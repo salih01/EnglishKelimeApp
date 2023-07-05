@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */; };
+		CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */; };
+		CEC0B7C42A55FC380001C767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C32A55FC380001C767 /* ViewController.swift */; };
+		CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0B7C52A55FC380001C767 /* Main.storyboard */; };
+		CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C82A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld */; };
+		CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC0B7CB2A55FC390001C767 /* Assets.xcassets */; };
+		CEC0B7CF2A55FC390001C767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0B7CD2A55FC390001C767 /* LaunchScreen.storyboard */; };
+		CEC0B7DA2A55FC390001C767 /* EnglishKelimeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7D92A55FC390001C767 /* EnglishKelimeAppTests.swift */; };
+		CEC0B7E42A55FC390001C767 /* EnglishKelimeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7E32A55FC390001C767 /* EnglishKelimeAppUITests.swift */; };
+		CEC0B7E62A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC0B7D62A55FC390001C767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC0B7B42A55FC380001C767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC0B7BB2A55FC380001C767;
+			remoteInfo = EnglishKelimeApp;
+		};
+		CEC0B7E02A55FC390001C767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC0B7B42A55FC380001C767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC0B7BB2A55FC380001C767;
+			remoteInfo = EnglishKelimeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishKelimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEC0B7C32A55FC380001C767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC0B7C62A55FC380001C767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEC0B7C92A55FC380001C767 /* EnglishKelimeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnglishKelimeApp.xcdatamodel; sourceTree = "<group>"; };
+		CEC0B7CB2A55FC390001C767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC0B7CE2A55FC390001C767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEC0B7D02A55FC390001C767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC0B7D52A55FC390001C767 /* EnglishKelimeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishKelimeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC0B7D92A55FC390001C767 /* EnglishKelimeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppTests.swift; sourceTree = "<group>"; };
+		CEC0B7DF2A55FC390001C767 /* EnglishKelimeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishKelimeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC0B7E32A55FC390001C767 /* EnglishKelimeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppUITests.swift; sourceTree = "<group>"; };
+		CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC0B7B92A55FC380001C767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7D22A55FC390001C767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7DC2A55FC390001C767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC0B7B32A55FC380001C767 = {
+			isa = PBXGroup;
+			children = (
+				CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */,
+				CEC0B7D82A55FC390001C767 /* EnglishKelimeAppTests */,
+				CEC0B7E22A55FC390001C767 /* EnglishKelimeAppUITests */,
+				CEC0B7BD2A55FC380001C767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC0B7BD2A55FC380001C767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */,
+				CEC0B7D52A55FC390001C767 /* EnglishKelimeAppTests.xctest */,
+				CEC0B7DF2A55FC390001C767 /* EnglishKelimeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */,
+				CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */,
+				CEC0B7C32A55FC380001C767 /* ViewController.swift */,
+				CEC0B7C52A55FC380001C767 /* Main.storyboard */,
+				CEC0B7CB2A55FC390001C767 /* Assets.xcassets */,
+				CEC0B7CD2A55FC390001C767 /* LaunchScreen.storyboard */,
+				CEC0B7D02A55FC390001C767 /* Info.plist */,
+				CEC0B7C82A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld */,
+			);
+			path = EnglishKelimeApp;
+			sourceTree = "<group>";
+		};
+		CEC0B7D82A55FC390001C767 /* EnglishKelimeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0B7D92A55FC390001C767 /* EnglishKelimeAppTests.swift */,
+			);
+			path = EnglishKelimeAppTests;
+			sourceTree = "<group>";
+		};
+		CEC0B7E22A55FC390001C767 /* EnglishKelimeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0B7E32A55FC390001C767 /* EnglishKelimeAppUITests.swift */,
+				CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */,
+			);
+			path = EnglishKelimeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC0B7BB2A55FC380001C767 /* EnglishKelimeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC0B7E92A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeApp" */;
+			buildPhases = (
+				CEC0B7B82A55FC380001C767 /* Sources */,
+				CEC0B7B92A55FC380001C767 /* Frameworks */,
+				CEC0B7BA2A55FC380001C767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnglishKelimeApp;
+			productName = EnglishKelimeApp;
+			productReference = CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC0B7D42A55FC390001C767 /* EnglishKelimeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC0B7EC2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppTests" */;
+			buildPhases = (
+				CEC0B7D12A55FC390001C767 /* Sources */,
+				CEC0B7D22A55FC390001C767 /* Frameworks */,
+				CEC0B7D32A55FC390001C767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC0B7D72A55FC390001C767 /* PBXTargetDependency */,
+			);
+			name = EnglishKelimeAppTests;
+			productName = EnglishKelimeAppTests;
+			productReference = CEC0B7D52A55FC390001C767 /* EnglishKelimeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEC0B7DE2A55FC390001C767 /* EnglishKelimeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC0B7EF2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppUITests" */;
+			buildPhases = (
+				CEC0B7DB2A55FC390001C767 /* Sources */,
+				CEC0B7DC2A55FC390001C767 /* Frameworks */,
+				CEC0B7DD2A55FC390001C767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC0B7E12A55FC390001C767 /* PBXTargetDependency */,
+			);
+			name = EnglishKelimeAppUITests;
+			productName = EnglishKelimeAppUITests;
+			productReference = CEC0B7DF2A55FC390001C767 /* EnglishKelimeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC0B7B42A55FC380001C767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CEC0B7BB2A55FC380001C767 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CEC0B7D42A55FC390001C767 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEC0B7BB2A55FC380001C767;
+					};
+					CEC0B7DE2A55FC390001C767 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEC0B7BB2A55FC380001C767;
+					};
+				};
+			};
+			buildConfigurationList = CEC0B7B72A55FC380001C767 /* Build configuration list for PBXProject "EnglishKelimeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEC0B7B32A55FC380001C767;
+			productRefGroup = CEC0B7BD2A55FC380001C767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC0B7BB2A55FC380001C767 /* EnglishKelimeApp */,
+				CEC0B7D42A55FC390001C767 /* EnglishKelimeAppTests */,
+				CEC0B7DE2A55FC390001C767 /* EnglishKelimeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC0B7BA2A55FC380001C767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC0B7CF2A55FC390001C767 /* LaunchScreen.storyboard in Resources */,
+				CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */,
+				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7D32A55FC390001C767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7DD2A55FC390001C767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC0B7B82A55FC380001C767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC0B7C42A55FC380001C767 /* ViewController.swift in Sources */,
+				CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */,
+				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
+				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7D12A55FC390001C767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC0B7DA2A55FC390001C767 /* EnglishKelimeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC0B7DB2A55FC390001C767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC0B7E62A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift in Sources */,
+				CEC0B7E42A55FC390001C767 /* EnglishKelimeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC0B7D72A55FC390001C767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC0B7BB2A55FC380001C767 /* EnglishKelimeApp */;
+			targetProxy = CEC0B7D62A55FC390001C767 /* PBXContainerItemProxy */;
+		};
+		CEC0B7E12A55FC390001C767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC0B7BB2A55FC380001C767 /* EnglishKelimeApp */;
+			targetProxy = CEC0B7E02A55FC390001C767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC0B7C52A55FC380001C767 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC0B7C62A55FC380001C767 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC0B7CD2A55FC390001C767 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC0B7CE2A55FC390001C767 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC0B7E72A55FC390001C767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEC0B7E82A55FC390001C767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC0B7EA2A55FC390001C767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnglishKelimeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEC0B7EB2A55FC390001C767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnglishKelimeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEC0B7ED2A55FC390001C767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnglishKelimeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnglishKelimeApp";
+			};
+			name = Debug;
+		};
+		CEC0B7EE2A55FC390001C767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnglishKelimeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnglishKelimeApp";
+			};
+			name = Release;
+		};
+		CEC0B7F02A55FC390001C767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnglishKelimeApp;
+			};
+			name = Debug;
+		};
+		CEC0B7F12A55FC390001C767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6M68LPML8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcakmak.EnglishKelimeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnglishKelimeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC0B7B72A55FC380001C767 /* Build configuration list for PBXProject "EnglishKelimeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC0B7E72A55FC390001C767 /* Debug */,
+				CEC0B7E82A55FC390001C767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC0B7E92A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC0B7EA2A55FC390001C767 /* Debug */,
+				CEC0B7EB2A55FC390001C767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC0B7EC2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC0B7ED2A55FC390001C767 /* Debug */,
+				CEC0B7EE2A55FC390001C767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC0B7EF2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC0B7F02A55FC390001C767 /* Debug */,
+				CEC0B7F12A55FC390001C767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEC0B7C82A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEC0B7C92A55FC380001C767 /* EnglishKelimeApp.xcdatamodel */,
+			);
+			currentVersion = CEC0B7C92A55FC380001C767 /* EnglishKelimeApp.xcdatamodel */;
+			path = EnglishKelimeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEC0B7B42A55FC380001C767 /* Project object */;
+}
