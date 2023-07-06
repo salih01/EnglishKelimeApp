@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29668A2A56C62800E3E533 /* OnboardingViewController.swift */; };
+		CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29668B2A56C62800E3E533 /* OnboardingViewController.xib */; };
+		CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29668F2A56C65000E3E533 /* MainViewController.swift */; };
+		CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966902A56C65000E3E533 /* MainViewController.xib */; };
+		CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2966952A56DB1300E3E533 /* SplashViewController.swift */; };
+		CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966962A56DB1300E3E533 /* SplashViewController.xib */; };
 		CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */; };
 		CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */; };
 		CEC0B7C42A55FC380001C767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C32A55FC380001C767 /* ViewController.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE29668A2A56C62800E3E533 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CE29668B2A56C62800E3E533 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		CE29668F2A56C65000E3E533 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE2966902A56C65000E3E533 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CE2966952A56DB1300E3E533 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CE2966962A56DB1300E3E533 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishKelimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2966852A56C4C600E3E533 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE2966862A56C55600E3E533 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2966942A56D86200E3E533 /* LoginViews */,
+				CE2966882A56C5D000E3E533 /* MainView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2966872A56C56700E3E533 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				CE29668A2A56C62800E3E533 /* OnboardingViewController.swift */,
+				CE29668B2A56C62800E3E533 /* OnboardingViewController.xib */,
+			);
+			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		CE2966882A56C5D000E3E533 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				CE29668F2A56C65000E3E533 /* MainViewController.swift */,
+				CE2966902A56C65000E3E533 /* MainViewController.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		CE2966892A56C60300E3E533 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		CE2966932A56D85100E3E533 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				CE2966952A56DB1300E3E533 /* SplashViewController.swift */,
+				CE2966962A56DB1300E3E533 /* SplashViewController.xib */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		CE2966942A56D86200E3E533 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE2966872A56C56700E3E533 /* OnboardingView */,
+				CE2966932A56D85100E3E533 /* SplashView */,
+				CE2966892A56C60300E3E533 /* LoginView */,
+			);
+			path = LoginViews;
+			sourceTree = "<group>";
+		};
 		CEC0B7B32A55FC380001C767 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +173,8 @@
 		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE2966862A56C55600E3E533 /* View */,
+				CE2966852A56C4C600E3E533 /* Base */,
 				CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */,
 				CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */,
 				CEC0B7C32A55FC380001C767 /* ViewController.swift */,
@@ -235,8 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC0B7CF2A55FC390001C767 /* LaunchScreen.storyboard in Resources */,
+				CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */,
 				CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */,
+				CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
+				CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +340,10 @@
 			files = (
 				CEC0B7C42A55FC380001C767 /* ViewController.swift in Sources */,
 				CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */,
+				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
+				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
+				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +525,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnglishKelimeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -477,7 +557,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnglishKelimeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
