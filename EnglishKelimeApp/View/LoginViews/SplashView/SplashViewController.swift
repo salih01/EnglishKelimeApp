@@ -32,6 +32,8 @@ class SplashViewController: UIViewController {
         
         if isUserLoggedIn {
             
+            isUserLoggedIn
+            
             let vc :MainViewController = MainViewController()
             vc.modalPresentationStyle = .fullScreen
             vc.present(vc, animated: true)
