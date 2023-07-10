@@ -23,6 +23,8 @@
 		CEC0B7DA2A55FC390001C767 /* EnglishKelimeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7D92A55FC390001C767 /* EnglishKelimeAppTests.swift */; };
 		CEC0B7E42A55FC390001C767 /* EnglishKelimeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7E32A55FC390001C767 /* EnglishKelimeAppUITests.swift */; };
 		CEC0B7E62A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */; };
+		CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */; };
+		CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CEC0B7DF2A55FC390001C767 /* EnglishKelimeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishKelimeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0B7E32A55FC390001C767 /* EnglishKelimeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppUITests.swift; sourceTree = "<group>"; };
 		CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 		CE2966892A56C60300E3E533 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
+				CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */,
+				CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */,
 				CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
+				CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */,
 				CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +349,7 @@
 				CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */,
 				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
+				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
