@@ -11,9 +11,11 @@ class SplashViewController: UIViewController {
     
     var isUserLoggedIn:Bool = true
     
+    @IBOutlet weak var imageView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        backGround()
+        imageView.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 5)
     }
     private func showinitialView() {
         if isUserLoggedIn {
@@ -32,16 +34,12 @@ class SplashViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        delay(durationInSeconds: 2.0) {
             self.showinitialView()
         }
     }
     
-    
-    func backGround(){
-        
-        view.backgroundColor = .systemGreen
-    }
+
     
     
     

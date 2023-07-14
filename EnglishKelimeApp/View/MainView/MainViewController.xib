@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="image" destination="ksR-5I-mRw" id="uoZ-6J-ZWE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +21,116 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAV-3p-iFG">
-                    <rect key="frame" x="160" y="416" width="73" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-xv-eZ1">
+                    <rect key="frame" x="46" y="231" width="300" height="390"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yd-qb-JmH">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="7JG-ZJ-bcx"/>
+                            </constraints>
+                            <color key="tintColor" name="Green"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseBackgroundColor" name="Green"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zal-8q-MFM">
+                            <rect key="frame" x="0.0" y="80" width="300" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="UX3-vr-SEt"/>
+                            </constraints>
+                            <color key="tintColor" name="LightGreen"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseBackgroundColor" name="LightGreen"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7N-rU-qMT">
+                            <rect key="frame" x="0.0" y="160" width="300" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="noj-eV-5Be"/>
+                            </constraints>
+                            <color key="tintColor" name="Dyellow"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseBackgroundColor" name="Dyellow"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7X-yC-Nva">
+                            <rect key="frame" x="0.0" y="240" width="300" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="7IV-Dp-ycG"/>
+                            </constraints>
+                            <color key="tintColor" name="Red"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseBackgroundColor" name="Red"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeJ-Xg-hrf">
+                            <rect key="frame" x="0.0" y="320" width="300" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="ErX-RI-OpK"/>
+                            </constraints>
+                            <color key="tintColor" name="Blue"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseBackgroundColor" name="Blue"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="7LC-Ka-G49"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-5I-mRw">
+                    <rect key="frame" x="150.66666666666666" y="78" width="92" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="F2t-6Y-pCG">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="O3P-B9-kef"/>
+                        <constraint firstAttribute="height" constant="84" id="j7E-3n-KA9"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="76" y="20"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="SLf-xv-eZ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="Qfc-7S-Hd4"/>
+                <constraint firstItem="SLf-xv-eZ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="172" id="Smm-bo-Rd1"/>
+                <constraint firstItem="ksR-5I-mRw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="19" id="oQy-SD-Xgz"/>
+                <constraint firstItem="ksR-5I-mRw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ptK-st-Nme"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SLf-xv-eZ1" secondAttribute="trailing" constant="47" id="wca-3W-zOV"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="LaunchIcon" width="1024" height="1024"/>
+        <namedColor name="Background">
+            <color red="0.96862745098039216" green="0.94509803921568625" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue">
+            <color red="0.23529411764705882" green="0.28235294117647058" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dyellow">
+            <color red="0.90588235294117647" green="0.69411764705882351" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.29803921568627451" green="0.29411764705882354" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGreen">
+            <color red="0.53725490196078429" green="0.50588235294117645" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.95686274509803915" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

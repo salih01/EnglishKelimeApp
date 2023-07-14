@@ -13,6 +13,7 @@
 		CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966902A56C65000E3E533 /* MainViewController.xib */; };
 		CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2966952A56DB1300E3E533 /* SplashViewController.swift */; };
 		CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966962A56DB1300E3E533 /* SplashViewController.xib */; };
+		CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EDEC2A61940C004D1F24 /* UIViewExtensions.swift */; };
 		CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */; };
 		CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */; };
 		CEC0B7C42A55FC380001C767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C32A55FC380001C767 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		CEC0B7E62A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */; };
 		CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */; };
 		CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */; };
+		CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE67C82A5C9ECB00805434 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		CE2966902A56C65000E3E533 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE2966952A56DB1300E3E533 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CE2966962A56DB1300E3E533 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		CEB3EDEC2A61940C004D1F24 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishKelimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKelimeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CEEE67C82A5C9ECB00805434 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEEE67C72A5C9EBE00805434 /* Extensions */,
 				CE2966862A56C55600E3E533 /* View */,
 				CE2966852A56C4C600E3E533 /* Base */,
 				CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */,
@@ -208,6 +213,15 @@
 				CEC0B7E52A55FC390001C767 /* EnglishKelimeAppUITestsLaunchTests.swift */,
 			);
 			path = EnglishKelimeAppUITests;
+			sourceTree = "<group>";
+		};
+		CEEE67C72A5C9EBE00805434 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE67C82A5C9ECB00805434 /* Helper.swift */,
+				CEB3EDEC2A61940C004D1F24 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,8 @@
 				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
 				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
+				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
+				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
