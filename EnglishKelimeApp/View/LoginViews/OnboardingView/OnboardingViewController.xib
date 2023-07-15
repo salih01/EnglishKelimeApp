@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,97 +18,12 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-74-KDm">
-                    <rect key="frame" x="46" y="220" width="300" height="390"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ0-LS-z0s">
-                            <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="BEH-6q-DZu"/>
-                            </constraints>
-                            <color key="tintColor" name="Green"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Green"/>
-                            </buttonConfiguration>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED5-vR-6rr">
-                            <rect key="frame" x="0.0" y="80" width="300" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="eki-SS-xM7"/>
-                            </constraints>
-                            <color key="tintColor" name="LightGreen"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="LightGreen"/>
-                            </buttonConfiguration>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-he-VRu">
-                            <rect key="frame" x="0.0" y="160" width="300" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="poE-jg-ZM8"/>
-                            </constraints>
-                            <color key="tintColor" name="Dyellow"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Dyellow"/>
-                            </buttonConfiguration>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-x1-Bax">
-                            <rect key="frame" x="0.0" y="240" width="300" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="6yg-K8-JZh"/>
-                            </constraints>
-                            <color key="tintColor" name="Red"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Red"/>
-                            </buttonConfiguration>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqr-Km-0nM">
-                            <rect key="frame" x="0.0" y="320" width="300" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="wzl-UR-CKb"/>
-                            </constraints>
-                            <color key="tintColor" name="Blue"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Blue"/>
-                            </buttonConfiguration>
-                        </button>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="300" id="tDA-S3-eeh"/>
-                    </constraints>
-                </stackView>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Am-74-KDm" secondAttribute="trailing" constant="47" id="2X2-wW-Zqx"/>
-                <constraint firstItem="6Am-74-KDm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="8d7-oa-g0I"/>
-                <constraint firstItem="6Am-74-KDm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="161" id="8e9-Df-fSa"/>
-            </constraints>
             <point key="canvasLocation" x="76" y="20"/>
         </view>
     </objects>
     <resources>
-        <namedColor name="Blue">
-            <color red="0.23499999940395355" green="0.28200000524520874" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Dyellow">
-            <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Green">
-            <color red="0.29800000786781311" green="0.29399999976158142" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="LightGreen">
-            <color red="0.53700000047683716" green="0.50599998235702515" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Red">
-            <color red="0.9570000171661377" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

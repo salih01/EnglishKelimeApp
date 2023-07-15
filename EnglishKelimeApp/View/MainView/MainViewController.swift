@@ -23,7 +23,20 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
+        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
+        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
+        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
+    }
+    
     
 
 }
