@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 5)
+        imageView.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
     }
     private func showinitialView() {
         if isUserLoggedIn {
