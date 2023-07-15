@@ -14,7 +14,8 @@
             <connections>
                 <outlet property="b1" destination="8Yd-qb-JmH" id="aKZ-aG-Ghp"/>
                 <outlet property="b2" destination="zal-8q-MFM" id="WeQ-BU-OrX"/>
-                <outlet property="image" destination="ksR-5I-mRw" id="uoZ-6J-ZWE"/>
+                <outlet property="containerView" destination="EAE-o0-KUs" id="zot-Vm-9pR"/>
+                <outlet property="launchView" destination="Mhe-Ye-V8o" id="Q0N-Is-gWK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -86,28 +87,36 @@
                         <constraint firstAttribute="width" constant="300" id="7LC-Ka-G49"/>
                     </constraints>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-5I-mRw">
-                    <rect key="frame" x="150.66666666666666" y="78" width="92" height="84"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-o0-KUs">
+                    <rect key="frame" x="122" y="59" width="149" height="149"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="F2t-6Y-pCG">
-                            <rect key="frame" x="0.0" y="0.0" width="92" height="84"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mhe-Ye-V8o">
+                            <rect key="frame" x="0.0" y="0.0" width="149" height="149"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="149" id="9gp-pK-NWm"/>
+                                <constraint firstAttribute="height" constant="149" id="rLG-91-aDF"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="92" id="O3P-B9-kef"/>
-                        <constraint firstAttribute="height" constant="84" id="j7E-3n-KA9"/>
+                        <constraint firstAttribute="height" constant="149" id="2LG-kp-VpM"/>
+                        <constraint firstAttribute="width" constant="149" id="NOC-qW-iqa"/>
+                        <constraint firstAttribute="trailing" secondItem="Mhe-Ye-V8o" secondAttribute="trailing" id="R2h-WV-nH2"/>
+                        <constraint firstAttribute="bottom" secondItem="Mhe-Ye-V8o" secondAttribute="bottom" id="fah-mk-FQx"/>
+                        <constraint firstItem="Mhe-Ye-V8o" firstAttribute="leading" secondItem="EAE-o0-KUs" secondAttribute="leading" id="tJ9-gO-UKq"/>
+                        <constraint firstItem="Mhe-Ye-V8o" firstAttribute="top" secondItem="EAE-o0-KUs" secondAttribute="top" id="wli-mj-rTz"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="Background"/>
             <constraints>
+                <constraint firstItem="EAE-o0-KUs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9OX-ll-t5N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EAE-o0-KUs" secondAttribute="trailing" constant="122" id="MNE-IF-NGQ"/>
                 <constraint firstItem="SLf-xv-eZ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="Qfc-7S-Hd4"/>
                 <constraint firstItem="SLf-xv-eZ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="172" id="Smm-bo-Rd1"/>
-                <constraint firstItem="ksR-5I-mRw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="19" id="oQy-SD-Xgz"/>
-                <constraint firstItem="ksR-5I-mRw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ptK-st-Nme"/>
+                <constraint firstItem="EAE-o0-KUs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="122" id="vbR-za-l0b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SLf-xv-eZ1" secondAttribute="trailing" constant="47" id="wca-3W-zOV"/>
             </constraints>
             <point key="canvasLocation" x="75.572519083969468" y="19.718309859154932"/>
@@ -122,16 +131,16 @@
             <color red="0.23499999940395355" green="0.28200000524520874" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dyellow">
-            <color red="0.90588235294117647" green="0.69411764705882351" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green">
-            <color red="0.29803921568627451" green="0.29411764705882354" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.29800000786781311" green="0.29399999976158142" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LightGreen">
             <color red="0.53700000047683716" green="0.50599998235702515" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Red">
-            <color red="0.95686274509803915" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9570000171661377" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

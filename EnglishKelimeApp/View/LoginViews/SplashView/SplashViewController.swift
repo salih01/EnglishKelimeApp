@@ -9,13 +9,16 @@ import UIKit
 
 class SplashViewController: UIViewController {
     
-    var isUserLoggedIn:Bool = true
+    var isUserLoggedIn:Bool = false
     
     @IBOutlet weak var imageView: UIView!
     
+    @IBOutlet weak var launchView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
+        imageView.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"Green") ?? .blue, shadowOpacity: 0.9, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 25.0)
+        launchView.addCornerRadius(radius: 15.0)
+        
     }
     private func showinitialView() {
         if isUserLoggedIn {

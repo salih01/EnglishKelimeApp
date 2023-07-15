@@ -9,34 +9,25 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var image: UIView!
+
     
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var launchView: UIImageView!
     @IBOutlet weak var b1: UIButton!
     @IBOutlet weak var b2: UIButton!
     
+    let cornerRadius : CGFloat = 25.0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
-        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
-
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
-        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
-        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
         
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        image.addShadow(color: .gray, opacity: 1,offset: CGSize(width: 2, height: 2), radius: 15)
-        b1.addShadow(color: .lightGray, opacity: 1, offset: CGSize(width: 10, height: 10), radius: 15)
-    }
+        containerView.addCornerRadiusAndShadow(cornerRadius: cornerRadius, shadowColor: .darkGray, shadowOpacity: 0.9, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 25.0)
+        launchView.addCornerRadius(radius: 15.0)
+
     
+        
+
+    }
     
 
 }
