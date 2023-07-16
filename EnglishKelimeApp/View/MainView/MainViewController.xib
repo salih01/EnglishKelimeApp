@@ -35,7 +35,7 @@
                             <color key="tintColor" name="Green"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Green"/>
+                                <color key="baseBackgroundColor" name="Purple"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zal-8q-MFM">
@@ -46,7 +46,7 @@
                             <color key="tintColor" name="LightGreen"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="LightGreen"/>
+                                <color key="baseBackgroundColor" name="Orange"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7N-rU-qMT">
@@ -57,7 +57,7 @@
                             <color key="tintColor" name="Dyellow"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Dyellow"/>
+                                <color key="baseBackgroundColor" name="NewYellow"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7X-yC-Nva">
@@ -68,7 +68,7 @@
                             <color key="tintColor" name="Red"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Button">
-                                <color key="baseBackgroundColor" name="Red"/>
+                                <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeJ-Xg-hrf">
@@ -123,9 +123,9 @@
         </view>
     </objects>
     <resources>
-        <image name="LaunchIcon" width="1024" height="1024"/>
+        <image name="LaunchIcon" width="180" height="180"/>
         <namedColor name="Background">
-            <color red="0.96899998188018799" green="0.94499999284744263" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Blue">
             <color red="0.23499999940395355" green="0.28200000524520874" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,6 +138,15 @@
         </namedColor>
         <namedColor name="LightGreen">
             <color red="0.53700000047683716" green="0.50599998235702515" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NewYellow">
+            <color red="0.9882352941176471" green="0.90588235294117647" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="1" green="0.42745098039215684" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.91764705882352937" green="0.015686274509803921" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Red">
             <color red="0.9570000171661377" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        containerView.addCornerRadiusAndShadow(cornerRadius: cornerRadius, shadowColor: .darkGray, shadowOpacity: 0.9, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 25.0)
+        containerView.addCornerRadiusAndShadow(cornerRadius: cornerRadius, shadowColor: .darkGray, shadowOpacity: 0.2, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 5)
         launchView.addCornerRadius(radius: 15.0)
 
     

@@ -16,7 +16,7 @@ class SplashViewController: UIViewController {
     @IBOutlet weak var launchView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"Green") ?? .blue, shadowOpacity: 0.9, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 25.0)
+        imageView.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: .darkGray, shadowOpacity: 0.2, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 10)
         launchView.addCornerRadius(radius: 15.0)
         
     }

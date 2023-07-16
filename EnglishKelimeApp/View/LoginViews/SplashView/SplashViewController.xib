@@ -42,31 +42,20 @@
                         <constraint firstItem="ApT-xt-H5M" firstAttribute="top" secondItem="lTw-og-ObW" secondAttribute="top" id="XQG-23-Y7Z"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Salih Çakmak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUY-4u-1UB">
-                    <rect key="frame" x="142" y="544" width="146" height="21"/>
-                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
-                    <color key="textColor" name="Blue"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="Background"/>
+            <color key="backgroundColor" name="ThemeColor"/>
             <constraints>
                 <constraint firstItem="lTw-og-ObW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jc4-DQ-mYF"/>
                 <constraint firstItem="lTw-og-ObW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rhq-vJ-Mz3"/>
-                <constraint firstItem="FUY-4u-1UB" firstAttribute="top" secondItem="ApT-xt-H5M" secondAttribute="bottom" constant="14" id="TEJ-tL-j3c"/>
-                <constraint firstItem="FUY-4u-1UB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k6R-aX-Aa9"/>
             </constraints>
             <point key="canvasLocation" x="75.348837209302332" y="19.313304721030043"/>
         </view>
     </objects>
     <resources>
-        <image name="LaunchIcon" width="1024" height="1024"/>
-        <namedColor name="Background">
-            <color red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Blue">
-            <color red="0.23499999940395355" green="0.28200000524520874" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="LaunchIcon" width="180" height="180"/>
+        <namedColor name="ThemeColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
