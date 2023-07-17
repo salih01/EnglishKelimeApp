@@ -12,7 +12,11 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var image: UIImageView!
 
-    
+    func setup(backImage:UIImage){
+        
+        image.image = backImage
+        
+    }
     
     
 

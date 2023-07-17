@@ -30,15 +30,15 @@ class OnboardingViewController: UIViewController {
 }
 extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return Slide.collection.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
-
-        
-        cell.image.image = UIImage(named: "onboarding1")
+        let imageName = Slide.collection[indexPath.item].imageName
+        let image = UIImage(named: imageName) ?? UIImage()
+        cell.setup(backImage: image)
         return cell
         
         
