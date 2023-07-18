@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +43,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="ThemeColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="lTw-og-ObW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jc4-DQ-mYF"/>
                 <constraint firstItem="lTw-og-ObW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rhq-vJ-Mz3"/>
@@ -54,9 +53,6 @@
     </objects>
     <resources>
         <image name="LaunchIcon" width="180" height="180"/>
-        <namedColor name="ThemeColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

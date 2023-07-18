@@ -51,7 +51,14 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 100
+        return 0
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        let index  = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+        print(index)
+        
     }
     
 }

@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,12 +22,13 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-Qn-ivN">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Y7z-Qn-ivN" secondAttribute="height" multiplier="25:34" id="shx-NJ-zm0"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Y7z-Qn-ivN" secondAttribute="bottom" id="KjQ-d7-i0s"/>
                             <constraint firstItem="Y7z-Qn-ivN" firstAttribute="top" secondItem="qb7-IZ-4Cy" secondAttribute="top" id="QS8-PL-qT8"/>
@@ -40,6 +40,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="qb7-IZ-4Cy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EFk-bz-M9z"/>
                 <constraint firstAttribute="trailing" secondItem="qb7-IZ-4Cy" secondAttribute="trailing" id="KdN-ww-Egd"/>
@@ -56,8 +57,5 @@
     </objects>
     <resources>
         <image name="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" width="4912" height="7360"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
