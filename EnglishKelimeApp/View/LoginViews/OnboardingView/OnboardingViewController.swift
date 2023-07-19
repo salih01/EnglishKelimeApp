@@ -18,10 +18,18 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate   = self
         collectionView.dataSource = self
+        setupCollectionView()
         collectionView.register(UINib(nibName: "OnboardingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
-
         
         startButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
+    }
+    
+    private func setupCollectionView(){
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        collectionView.backgroundColor = .systemGroupedBackground
+        collectionView.collectionViewLayout = layout
+        collectionView.isPagingEnabled = true
     }
 
     @IBAction func startButton(_ sender: Any) {
@@ -51,7 +59,7 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 100
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
