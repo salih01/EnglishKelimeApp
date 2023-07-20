@@ -74,7 +74,7 @@ by following you top brands.</string>
                     <color key="currentPageIndicatorTintColor" name="NewRed"/>
                 </pageControl>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceHorizontal="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rr6-7D-rXN">
-                    <rect key="frame" x="62" y="215" width="250" height="340"/>
+                    <rect key="frame" x="42" y="215" width="291" height="340"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3NB-3S-7TN">
@@ -92,9 +92,9 @@ by following you top brands.</string>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Rr6-7D-rXN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="62" id="966-HZ-UjZ"/>
+                <constraint firstItem="Rr6-7D-rXN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="966-HZ-UjZ"/>
                 <constraint firstItem="knf-cW-4nd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="J66-CN-73a"/>
-                <constraint firstItem="Rr6-7D-rXN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-63" id="NyF-Pr-tzv"/>
+                <constraint firstItem="Rr6-7D-rXN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-42" id="NyF-Pr-tzv"/>
                 <constraint firstItem="VD6-Hd-IBc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="QmO-WB-88U"/>
                 <constraint firstItem="Rr6-7D-rXN" firstAttribute="top" secondItem="VD6-Hd-IBc" secondAttribute="bottom" constant="7.5" id="Vng-R5-eWC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="knf-cW-4nd" secondAttribute="trailing" constant="16" id="gyr-qF-xy1"/>

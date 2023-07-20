@@ -17,7 +17,10 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         image.image = backImage
         
     }
-    
+    static func cellSize() -> CGSize {
+        // Hücre boyutunu burada dilediğiniz gibi belirleyebilirsiniz
+        return CGSize(width: 300, height: 500)
+    }
     
 
 }

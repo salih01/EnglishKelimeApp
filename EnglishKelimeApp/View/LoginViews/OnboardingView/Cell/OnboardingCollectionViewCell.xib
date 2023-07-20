@@ -11,21 +11,18 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="EnglishKelimeApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+            <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+                <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-IZ-4Cy">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-Qn-ivN">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Y7z-Qn-ivN" secondAttribute="height" multiplier="25:34" id="shx-NJ-zm0"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,7 +30,6 @@
                             <constraint firstAttribute="bottom" secondItem="Y7z-Qn-ivN" secondAttribute="bottom" id="KjQ-d7-i0s"/>
                             <constraint firstItem="Y7z-Qn-ivN" firstAttribute="top" secondItem="qb7-IZ-4Cy" secondAttribute="top" id="QS8-PL-qT8"/>
                             <constraint firstAttribute="trailing" secondItem="Y7z-Qn-ivN" secondAttribute="trailing" id="Vz1-FQ-vNF"/>
-                            <constraint firstAttribute="width" secondItem="qb7-IZ-4Cy" secondAttribute="height" multiplier="25:34" id="fSN-y6-G5w"/>
                             <constraint firstItem="Y7z-Qn-ivN" firstAttribute="leading" secondItem="qb7-IZ-4Cy" secondAttribute="leading" id="fru-b2-g7K"/>
                         </constraints>
                     </view>
@@ -47,12 +43,12 @@
                 <constraint firstAttribute="bottom" secondItem="qb7-IZ-4Cy" secondAttribute="bottom" id="aXN-Pt-HQb"/>
                 <constraint firstItem="qb7-IZ-4Cy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cTI-LV-8Eb"/>
             </constraints>
-            <size key="customSize" width="300" height="390"/>
+            <size key="customSize" width="300" height="430"/>
             <connections>
                 <outlet property="backView" destination="qb7-IZ-4Cy" id="7Ee-TT-qJ1"/>
                 <outlet property="image" destination="Y7z-Qn-ivN" id="aq9-R7-sCP"/>
             </connections>
-            <point key="canvasLocation" x="268.70229007633588" y="139.43661971830986"/>
+            <point key="canvasLocation" x="268.70229007633588" y="153.52112676056339"/>
         </collectionViewCell>
     </objects>
     <resources>

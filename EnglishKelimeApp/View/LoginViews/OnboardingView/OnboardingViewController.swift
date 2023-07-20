@@ -13,12 +13,13 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate   = self
         collectionView.dataSource = self
         setupCollectionView()
+        
         collectionView.register(UINib(nibName: "OnboardingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
         
         startButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
@@ -53,8 +54,8 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
-     
-        return cell.backView.frame.size
+    
+        return OnboardingCollectionViewCell.cellSize()
     }
     
     
