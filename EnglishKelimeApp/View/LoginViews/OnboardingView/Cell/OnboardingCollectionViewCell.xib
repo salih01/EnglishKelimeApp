@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-IZ-4Cy">
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-IZ-4Cy">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-Qn-ivN">

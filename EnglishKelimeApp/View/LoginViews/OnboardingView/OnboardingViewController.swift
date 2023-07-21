@@ -55,7 +55,9 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
     
-        return OnboardingCollectionViewCell.cellSize()
+        let cellWidth = collectionView.frame.width // Örnek olarak sağ ve sol kenarlardan 20 puan çıkarıldı
+        return CGSize(width: cellWidth, height: 500) // yourDesiredHeight yerine istediğiniz yüksekliği belirleyin
+    
     }
     
     
