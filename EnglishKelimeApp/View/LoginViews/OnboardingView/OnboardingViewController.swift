@@ -11,7 +11,9 @@ class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
 
     override func viewDidLoad() {
@@ -33,6 +35,12 @@ class OnboardingViewController: UIViewController {
         collectionView.isPagingEnabled = true
     }
 
+    private func showCaption(atIndex index:Int){
+        let slide = Slide.collection[index]
+        titleLabel.text = slide.title
+        descriptionLabel.text = slide.description
+        
+    }
     @IBAction func startButton(_ sender: Any) {
     }
 
@@ -68,28 +76,13 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         let index  = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+        showCaption(atIndex: index)
+        self.pageControl.currentPage = index
         print(index)
         
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //        testView.addCornerRadiusAndShadow(cornerRadius: 40, shadowColor: .darkGray, shadowOpacity: 0.2, shadowOffset: CGSize(width: 0.2, height: 3), shadowRadius: 1)
 //        testView.addBorder(color: UIColor(named:"borderColor")!, width: 0.7)

@@ -14,6 +14,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Rr6-7D-rXN" id="oUy-gh-hAn"/>
+                <outlet property="descriptionLabel" destination="hQn-OH-jQn" id="KXS-ar-QlW"/>
+                <outlet property="pageControl" destination="Nju-r2-ZCP" id="7m9-bQ-VDf"/>
                 <outlet property="startButton" destination="knf-cW-4nd" id="D6W-nh-YDN"/>
                 <outlet property="titleLabel" destination="HVI-sB-zg2" id="Ebe-IT-GvE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="Uvr-kw-mFl"/>
@@ -29,6 +31,9 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-sB-zg2">
                             <rect key="frame" x="0.0" y="0.0" width="343" height="62.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="62.5" id="kza-ym-oYE"/>
+                            </constraints>
                             <string key="text">Shop
 Your Favourites</string>
                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
@@ -37,6 +42,9 @@ Your Favourites</string>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQn-OH-jQn">
                             <rect key="frame" x="0.0" y="70.5" width="343" height="117"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="117" id="3Va-Iv-pS8"/>
+                            </constraints>
                             <string key="text">Personalise your shopping experience
 by following you top brands.Personalise your shopping experience
 by following you top brands.Personalise your shopping experience
