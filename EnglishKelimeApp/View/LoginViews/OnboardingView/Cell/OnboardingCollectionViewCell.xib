@@ -20,7 +20,7 @@
                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-IZ-4Cy">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-Qn-ivN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cikcikkus" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-Qn-ivN">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -52,6 +52,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="young-students-studying-together-with-book-2022-11-25-18-11-08-utc-min" width="4912" height="7360"/>
+        <image name="cikcikkus" width="2316" height="3088"/>
     </resources>
 </document>
