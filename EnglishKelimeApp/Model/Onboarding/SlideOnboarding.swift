@@ -14,7 +14,7 @@ struct Slide {
     
     static let collection:[Slide] = [
     
-        Slide(imageName: "1", title: "onboarding1", description: "onboarding1onboarding1"),
+        Slide(imageName: "1", title: "İngilizce Kelime Öğrenmek Şimdi Çok daha kolay", description: "onboarding1onboarding1"),
         Slide(imageName: "2", title: "onboarding2", description: "onboarding1onboarding2222"),
         Slide(imageName: "3", title: "onboarding3", description: "onboarding1onboarding3333"),
         Slide(imageName: "4", title: "onboarding4", description: "onboarding1onboarding4444"),

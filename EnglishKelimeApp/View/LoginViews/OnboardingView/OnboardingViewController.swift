@@ -42,6 +42,8 @@ class OnboardingViewController: UIViewController {
         
     }
     @IBAction func startButton(_ sender: Any) {
+        let vc:LoginViewController = LoginViewController()
+        present(vc, animated: true)
     }
 
 }
