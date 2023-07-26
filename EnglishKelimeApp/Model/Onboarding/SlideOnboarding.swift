@@ -14,15 +14,15 @@ struct Slide {
     
     static let collection:[Slide] = [
     
-        Slide(imageName: "1", title: "İngilizce Kelime Öğrenmek Şimdi Çok daha kolay", description: "onboarding1onboarding1"),
-        Slide(imageName: "2", title: "onboarding2", description: "onboarding1onboarding2222"),
-        Slide(imageName: "3", title: "onboarding3", description: "onboarding1onboarding3333"),
-        Slide(imageName: "4", title: "onboarding4", description: "onboarding1onboarding4444"),
-        Slide(imageName: "5", title: "onboarding4", description: "onboarding1onboarding4444"),
-        Slide(imageName: "6", title: "onboarding4", description: "onboarding1onboarding4444"),
-        Slide(imageName: "7", title: "onboarding4", description: "onboarding1onboarding4444"),
-        Slide(imageName: "8", title: "onboarding4", description: "onboarding1onboarding4444"),
-        Slide(imageName: "9", title: "onboarding4", description: "onboarding1onboarding4444")
+        Slide(imageName: "1", title: "İngilizce Kelime Öğrenmek Şimdi Çok daha kolay", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "2", title: "onboarding2", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "3", title: "onboarding3", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "4", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "5", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "6", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "7", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "8", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
+        Slide(imageName: "9", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak ")
 
     ]
 }
