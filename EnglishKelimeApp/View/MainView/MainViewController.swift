@@ -24,10 +24,6 @@ class MainViewController: UIViewController {
         containerView.addCornerRadiusAndShadow(cornerRadius: cornerRadius, shadowColor: .darkGray, shadowOpacity: 0.2, shadowOffset: CGSize(width: 5.0, height: 5.0), shadowRadius: 5)
         launchView.addCornerRadius(radius: 15.0)
 
-    
-        
-
     }
-    
 
 }

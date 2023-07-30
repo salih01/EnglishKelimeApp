@@ -20,16 +20,18 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate   = self
         collectionView.dataSource = self
-        setupCollectionView()
         
         collectionView.register(UINib(nibName: "OnboardingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
-        
+        setupCollectionView()
+        showCaption(atIndex: 0)
+         pageControl.currentPage = 0
         startButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
     }
-    
+
     private func setupCollectionView(){
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        collectionView.layer.cornerRadius = 15
         collectionView.backgroundColor = .systemGroupedBackground
         collectionView.collectionViewLayout = layout
         collectionView.isPagingEnabled = true
