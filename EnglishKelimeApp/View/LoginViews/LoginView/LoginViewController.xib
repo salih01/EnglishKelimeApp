@@ -16,6 +16,7 @@
                 <outlet property="errorLabel" destination="nGF-Cs-fjP" id="sVr-EV-pwk"/>
                 <outlet property="logInButton" destination="swc-2G-FJO" id="msM-dm-gVv"/>
                 <outlet property="paswordTextField" destination="GJU-hN-qy0" id="XBK-vc-IRU"/>
+                <outlet property="stackView" destination="qj7-RU-sRo" id="UDq-NW-G9e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

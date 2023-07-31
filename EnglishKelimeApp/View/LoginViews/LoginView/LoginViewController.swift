@@ -7,17 +7,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController ,UITextFieldDelegate{
 
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var paswordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initUI()
+        emailTextField.delegate = self
+    }
+    
+    func initUI() {
+        
         logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"Blue")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
 //        emailTextField.layer.cornerRadius = 15
 //        emailTextField.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: .systemGray, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 2), shadowRadius: 3)
@@ -31,6 +37,30 @@ class LoginViewController: UIViewController {
         
         
     }
+    
+    // UITextFieldDelegate metodunu uygulayalım
+      func textFieldDidBeginEditing(_ textField: UITextField) {
+          // emailTextField tıklanınca animasyonu başlatalım
+          animateStackView()
+      }
+
+      // Animasyonu gerçekleştirecek fonksiyonu oluşturalım
+      private func animateStackView() {
+          // StackView'in başlangıç konumu
+          let initialPosition = stackView.frame.origin.y
+
+          // StackView'in yeni konumu (Y ekseninde 200 birim yukarı)
+          let finalPosition = initialPosition - 200
+
+          // Animasyon süresi
+          let animationDuration: TimeInterval = 0.5
+
+          // Animasyon bloğu
+          UIView.animate(withDuration: animationDuration, animations: {
+              // StackView'i yeni konuma taşıyalım
+              self.stackView.frame.origin.y = finalPosition
+          })
+      }
 
     @IBAction func logInButton(_ sender: Any) {
     }
