@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum KeyboardState {
+    case shown
+    case hidden
+}
+
 class LoginViewController: UIViewController ,UITextFieldDelegate{
 
     
@@ -16,51 +21,58 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
     
+    @IBOutlet weak var emailPaswordView: UIView!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    var keyboardState: KeyboardState = .hidden
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        emailTextField.delegate = self
+        emailTextField.delegate   = self
+        paswordTextField.delegate = self
     }
-    
+
     func initUI() {
         
-        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"Blue")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-//        emailTextField.layer.cornerRadius = 15
-//        emailTextField.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: .systemGray, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 2), shadowRadius: 3)
-//        paswordTextField.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: .systemGray, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 2), shadowRadius: 3)
+        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         emailTextField.layer.cornerRadius = 15
-        emailTextField.layer.borderWidth = CGFloat(3.0)
-        emailTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
+//        emailTextField.layer.borderWidth = CGFloat(3.0)
+//        emailTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
         paswordTextField.layer.cornerRadius = 15
-        paswordTextField.layer.borderWidth = CGFloat(3.0)
-        paswordTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
+//        paswordTextField.layer.borderWidth = CGFloat(3.0)
+//        paswordTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
         
+        emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)
+//        self.hideKeyboardWhenTappedAround()
         
+        imageView.addCornerRadius(radius: 30)
+
     }
-    
-    // UITextFieldDelegate metodunu uygulayalım
-      func textFieldDidBeginEditing(_ textField: UITextField) {
-          // emailTextField tıklanınca animasyonu başlatalım
-          animateStackView()
-      }
+    // Klavye gösterilmeye başlandığında çağrılır
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateStackView(for: .shown)
+    }
 
-      // Animasyonu gerçekleştirecek fonksiyonu oluşturalım
-      private func animateStackView() {
-          // StackView'in başlangıç konumu
-          let initialPosition = stackView.frame.origin.y
+    // Klavye gizlendiğinde çağrılır
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateStackView(for: .hidden)
+        self.hideKeyboardWhenTappedAround()
+    }
 
-          // StackView'in yeni konumu (Y ekseninde 200 birim yukarı)
-          let finalPosition = initialPosition - 200
+    // Klavye durumuna göre animasyonu gerçekleştiren fonksiyon
+    private func animateStackView(for state: KeyboardState) {
+        switch state {
+        case .shown:
+            UIView.animate(withDuration: 0.5) {
+                self.stackView.transform = CGAffineTransform(translationX: 0, y: -260)
+            }
+        case .hidden:
+            UIView.animate(withDuration: 0.5) {
+                self.stackView.transform = .identity
+            }
+        }
+    }
 
-          // Animasyon süresi
-          let animationDuration: TimeInterval = 0.5
-
-          // Animasyon bloğu
-          UIView.animate(withDuration: animationDuration, animations: {
-              // StackView'i yeni konuma taşıyalım
-              self.stackView.frame.origin.y = finalPosition
-          })
-      }
 
     @IBAction func logInButton(_ sender: Any) {
     }
