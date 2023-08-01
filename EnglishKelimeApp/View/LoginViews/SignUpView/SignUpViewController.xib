@@ -1,22 +1,175 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="kKN-Xh-U0b" id="DhL-tY-9b0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kKN-Xh-U0b">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vS-o1-SXK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-wl-YkX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-GJ-hT6">
+                            <rect key="frame" x="30" y="208" width="315" height="359"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyO-9p-ms3">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="268"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Pkj-dn-dGN">
+                                            <rect key="frame" x="12" y="20" width="290" height="228"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZgJ-JD-zCt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <color key="tintColor" name="NewRed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="rPH-qB-7mD"/>
+                                                    </constraints>
+                                                    <color key="textColor" name="Dyellow"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIp-lW-ebt">
+                                                    <rect key="frame" x="0.0" y="71" width="290" height="2"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="oaD-id-J5E"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parola" placeholder="Parola" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwd-Zm-aVF">
+                                                    <rect key="frame" x="0.0" y="84" width="290" height="60"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <color key="tintColor" name="NewRed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="i9k-b2-xK2"/>
+                                                    </constraints>
+                                                    <color key="textColor" name="Dyellow"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx8-t9-bFk">
+                                                    <rect key="frame" x="0.0" y="155" width="290" height="2"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="vtB-aP-fU8"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parola" placeholder="Parola" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-Eq-wtk">
+                                                    <rect key="frame" x="0.0" y="168" width="290" height="60"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <color key="tintColor" name="NewRed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="BFj-Co-oPO"/>
+                                                    </constraints>
+                                                    <color key="textColor" name="Dyellow"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                </textField>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trb-wQ-T4t">
+                                                    <rect key="frame" x="0.0" y="228" width="290" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="3Hl-2v-IAa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                                    <color key="textColor" name="NewRed"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="290" id="PbV-9d-oMr"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Pkj-dn-dGN" firstAttribute="leading" secondItem="CyO-9p-ms3" secondAttribute="leading" constant="12" id="1ES-hh-pQm"/>
+                                        <constraint firstItem="Pkj-dn-dGN" firstAttribute="top" secondItem="CyO-9p-ms3" secondAttribute="top" constant="20" id="7g7-Hj-TJO"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pkj-dn-dGN" secondAttribute="trailing" constant="13" id="O5O-t0-o2J"/>
+                                        <constraint firstAttribute="bottom" secondItem="Pkj-dn-dGN" secondAttribute="bottom" constant="20" id="nsv-bv-Zgt"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPQ-Pl-Oyc">
+                                    <rect key="frame" x="0.0" y="299" width="315" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="3eY-Af-BWm"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Giriş Yap">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="Futura-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseBackgroundColor" name="NewYellow"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="CyO-9p-ms3" firstAttribute="top" secondItem="nS1-GJ-hT6" secondAttribute="top" id="G31-DM-E6Z"/>
+                                <constraint firstItem="CyO-9p-ms3" firstAttribute="leading" secondItem="nS1-GJ-hT6" secondAttribute="leading" id="mpV-ti-SYe"/>
+                                <constraint firstAttribute="trailing" secondItem="CyO-9p-ms3" secondAttribute="trailing" id="rjt-MP-g8Q"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nS1-GJ-hT6" secondAttribute="trailing" constant="30" id="0A6-qM-k66"/>
+                        <constraint firstItem="ofc-wl-YkX" firstAttribute="leading" secondItem="4vS-o1-SXK" secondAttribute="leading" id="Hjb-r6-xnO"/>
+                        <constraint firstAttribute="bottom" secondItem="nS1-GJ-hT6" secondAttribute="bottom" constant="100" id="Xc5-BX-gxa"/>
+                        <constraint firstAttribute="trailing" secondItem="ofc-wl-YkX" secondAttribute="trailing" id="btt-i6-P4o"/>
+                        <constraint firstAttribute="bottom" secondItem="ofc-wl-YkX" secondAttribute="bottom" constant="267" id="cmK-3k-f8M"/>
+                        <constraint firstItem="ofc-wl-YkX" firstAttribute="top" secondItem="4vS-o1-SXK" secondAttribute="top" id="mMa-t9-7R8"/>
+                        <constraint firstItem="nS1-GJ-hT6" firstAttribute="leading" secondItem="4vS-o1-SXK" secondAttribute="leading" constant="30" id="nxf-gL-18g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vYM-7Z-xgc"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4vS-o1-SXK" firstAttribute="trailing" secondItem="vYM-7Z-xgc" secondAttribute="trailing" id="4eg-Xp-2TR"/>
+                <constraint firstAttribute="bottom" secondItem="4vS-o1-SXK" secondAttribute="bottom" id="L4D-ZV-c3U"/>
+                <constraint firstItem="4vS-o1-SXK" firstAttribute="leading" secondItem="vYM-7Z-xgc" secondAttribute="leading" id="QZS-LG-ESG"/>
+                <constraint firstItem="4vS-o1-SXK" firstAttribute="top" secondItem="kKN-Xh-U0b" secondAttribute="top" id="tYl-8k-oy8"/>
+            </constraints>
+            <point key="canvasLocation" x="114.40000000000001" y="19.340329835082461"/>
         </view>
     </objects>
+    <resources>
+        <image name="6" width="5160" height="7740"/>
+        <namedColor name="Dyellow">
+            <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NewRed">
+            <color red="0.98799997568130493" green="0.16099999845027924" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NewYellow">
+            <color red="0.98799997568130493" green="0.90600001811981201" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

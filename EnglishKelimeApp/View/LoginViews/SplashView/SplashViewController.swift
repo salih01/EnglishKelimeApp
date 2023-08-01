@@ -29,7 +29,7 @@ class SplashViewController: UIViewController {
 //            let vc = OnboardingViewController()
 //            vc.modalPresentationStyle = .fullScreen
 //            present(vc, animated: true, completion: nil)
-            let vc = LoginViewController()
+            let vc = SignUpViewController()
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
         }
