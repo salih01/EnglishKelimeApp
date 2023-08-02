@@ -38,7 +38,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     func initUI() {
         
         logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-        emailTextField.layer.cornerRadius = 10
+        emailTextField.layer.cornerRadius = 5
         paswordTextField.layer.cornerRadius = 10
         
         emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)

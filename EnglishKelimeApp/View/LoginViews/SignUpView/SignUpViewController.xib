@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -10,7 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="EnglishKelimeApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailPaswordView" destination="OCH-j7-StS" id="hXA-2E-9I2"/>
+                <outlet property="emailTextField" destination="9bV-PO-X3V" id="yuA-Na-Gb4"/>
+                <outlet property="imageView" destination="At8-3f-MDP" id="pC2-Co-lA6"/>
+                <outlet property="lockIcon" destination="4xy-yd-3hL" id="4pI-dB-zVR"/>
+                <outlet property="lockIcon2" destination="n13-4L-0Zp" id="PkR-h3-Unv"/>
+                <outlet property="logInButton" destination="9Gk-Vg-ds8" id="nRg-NO-HOT"/>
+                <outlet property="paswordTextField" destination="UFk-wD-Odh" id="rZp-Pm-Oh9"/>
+                <outlet property="paswordTextField2" destination="Ncb-0Q-Ofm" id="bOQ-xH-UrF"/>
+                <outlet property="personIcon" destination="F8g-gI-zt5" id="TWK-fC-VIT"/>
+                <outlet property="stackView" destination="BRR-C5-Hlm" id="3m9-yW-NlY"/>
+                <outlet property="view" destination="MrR-u8-EKC" id="LFb-WG-BhN"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MrR-u8-EKC">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -147,6 +161,9 @@
                                         </attributedString>
                                         <color key="baseBackgroundColor" name="Yellow"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="dJm-Pf-eFe"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -155,6 +172,13 @@
                                 <constraint firstAttribute="trailing" secondItem="OCH-j7-StS" secondAttribute="trailing" id="lNK-Tg-DfZ"/>
                             </constraints>
                         </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halen Üye olmadın mı ?!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbh-BJ-S86">
+                            <rect key="frame" x="30" y="56" width="354" height="348"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="63"/>
+                            <color key="textColor" name="Yellow"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
