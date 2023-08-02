@@ -21,6 +21,14 @@ extension UIView {
         layer.borderColor = color.cgColor
         layer.borderWidth = width
     }
+    
+    func blurEffect(view: UIView, alpha: CGFloat) {
+        let blurEffect = UIBlurEffect(style: .regular)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = view.bounds
+        visualEffectView.alpha = alpha
+        view.addSubview(visualEffectView)
+    }
 }
 
 extension UIImageView {
@@ -50,3 +58,5 @@ extension UIImageView {
         layer.mask = maskLayer
     }
 }
+
+

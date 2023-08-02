@@ -41,7 +41,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         paswordTextField.layer.cornerRadius = 10
         paswordTextField2.layer.cornerRadius = 10
         imageView.addCornerRadius(radius: 30)
-        
+//        imageView.blurEffect(view: imageView, alpha: 0.6)
         personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         lockIcon2.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
