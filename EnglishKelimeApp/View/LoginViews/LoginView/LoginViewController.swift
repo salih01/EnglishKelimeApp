@@ -20,11 +20,14 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
-    
     @IBOutlet weak var emailPaswordView: UIView!
-    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var personIcon: UIImageView!
+    @IBOutlet weak var lockIcon: UIImageView!
+    
+    
     var keyboardState: KeyboardState = .hidden
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -35,17 +38,15 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     func initUI() {
         
         logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-        emailTextField.layer.cornerRadius = 15
-//        emailTextField.layer.borderWidth = CGFloat(3.0)
-//        emailTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
-        paswordTextField.layer.cornerRadius = 15
-//        paswordTextField.layer.borderWidth = CGFloat(3.0)
-//        paswordTextField.layer.borderColor = UIColor.init(named: "Blue")?.cgColor
+        emailTextField.layer.cornerRadius = 10
+        paswordTextField.layer.cornerRadius = 10
         
         emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)
 //        self.hideKeyboardWhenTappedAround()
         
         imageView.addCornerRadius(radius: 30)
+        personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
+        lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
 
     }
     // Klavye gösterilmeye başlandığında çağrılır

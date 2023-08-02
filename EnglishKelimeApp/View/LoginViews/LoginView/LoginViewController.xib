@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,88 +14,104 @@
             <connections>
                 <outlet property="emailPaswordView" destination="Uwc-3r-xYN" id="Fzu-yG-IFW"/>
                 <outlet property="emailTextField" destination="bJc-GD-QRv" id="ah9-re-GeO"/>
-                <outlet property="errorLabel" destination="nGF-Cs-fjP" id="sVr-EV-pwk"/>
                 <outlet property="imageView" destination="p3q-CQ-VNv" id="PUO-RO-rQW"/>
+                <outlet property="lockIcon" destination="srb-Nj-xCd" id="ZX9-2n-6FZ"/>
                 <outlet property="logInButton" destination="swc-2G-FJO" id="msM-dm-gVv"/>
                 <outlet property="paswordTextField" destination="GJU-hN-qy0" id="XBK-vc-IRU"/>
+                <outlet property="personIcon" destination="pdw-3P-bN6" id="93V-eR-sus"/>
                 <outlet property="stackView" destination="qj7-RU-sRo" id="UDq-NW-G9e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-rw-pZm">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="p3q-CQ-VNv">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                            <rect key="frame" x="0.0" y="-57" width="414" height="686"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-RU-sRo">
-                            <rect key="frame" x="30" y="292" width="315" height="275"/>
+                            <rect key="frame" x="30" y="562" width="354" height="234"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwc-3r-xYN">
-                                    <rect key="frame" x="0.0" y="0.0" width="315" height="184"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="143"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="1OI-ze-vAD">
-                                            <rect key="frame" x="12" y="20" width="290" height="144"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="rWF-FQ-Tln">
+                                            <rect key="frame" x="14" y="20" width="326" height="103"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJc-GD-QRv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hji-DP-KU7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="40"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pdw-3P-bN6">
+                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="39"/>
+                                                            <color key="tintColor" name="NewRed"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="38" id="M57-6l-Co4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Email" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJc-GD-QRv">
+                                                            <rect key="frame" x="46" y="0.0" width="280" height="40"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <color key="tintColor" name="NewRed"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="280" id="4of-8r-xVV"/>
+                                                                <constraint firstAttribute="height" constant="40" id="JRD-hC-sBP"/>
+                                                            </constraints>
+                                                            <color key="textColor" name="NewRed"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <view opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVK-iU-oBT">
+                                                    <rect key="frame" x="46" y="51" width="280" height="1"/>
                                                     <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                    <color key="tintColor" name="NewRed"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="JRD-hC-sBP"/>
-                                                    </constraints>
-                                                    <color key="textColor" name="NewRed"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                                                </textField>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVK-iU-oBT">
-                                                    <rect key="frame" x="0.0" y="71" width="290" height="2"/>
-                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="21N-PJ-n8z"/>
+                                                        <constraint firstAttribute="height" constant="1" id="21N-PJ-n8z"/>
+                                                        <constraint firstAttribute="width" constant="280" id="Wdk-lo-2Nw"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parola" placeholder="Parola" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-hN-qy0">
-                                                    <rect key="frame" x="0.0" y="84" width="290" height="60"/>
-                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                    <color key="tintColor" name="NewRed"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="0qD-Io-ED8"/>
-                                                    </constraints>
-                                                    <color key="textColor" name="NewRed"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
-                                                </textField>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGF-Cs-fjP">
-                                                    <rect key="frame" x="0.0" y="144" width="290" height="60"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="deV-GF-ExB"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                    <color key="textColor" name="NewRed"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PTv-ze-0ff">
+                                                    <rect key="frame" x="0.0" y="63" width="326" height="40"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="srb-Nj-xCd">
+                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="39"/>
+                                                            <color key="tintColor" name="NewRed"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="38" id="wCC-Q1-txe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Parola" placeholder="Parola" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-hN-qy0">
+                                                            <rect key="frame" x="46" y="0.0" width="280" height="40"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <color key="tintColor" name="NewRed"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="0qD-Io-ED8"/>
+                                                                <constraint firstAttribute="width" constant="280" id="UtJ-cI-WwH"/>
+                                                            </constraints>
+                                                            <color key="textColor" name="NewRed"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="290" id="hQm-c5-tvL"/>
-                                            </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="1OI-ze-vAD" firstAttribute="leading" secondItem="Uwc-3r-xYN" secondAttribute="leading" constant="12" id="B0B-ah-9kG"/>
-                                        <constraint firstAttribute="bottom" secondItem="1OI-ze-vAD" secondAttribute="bottom" constant="20" id="HaR-9x-rxp"/>
-                                        <constraint firstItem="1OI-ze-vAD" firstAttribute="top" secondItem="Uwc-3r-xYN" secondAttribute="top" constant="20" id="UfR-sT-boO"/>
-                                        <constraint firstAttribute="trailing" secondItem="1OI-ze-vAD" secondAttribute="trailing" constant="13" id="a4V-5w-Eug"/>
+                                        <constraint firstAttribute="bottom" secondItem="rWF-FQ-Tln" secondAttribute="bottom" constant="20" symbolic="YES" id="5TI-Rr-c3L"/>
+                                        <constraint firstItem="rWF-FQ-Tln" firstAttribute="leading" secondItem="Uwc-3r-xYN" secondAttribute="leading" constant="14" id="lPB-ih-rwd"/>
+                                        <constraint firstItem="rWF-FQ-Tln" firstAttribute="top" secondItem="Uwc-3r-xYN" secondAttribute="top" constant="20" symbolic="YES" id="mh6-aT-0OB"/>
+                                        <constraint firstAttribute="trailing" secondItem="rWF-FQ-Tln" secondAttribute="trailing" constant="14" id="owA-19-2lj"/>
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swc-2G-FJO">
-                                    <rect key="frame" x="0.0" y="215" width="315" height="60"/>
+                                    <rect key="frame" x="0.0" y="174" width="354" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="21k-yn-6e8"/>
                                     </constraints>
@@ -126,12 +142,12 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="p3q-CQ-VNv" firstAttribute="leading" secondItem="hMd-rw-pZm" secondAttribute="leading" id="0JX-ba-GmM"/>
+                        <constraint firstItem="p3q-CQ-VNv" firstAttribute="top" secondItem="hMd-rw-pZm" secondAttribute="top" constant="-57" id="B7A-4E-6i1"/>
                         <constraint firstAttribute="trailing" secondItem="qj7-RU-sRo" secondAttribute="trailing" constant="30" id="GQI-U8-mVT"/>
                         <constraint firstItem="qj7-RU-sRo" firstAttribute="leading" secondItem="hMd-rw-pZm" secondAttribute="leading" constant="30" id="Jo6-1Z-0AX"/>
                         <constraint firstAttribute="bottom" secondItem="qj7-RU-sRo" secondAttribute="bottom" constant="100" id="hTv-3t-gnV"/>
                         <constraint firstAttribute="trailing" secondItem="p3q-CQ-VNv" secondAttribute="trailing" id="hfT-3P-AVV"/>
                         <constraint firstAttribute="bottom" secondItem="p3q-CQ-VNv" secondAttribute="bottom" constant="267" id="jyI-DE-j1x"/>
-                        <constraint firstItem="p3q-CQ-VNv" firstAttribute="top" secondItem="hMd-rw-pZm" secondAttribute="top" id="ujX-uY-drc"/>
                     </constraints>
                 </view>
             </subviews>
@@ -143,11 +159,13 @@
                 <constraint firstItem="hMd-rw-pZm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Eml-j4-fch"/>
                 <constraint firstItem="hMd-rw-pZm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mug-3H-rsj"/>
             </constraints>
-            <point key="canvasLocation" x="114.40000000000001" y="19.340329835082461"/>
+            <point key="canvasLocation" x="113.04347826086958" y="18.75"/>
         </view>
     </objects>
     <resources>
         <image name="8" width="4160" height="6240"/>
+        <image name="lock.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="NewRed">
             <color red="0.98799997568130493" green="0.16099999845027924" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -156,6 +174,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
