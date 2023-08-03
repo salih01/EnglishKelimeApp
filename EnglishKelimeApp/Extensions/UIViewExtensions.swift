@@ -27,6 +27,7 @@ extension UIView {
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
         visualEffectView.frame = view.bounds
         visualEffectView.alpha = alpha
+        visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         view.addSubview(visualEffectView)
     }
 }
@@ -36,6 +37,7 @@ extension UIImageView {
         layer.cornerRadius = radius
         layer.masksToBounds = true
     }
+
 }
 
 extension UIViewController {
@@ -58,5 +60,6 @@ extension UIImageView {
         layer.mask = maskLayer
     }
 }
+
 
 

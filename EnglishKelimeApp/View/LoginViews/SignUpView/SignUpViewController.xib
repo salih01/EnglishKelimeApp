@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="blurView" destination="wOE-Fj-66U" id="LX3-6W-a7q"/>
                 <outlet property="emailPaswordView" destination="OCH-j7-StS" id="hXA-2E-9I2"/>
                 <outlet property="emailTextField" destination="9bV-PO-X3V" id="yuA-Na-Gb4"/>
                 <outlet property="imageView" destination="At8-3f-MDP" id="pC2-Co-lA6"/>
@@ -49,7 +50,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="326" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F8g-gI-zt5">
-                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="39"/>
+                                                            <rect key="frame" x="0.0" y="0.99999999999999822" width="38" height="38.666666666666671"/>
                                                             <color key="tintColor" name="Dyellow"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="38" id="vl3-DO-JhP"/>
@@ -81,7 +82,7 @@
                                                     <rect key="frame" x="0.0" y="63" width="326" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4xy-yd-3hL">
-                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="39"/>
+                                                            <rect key="frame" x="0.0" y="0.99999999999999822" width="38" height="38.666666666666671"/>
                                                             <color key="tintColor" name="Dyellow"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="38" id="3My-Yk-XqY"/>
@@ -113,7 +114,7 @@
                                                     <rect key="frame" x="0.0" y="126" width="326" height="40"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n13-4L-0Zp">
-                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="39"/>
+                                                            <rect key="frame" x="0.0" y="0.99999999999999822" width="38" height="38.666666666666671"/>
                                                             <color key="tintColor" name="Dyellow"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="38" id="NAU-uy-4Ab"/>
@@ -172,13 +173,24 @@
                                 <constraint firstAttribute="trailing" secondItem="OCH-j7-StS" secondAttribute="trailing" id="lNK-Tg-DfZ"/>
                             </constraints>
                         </stackView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halen Üye olmadın mı ?!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbh-BJ-S86">
-                            <rect key="frame" x="30" y="56" width="354" height="348"/>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDA-jI-rJ6">
+                            <rect key="frame" x="57" y="215" width="327" height="239"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="63"/>
-                            <color key="textColor" name="Yellow"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="wOE-Fj-66U">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="239"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halen Üye olmadın mı ?!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbh-BJ-S86">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="227"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="63"/>
+                                    <color key="textColor" name="Yellow"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

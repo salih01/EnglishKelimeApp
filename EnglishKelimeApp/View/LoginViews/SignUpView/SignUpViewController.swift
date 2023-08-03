@@ -25,6 +25,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var lockIcon: UIImageView!
     @IBOutlet weak var lockIcon2: UIImageView!
     
+    @IBOutlet weak var blurView: UIImageView!
     
     var keyboardState: KeyboardState2 = .hidden
     
@@ -47,8 +48,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         lockIcon2.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)
-
-
+        blurView.blurEffect(view: blurView, alpha: 0.95)
     }
     // Klavye gösterilmeye başlandığında çağrılır
     func textFieldDidBeginEditing(_ textField: UITextField) {
