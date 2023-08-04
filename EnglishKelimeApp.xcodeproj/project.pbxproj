@@ -118,6 +118,7 @@
 		CE2966862A56C55600E3E533 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE7BB8C72A7D81DA0097DD56 /* CustomViews */,
 				CE2966942A56D86200E3E533 /* LoginViews */,
 				CE2966882A56C5D000E3E533 /* MainView */,
 			);
@@ -186,6 +187,13 @@
 				CE606C262A65D78E00B23001 /* SlideOnboarding.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CE7BB8C72A7D81DA0097DD56 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		CEC0B7B32A55FC380001C767 = {
