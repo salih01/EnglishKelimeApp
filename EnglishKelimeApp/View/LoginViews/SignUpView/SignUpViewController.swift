@@ -79,8 +79,9 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func backButton(_ sender: Any) {
-        print("Back button Clicked")
-    }
+        let vc = LoginViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)    }
     
     @IBAction func signInButton(_ sender: Any) {
     }

@@ -24,6 +24,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var personIcon: UIImageView!
     @IBOutlet weak var lockIcon: UIImageView!
+    @IBOutlet weak var signInButton: UIButton!
     
     
     var keyboardState: KeyboardState = .hidden
@@ -38,6 +39,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     func initUI() {
         
         logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
+        signInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         emailTextField.layer.cornerRadius = 5
         paswordTextField.layer.cornerRadius = 10
         
@@ -82,4 +84,11 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     }
     
 
+    @IBAction func signInButton(_ sender: Any) {
+        
+        let vc = SignUpViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
+    }
 }

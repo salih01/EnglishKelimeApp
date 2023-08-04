@@ -19,6 +19,7 @@
                 <outlet property="logInButton" destination="swc-2G-FJO" id="msM-dm-gVv"/>
                 <outlet property="paswordTextField" destination="GJU-hN-qy0" id="XBK-vc-IRU"/>
                 <outlet property="personIcon" destination="pdw-3P-bN6" id="93V-eR-sus"/>
+                <outlet property="signInButton" destination="vtz-08-pXJ" id="nKa-F8-gc7"/>
                 <outlet property="stackView" destination="qj7-RU-sRo" id="UDq-NW-G9e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,7 +36,7 @@
                             <rect key="frame" x="0.0" y="-57" width="414" height="686"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-RU-sRo">
-                            <rect key="frame" x="30" y="562" width="354" height="234"/>
+                            <rect key="frame" x="30" y="471" width="354" height="325"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwc-3r-xYN">
                                     <rect key="frame" x="0.0" y="0.0" width="354" height="143"/>
@@ -129,6 +130,28 @@
                                     </buttonConfiguration>
                                     <connections>
                                         <action selector="logInButton:" destination="-1" eventType="touchUpInside" id="X0Y-l2-4dr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-08-pXJ">
+                                    <rect key="frame" x="0.0" y="265" width="354" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="V0d-aH-fKy"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Üye Ol">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="Futura-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseBackgroundColor" name="NewRed"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="logInButton:" destination="-1" eventType="touchUpInside" id="uHX-Kn-bSL"/>
+                                        <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="1J4-mn-EHq"/>
                                     </connections>
                                 </button>
                             </subviews>
