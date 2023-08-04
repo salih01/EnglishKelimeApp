@@ -23,7 +23,7 @@ extension UIView {
     }
     
     func blurEffect(view: UIView, alpha: CGFloat) {
-        let blurEffect = UIBlurEffect(style: .regular)
+        let blurEffect = UIBlurEffect(style: .systemChromeMaterialDark)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
         visualEffectView.frame = view.bounds
         visualEffectView.alpha = alpha
