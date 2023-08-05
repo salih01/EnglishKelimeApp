@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="aH4-Lv-59P" id="sWa-LQ-7JQ"/>
+                <outlet property="backImage" destination="HYa-uq-3PI" id="4IY-4k-xaH"/>
+                <outlet property="backView" destination="AGq-Oe-qGQ" id="9Ya-cM-ex9"/>
                 <outlet property="emailPaswordView" destination="Uwc-3r-xYN" id="Fzu-yG-IFW"/>
                 <outlet property="emailTextField" destination="bJc-GD-QRv" id="ah9-re-GeO"/>
                 <outlet property="imageView" destination="p3q-CQ-VNv" id="PUO-RO-rQW"/>
@@ -161,6 +164,47 @@
                                 <constraint firstItem="Uwc-3r-xYN" firstAttribute="leading" secondItem="qj7-RU-sRo" secondAttribute="leading" id="ns3-c4-KFh"/>
                             </constraints>
                         </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGq-Oe-qGQ">
+                            <rect key="frame" x="-8" y="56" width="109" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-Lv-59P">
+                                    <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <connections>
+                                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="w2x-Ea-HrC"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-uq-3PI">
+                                    <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="109" id="7id-Mt-vHq"/>
+                                        <constraint firstAttribute="height" constant="60" id="qQy-d8-hdh"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Upg-T5-3L1">
+                                    <rect key="frame" x="10" y="10" width="94" height="40"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="HYa-uq-3PI" firstAttribute="leading" secondItem="AGq-Oe-qGQ" secondAttribute="leading" id="3t2-Ba-fgR"/>
+                                <constraint firstItem="Upg-T5-3L1" firstAttribute="top" secondItem="AGq-Oe-qGQ" secondAttribute="top" constant="8" id="5k0-la-rZs"/>
+                                <constraint firstAttribute="trailing" secondItem="Upg-T5-3L1" secondAttribute="trailing" constant="5" id="6WP-5T-lXE"/>
+                                <constraint firstItem="HYa-uq-3PI" firstAttribute="top" secondItem="AGq-Oe-qGQ" secondAttribute="top" id="72a-CY-hAk"/>
+                                <constraint firstItem="aH4-Lv-59P" firstAttribute="top" secondItem="AGq-Oe-qGQ" secondAttribute="top" id="91r-Nw-qV3"/>
+                                <constraint firstItem="Upg-T5-3L1" firstAttribute="leading" secondItem="AGq-Oe-qGQ" secondAttribute="leading" constant="10" id="96q-Jn-r5O"/>
+                                <constraint firstAttribute="width" constant="109" id="DW8-BR-yaU"/>
+                                <constraint firstAttribute="bottom" secondItem="aH4-Lv-59P" secondAttribute="bottom" id="Dyr-Ce-n3e"/>
+                                <constraint firstAttribute="trailing" secondItem="HYa-uq-3PI" secondAttribute="trailing" id="aYE-Zw-ha4"/>
+                                <constraint firstAttribute="bottom" secondItem="Upg-T5-3L1" secondAttribute="bottom" constant="8.3300000000000001" id="dty-Xz-wqc"/>
+                                <constraint firstAttribute="trailing" secondItem="aH4-Lv-59P" secondAttribute="trailing" id="fqM-fG-EAN"/>
+                                <constraint firstItem="aH4-Lv-59P" firstAttribute="leading" secondItem="AGq-Oe-qGQ" secondAttribute="leading" id="iS4-5L-LN7"/>
+                                <constraint firstAttribute="height" constant="60" id="nsD-Op-YEW"/>
+                                <constraint firstAttribute="bottom" secondItem="HYa-uq-3PI" secondAttribute="bottom" id="uTK-Wg-pBX"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -171,6 +215,8 @@
                         <constraint firstAttribute="bottom" secondItem="qj7-RU-sRo" secondAttribute="bottom" constant="100" id="hTv-3t-gnV"/>
                         <constraint firstAttribute="trailing" secondItem="p3q-CQ-VNv" secondAttribute="trailing" id="hfT-3P-AVV"/>
                         <constraint firstAttribute="bottom" secondItem="p3q-CQ-VNv" secondAttribute="bottom" constant="267" id="jyI-DE-j1x"/>
+                        <constraint firstItem="AGq-Oe-qGQ" firstAttribute="top" secondItem="hMd-rw-pZm" secondAttribute="top" constant="56" id="t1I-Pv-IjB"/>
+                        <constraint firstItem="AGq-Oe-qGQ" firstAttribute="leading" secondItem="hMd-rw-pZm" secondAttribute="leading" constant="-8" id="vug-VA-LAi"/>
                     </constraints>
                 </view>
             </subviews>
@@ -187,6 +233,7 @@
     </objects>
     <resources>
         <image name="8" width="4160" height="6240"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="lock.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="NewRed">

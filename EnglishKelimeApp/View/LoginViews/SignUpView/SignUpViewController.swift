@@ -83,9 +83,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func backButton(_ sender: Any) {
-        let vc = LoginViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func signInButton(_ sender: Any) {
