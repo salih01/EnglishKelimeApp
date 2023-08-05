@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var paswordTextField: UITextField!
     @IBOutlet weak var paswordTextField2: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var emailPaswordView: UIView!
     @IBOutlet weak var personIcon: UIImageView!
     @IBOutlet weak var lockIcon: UIImageView!
@@ -43,6 +44,9 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         paswordTextField.layer.cornerRadius = 10
         paswordTextField2.layer.cornerRadius = 10
         imageView.addCornerRadius(radius: 30)
+        logInButton.hapticFeedback(style: .light)
+        backButton.hapticFeedback(style: .light)
+        
 //        imageView.blurEffect(view: imageView, alpha: 0.6)
         personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
@@ -51,7 +55,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)
         backView.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor:.black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         backImage.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-        backImage.blurEffect(view: backImage, alpha: 0.4)
+        backImage.blurEffect(view: backImage, alpha: 0.98)
     }
     // Klavye gösterilmeye başlandığında çağrılır
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -81,7 +85,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBAction func backButton(_ sender: Any) {
         let vc = LoginViewController()
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)    }
+        present(vc, animated: true, completion: nil)
+    }
     
     @IBAction func signInButton(_ sender: Any) {
     }

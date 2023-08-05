@@ -49,6 +49,9 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         imageView.addCornerRadius(radius: 30)
         personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
         lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
+        logInButton.hapticFeedback(style: .light)
+        signInButton.hapticFeedback(style: .light)
+
 
     }
     // Klavye gösterilmeye başlandığında çağrılır
@@ -78,14 +81,12 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
 
 
     @IBAction func logInButton(_ sender: Any) {
-        
-        
+
         
     }
     
 
     @IBAction func signInButton(_ sender: Any) {
-        
         let vc = SignUpViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)

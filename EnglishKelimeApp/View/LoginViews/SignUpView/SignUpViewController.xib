@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="f7W-bi-zAr" id="Oq9-hc-FNu"/>
                 <outlet property="backImage" destination="aN6-7f-XXA" id="Jxh-Vn-eHv"/>
                 <outlet property="backView" destination="szZ-t1-HQj" id="rGK-4K-rgh"/>
                 <outlet property="emailPaswordView" destination="OCH-j7-StS" id="hXA-2E-9I2"/>
@@ -36,9 +37,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="At8-3f-MDP">
-                            <rect key="frame" x="0.0" y="-57" width="414" height="457"/>
+                            <rect key="frame" x="0.0" y="-57" width="414" height="631"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="At8-3f-MDP" secondAttribute="height" multiplier="414:457" id="9hy-ya-Y35"/>
+                                <constraint firstAttribute="width" secondItem="At8-3f-MDP" secondAttribute="height" multiplier="414:457" constant="-157.62800875273524" id="9hy-ya-Y35"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="BRR-C5-Hlm">
@@ -177,25 +178,25 @@
                             </constraints>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szZ-t1-HQj">
-                            <rect key="frame" x="11" y="56" width="60" height="60"/>
+                            <rect key="frame" x="-8" y="56" width="109" height="60"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7W-bi-zAr">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     <connections>
                                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="vDE-Zs-lCc"/>
                                     </connections>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur2" translatesAutoresizingMaskIntoConstraints="NO" id="aN6-7f-XXA">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="aN6-7f-XXA">
+                                    <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="109" id="GZL-yV-doK"/>
                                         <constraint firstAttribute="height" constant="60" id="Umw-4U-pYQ"/>
-                                        <constraint firstAttribute="width" constant="60" id="mGB-aa-h2j"/>
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YEJ-67-xZt">
-                                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                    <rect key="frame" x="10" y="10" width="94" height="40"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
                             </subviews>
@@ -206,11 +207,11 @@
                                 <constraint firstAttribute="bottom" secondItem="aN6-7f-XXA" secondAttribute="bottom" id="Fvd-5D-wX8"/>
                                 <constraint firstItem="f7W-bi-zAr" firstAttribute="top" secondItem="szZ-t1-HQj" secondAttribute="top" id="N7Z-e1-38m"/>
                                 <constraint firstItem="f7W-bi-zAr" firstAttribute="leading" secondItem="szZ-t1-HQj" secondAttribute="leading" id="P7f-G4-s3s"/>
+                                <constraint firstAttribute="width" constant="109" id="RfP-18-6d0"/>
                                 <constraint firstItem="aN6-7f-XXA" firstAttribute="top" secondItem="szZ-t1-HQj" secondAttribute="top" id="S7p-p0-jVf"/>
-                                <constraint firstAttribute="trailing" secondItem="YEJ-67-xZt" secondAttribute="trailing" constant="10" id="Wf9-eJ-zmz"/>
+                                <constraint firstAttribute="trailing" secondItem="YEJ-67-xZt" secondAttribute="trailing" constant="5" id="Wf9-eJ-zmz"/>
                                 <constraint firstAttribute="trailing" secondItem="aN6-7f-XXA" secondAttribute="trailing" id="YHa-IZ-UiL"/>
                                 <constraint firstItem="YEJ-67-xZt" firstAttribute="top" secondItem="szZ-t1-HQj" secondAttribute="top" constant="8" id="ijd-AB-Tab"/>
-                                <constraint firstAttribute="width" constant="60" id="oxF-UL-dXK"/>
                                 <constraint firstAttribute="bottom" secondItem="YEJ-67-xZt" secondAttribute="bottom" constant="8.3300000000000001" id="q6B-Ax-UxI"/>
                                 <constraint firstItem="YEJ-67-xZt" firstAttribute="leading" secondItem="szZ-t1-HQj" secondAttribute="leading" constant="10" id="t96-tA-czp"/>
                                 <constraint firstItem="aN6-7f-XXA" firstAttribute="leading" secondItem="szZ-t1-HQj" secondAttribute="leading" id="thX-3o-9w8"/>
@@ -221,7 +222,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="BRR-C5-Hlm" firstAttribute="leading" secondItem="djs-oW-Z7E" secondAttribute="leading" constant="11" id="2m0-of-5ZO"/>
-                        <constraint firstItem="szZ-t1-HQj" firstAttribute="leading" secondItem="djs-oW-Z7E" secondAttribute="leading" constant="11" id="BSo-Gz-7hn"/>
+                        <constraint firstItem="szZ-t1-HQj" firstAttribute="leading" secondItem="djs-oW-Z7E" secondAttribute="leading" constant="-8" id="BSo-Gz-7hn"/>
                         <constraint firstAttribute="bottom" secondItem="BRR-C5-Hlm" secondAttribute="bottom" constant="100" id="BwY-Ca-9jx"/>
                         <constraint firstItem="At8-3f-MDP" firstAttribute="top" secondItem="djs-oW-Z7E" secondAttribute="top" constant="-57" id="OTm-vb-RC8"/>
                         <constraint firstAttribute="trailing" secondItem="At8-3f-MDP" secondAttribute="trailing" id="htV-1i-RbA"/>
@@ -244,7 +245,6 @@
     </objects>
     <resources>
         <image name="6" width="5160" height="7740"/>
-        <image name="blur2" width="8000" height="8000"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="lock.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>

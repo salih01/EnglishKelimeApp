@@ -14,9 +14,6 @@ extension UIView {
         layer.shadowOffset = shadowOffset
         layer.shadowRadius = shadowRadius
     }
-}
-
-extension UIView {
     func addBorder(color: UIColor, width: CGFloat) {
         layer.borderColor = color.cgColor
         layer.borderWidth = width
@@ -29,6 +26,14 @@ extension UIView {
         visualEffectView.alpha = alpha
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         view.addSubview(visualEffectView)
+    }
+
+}
+extension UIButton {
+    func hapticFeedback(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let generator = UIImpactFeedbackGenerator(style: style)
+        generator.prepare()
+        generator.impactOccurred()
     }
 }
 
