@@ -27,6 +27,14 @@ extension UIView {
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         view.addSubview(visualEffectView)
     }
+    func blurEffectLight(view: UIView, alpha: CGFloat) {
+        let blurEffect = UIBlurEffect(style: .regular)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = view.bounds
+        visualEffectView.alpha = alpha
+        visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+        view.addSubview(visualEffectView)
+    }
 
 }
 extension UIButton {
