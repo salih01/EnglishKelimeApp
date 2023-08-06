@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */; };
+		9A081E81E1A86AD68051FCDE /* Pods_EnglishKelimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */; };
+		C5093728BE7BEBE5286E4BC9 /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */; };
 		CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29668A2A56C62800E3E533 /* OnboardingViewController.swift */; };
 		CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29668B2A56C62800E3E533 /* OnboardingViewController.xib */; };
 		CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29668F2A56C65000E3E533 /* MainViewController.swift */; };
 		CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966902A56C65000E3E533 /* MainViewController.xib */; };
 		CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2966952A56DB1300E3E533 /* SplashViewController.swift */; };
 		CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966962A56DB1300E3E533 /* SplashViewController.xib */; };
+		CE5642EC2A7FE7120093A674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5642EB2A7FE7120093A674 /* ViewController.swift */; };
 		CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE606C262A65D78E00B23001 /* SlideOnboarding.swift */; };
 		CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */; };
 		CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */; };
@@ -53,12 +57,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.release.xcconfig"; sourceTree = "<group>"; };
+		63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		766077F1121D201679BB072F /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94896B29CA984262E4E5D5D2 /* Pods-EnglishKelimeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeAppTests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeAppTests/Pods-EnglishKelimeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B530397EFB254C5B8A04E792 /* Pods-EnglishKelimeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeAppTests/Pods-EnglishKelimeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE29668A2A56C62800E3E533 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CE29668B2A56C62800E3E533 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		CE29668F2A56C65000E3E533 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE2966902A56C65000E3E533 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE2966952A56DB1300E3E533 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CE2966962A56DB1300E3E533 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		CE5642EB2A7FE7120093A674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE606C262A65D78E00B23001 /* SlideOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOnboarding.swift; sourceTree = "<group>"; };
 		CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -83,6 +96,7 @@
 		CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CEEE67C82A5C9ECB00805434 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A081E81E1A86AD68051FCDE /* Pods_EnglishKelimeAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +120,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5093728BE7BEBE5286E4BC9 /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C151469299DDA68A929D285E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */,
+				F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */,
+				670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE2966852A56C4C600E3E533 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +144,7 @@
 				CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */,
 				CEC0B7C52A55FC380001C767 /* Main.storyboard */,
 				CEC0B7CD2A55FC390001C767 /* LaunchScreen.storyboard */,
+				CE5642EB2A7FE7120093A674 /* ViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -227,6 +255,8 @@
 				CEC0B7D82A55FC390001C767 /* EnglishKelimeAppTests */,
 				CEC0B7E22A55FC390001C767 /* EnglishKelimeAppUITests */,
 				CEC0B7BD2A55FC380001C767 /* Products */,
+				ECCBF694E3E28ABD9C5B5A7B /* Pods */,
+				C151469299DDA68A929D285E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,6 +328,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		ECCBF694E3E28ABD9C5B5A7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */,
+				627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */,
+				766077F1121D201679BB072F /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.debug.xcconfig */,
+				171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */,
+				B530397EFB254C5B8A04E792 /* Pods-EnglishKelimeAppTests.debug.xcconfig */,
+				94896B29CA984262E4E5D5D2 /* Pods-EnglishKelimeAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC0B7E92A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeApp" */;
 			buildPhases = (
+				6BFCBAAE7CDFCE230DC6FE64 /* [CP] Check Pods Manifest.lock */,
 				CEC0B7B82A55FC380001C767 /* Sources */,
 				CEC0B7B92A55FC380001C767 /* Frameworks */,
 				CEC0B7BA2A55FC380001C767 /* Resources */,
@@ -322,6 +366,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC0B7EC2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppTests" */;
 			buildPhases = (
+				9791709EA48C91403CF0CAA8 /* [CP] Check Pods Manifest.lock */,
 				CEC0B7D12A55FC390001C767 /* Sources */,
 				CEC0B7D22A55FC390001C767 /* Frameworks */,
 				CEC0B7D32A55FC390001C767 /* Resources */,
@@ -340,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC0B7EF2A55FC390001C767 /* Build configuration list for PBXNativeTarget "EnglishKelimeAppUITests" */;
 			buildPhases = (
+				ED9D4AD73AECFEDD43310BC0 /* [CP] Check Pods Manifest.lock */,
 				CEC0B7DB2A55FC390001C767 /* Sources */,
 				CEC0B7DC2A55FC390001C767 /* Frameworks */,
 				CEC0B7DD2A55FC390001C767 /* Resources */,
@@ -431,6 +477,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BFCBAAE7CDFCE230DC6FE64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnglishKelimeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9791709EA48C91403CF0CAA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnglishKelimeAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9D4AD73AECFEDD43310BC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnglishKelimeApp-EnglishKelimeAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEC0B7B82A55FC380001C767 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -440,6 +555,7 @@
 				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
 				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
+				CE5642EC2A7FE7120093A674 /* ViewController.swift in Sources */,
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
 				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
@@ -620,6 +736,7 @@
 		};
 		CEC0B7EA2A55FC390001C767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -651,6 +768,7 @@
 		};
 		CEC0B7EB2A55FC390001C767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -682,6 +800,7 @@
 		};
 		CEC0B7ED2A55FC390001C767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B530397EFB254C5B8A04E792 /* Pods-EnglishKelimeAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,6 +821,7 @@
 		};
 		CEC0B7EE2A55FC390001C767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94896B29CA984262E4E5D5D2 /* Pods-EnglishKelimeAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,6 +842,7 @@
 		};
 		CEC0B7F02A55FC390001C767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766077F1121D201679BB072F /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -740,6 +861,7 @@
 		};
 		CEC0B7F12A55FC390001C767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
