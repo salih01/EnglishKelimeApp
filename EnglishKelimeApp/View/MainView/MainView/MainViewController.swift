@@ -10,8 +10,6 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var blurView: UIVisualEffectView!
-    @IBOutlet weak var b1: UIButton!
-    @IBOutlet weak var b2: UIButton!
     @IBOutlet weak var blurView2: UIView!
 
     override func viewDidLoad() {
@@ -26,7 +24,29 @@ class MainViewController: UIViewController {
         blurView2.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
     }
 
-    @IBAction func button(_ sender: Any) {
+    @IBAction func homeButton(_ sender: UIButton) {
+        
+        let tag = sender.tag
+        if tag == 1 {
+            print(tag)
+            let vc = MainViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+            
+        } else if tag == 2 {
+            print(tag)
+            
 
+        } else if tag == 3 {
+            print(tag)
+
+        } else if tag == 4 {
+            print(tag)
+            let vc = SettingsViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+
+        }
+        
     }
 }

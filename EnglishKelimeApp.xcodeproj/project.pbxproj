@@ -16,7 +16,6 @@
 		CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966902A56C65000E3E533 /* MainViewController.xib */; };
 		CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2966952A56DB1300E3E533 /* SplashViewController.swift */; };
 		CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2966962A56DB1300E3E533 /* SplashViewController.xib */; };
-		CE5642EC2A7FE7120093A674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5642EB2A7FE7120093A674 /* ViewController.swift */; };
 		CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE606C262A65D78E00B23001 /* SlideOnboarding.swift */; };
 		CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */; };
 		CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */; };
@@ -71,7 +70,6 @@
 		CE2966902A56C65000E3E533 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE2966952A56DB1300E3E533 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CE2966962A56DB1300E3E533 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		CE5642EB2A7FE7120093A674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE606C262A65D78E00B23001 /* SlideOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOnboarding.swift; sourceTree = "<group>"; };
 		CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */,
 				CEC0B7C52A55FC380001C767 /* Main.storyboard */,
 				CEC0B7CD2A55FC390001C767 /* LaunchScreen.storyboard */,
-				CE5642EB2A7FE7120093A674 /* ViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -555,7 +552,6 @@
 				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
 				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
-				CE5642EC2A7FE7120093A674 /* ViewController.swift in Sources */,
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
 				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
