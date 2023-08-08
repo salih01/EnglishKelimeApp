@@ -12,9 +12,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var blurView2: UIView!
 
+    @IBOutlet var contentView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+
 
 
     }
@@ -29,9 +31,15 @@ class MainViewController: UIViewController {
         let tag = sender.tag
         if tag == 1 {
             print(tag)
-            let vc = MainViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
+            let mainView = MainViewController(nibName: "MainViewController", bundle: nil)
+
+            contentView.addSubview(mainView.view)
+            mainView.didMove(toParent: self)
+
+
+//            let vc = MainViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: false, completion: nil)
             
         } else if tag == 2 {
             print(tag)
@@ -42,9 +50,14 @@ class MainViewController: UIViewController {
 
         } else if tag == 4 {
             print(tag)
-            let vc = SettingsViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
+            let settings = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+            contentView.addSubview(settings.view)
+            settings.didMove(toParent: self)
+            
+            
+//            let vc = SettingsViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true, completion: nil)
 
         }
         

@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="blurView" destination="mWY-aQ-CVH" id="jqn-Ow-4ad"/>
                 <outlet property="blurView2" destination="jPv-Ct-DHF" id="qoc-8p-XOH"/>
+                <outlet property="contentView" destination="tXx-XC-hLg" id="CTe-sD-ZvH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,9 +23,17 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-nJ-C5m">
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXx-XC-hLg">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                </imageView>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-nJ-C5m">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWY-aQ-CVH">
                     <rect key="frame" x="16" y="744" width="361" height="74"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jPv-Ct-DHF">
@@ -61,6 +70,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="suit.heart.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="homeButton:" destination="-1" eventType="touchUpInside" id="AV4-yf-upK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-rd-Twq">
                                         <rect key="frame" x="180" y="0.0" width="51" height="35"/>
@@ -73,6 +85,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="scribble.variable" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="homeButton:" destination="-1" eventType="touchUpInside" id="7uP-mz-iqp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-OI-dm1">
                                         <rect key="frame" x="270" y="0.0" width="52" height="35"/>
@@ -86,6 +101,9 @@
                                             <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="homeButton:" destination="-1" eventType="touchUpInside" id="nro-n3-b70"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -105,14 +123,11 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="MainViewController"/>
             <constraints>
                 <constraint firstItem="mWY-aQ-CVH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0TX-RX-iJA"/>
-                <constraint firstItem="gRk-nJ-C5m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H4n-E7-5Xb"/>
-                <constraint firstItem="gRk-nJ-C5m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KaB-wW-VCn"/>
                 <constraint firstItem="mWY-aQ-CVH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="L4E-2i-lLJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mWY-aQ-CVH" secondAttribute="trailing" constant="16" id="Xr4-yb-Lzs"/>
-                <constraint firstAttribute="bottom" secondItem="gRk-nJ-C5m" secondAttribute="bottom" id="dVJ-9j-iu1"/>
-                <constraint firstItem="gRk-nJ-C5m" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="e9B-kd-73O"/>
             </constraints>
             <point key="canvasLocation" x="75.572519083969468" y="19.718309859154932"/>
         </view>
