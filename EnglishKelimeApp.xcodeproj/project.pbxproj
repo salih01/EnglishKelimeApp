@@ -19,6 +19,8 @@
 		CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE606C262A65D78E00B23001 /* SlideOnboarding.swift */; };
 		CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */; };
 		CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */; };
+		CE8FC6B52A84FB4600B443D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FC6B32A84FB4600B443D1 /* HomeViewController.swift */; };
+		CE8FC6B62A84FB4600B443D1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8FC6B42A84FB4600B443D1 /* HomeViewController.xib */; };
 		CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EDEC2A61940C004D1F24 /* UIViewExtensions.swift */; };
 		CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */; };
 		CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0B7C12A55FC380001C767 /* SceneDelegate.swift */; };
@@ -73,6 +75,8 @@
 		CE606C262A65D78E00B23001 /* SlideOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOnboarding.swift; sourceTree = "<group>"; };
 		CE7BB8CF2A7DAD750097DD56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		CE8FC6B32A84FB4600B443D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE8FC6B42A84FB4600B443D1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CEB3EDEC2A61940C004D1F24 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CEC0B7BC2A55FC380001C767 /* EnglishKelimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishKelimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0B7BF2A55FC380001C767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		CE2966882A56C5D000E3E533 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				CE8FC6B22A84FB2500B443D1 /* HomeView */,
 				CE7BB8CD2A7DABB10097DD56 /* MainView */,
 				CE7BB8CE2A7DABC40097DD56 /* SettingsView */,
 			);
@@ -243,6 +248,15 @@
 				CE7BB8D02A7DAD750097DD56 /* SettingsViewController.xib */,
 			);
 			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		CE8FC6B22A84FB2500B443D1 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FC6B32A84FB4600B443D1 /* HomeViewController.swift */,
+				CE8FC6B42A84FB4600B443D1 /* HomeViewController.xib */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		CEC0B7B32A55FC380001C767 = {
@@ -455,6 +469,7 @@
 				CECB49242A644CE0007CE3D7 /* OnboardingCollectionViewCell.xib in Resources */,
 				CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */,
 				CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */,
+				CE8FC6B62A84FB4600B443D1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +568,7 @@
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
 				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
+				CE8FC6B52A84FB4600B443D1 /* HomeViewController.swift in Sources */,
 				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */,
