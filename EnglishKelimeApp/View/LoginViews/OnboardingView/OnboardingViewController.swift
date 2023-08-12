@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol OnboardingDelegate: AnyObject {
+    func showMainViewController()
+}
+
 class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
@@ -85,6 +89,16 @@ extension OnboardingViewController :UICollectionViewDelegate,UICollectionViewDat
         print(index)
         
     }
+    
+}
+
+extension OnboardingViewController:OnboardingDelegate {
+    func showMainViewController() {
+        let vc = MainViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
     
 }
 

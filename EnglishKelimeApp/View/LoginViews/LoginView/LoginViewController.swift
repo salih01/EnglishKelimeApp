@@ -14,6 +14,7 @@ enum KeyboardState {
 
 class LoginViewController: UIViewController ,UITextFieldDelegate{
 
+    weak var onboardingDelegates:OnboardingDelegate?
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var paswordTextField: UITextField!
@@ -31,7 +32,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var backImage: UIImageView!
     
     var keyboardState: KeyboardState = .hidden
-    
+    private let isSuccesfulLogin = true
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -92,7 +93,11 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     }
     
     @IBAction func logInButton(_ sender: Any) {
-
+        if isSuccesfulLogin {
+            onboardingDelegates?.showMainViewController()
+        } else {
+            
+        }
         
     }
     

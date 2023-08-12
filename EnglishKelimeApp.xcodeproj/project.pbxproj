@@ -202,9 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				CEDD43492A799B3A00FD6B6C /* SignUpView */,
+				CE2966892A56C60300E3E533 /* LoginView */,
 				CE2966872A56C56700E3E533 /* OnboardingView */,
 				CE2966932A56D85100E3E533 /* SplashView */,
-				CE2966892A56C60300E3E533 /* LoginView */,
 			);
 			path = LoginViews;
 			sourceTree = "<group>";
