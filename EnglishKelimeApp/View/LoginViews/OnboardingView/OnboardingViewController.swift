@@ -97,6 +97,8 @@ extension OnboardingViewController:OnboardingDelegate {
         let vc = MainViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
+        
+        
     }
     
     
