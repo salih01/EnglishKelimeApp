@@ -80,7 +80,7 @@ class MainViewController: UIViewController {
             settings.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
             settings.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
             settings.didMove(toParent: self)
-            children.forEach { $0.removeFromParent() }
+            children.forEach { $0.removeFromParent()}
 
         }
         
