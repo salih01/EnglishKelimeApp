@@ -6,6 +6,7 @@ target 'EnglishKelimeApp' do
   use_frameworks!
 
   # Pods for EnglishKelimeApp
+	pod 'FirebaseAuth'
 
   target 'EnglishKelimeAppTests' do
     inherit! :search_paths
