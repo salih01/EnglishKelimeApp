@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
+		3A7EDD9C2A9121D9006A0F56 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */; };
 		924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */; };
 		9A081E81E1A86AD68051FCDE /* Pods_EnglishKelimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */; };
 		C5093728BE7BEBE5286E4BC9 /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */; };
@@ -62,6 +63,7 @@
 		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.release.xcconfig"; sourceTree = "<group>"; };
 		63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +323,7 @@
 			children = (
 				CEDD434A2A799B8C00FD6B6C /* SignUpViewController.swift */,
 				CEDD434B2A799B8C00FD6B6C /* SignUpViewController.xib */,
+				3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
 				CE8FC6B52A84FB4600B443D1 /* HomeViewController.swift in Sources */,
 				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
+				3A7EDD9C2A9121D9006A0F56 /* SignUpViewModel.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,

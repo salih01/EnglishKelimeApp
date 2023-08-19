@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 enum KeyboardState2 {
     case shown
     case hidden
@@ -30,6 +32,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var blurView: UIImageView!
     
     var keyboardState: KeyboardState2 = .hidden
+    var viewModel: SignUpViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,12 +85,19 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+ 
+    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func signInButton(_ sender: Any) {
+        
+        guard let email = emailTextField.text ,!email.isEmpty, let pasword = paswordTextField.text,!pasword.isEmpty  else {return}
+        self.viewModel?.createUser(email: email, password: pasword)
+        
+        
     }
     
 }
