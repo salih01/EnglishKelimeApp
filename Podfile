@@ -7,6 +7,7 @@ target 'EnglishKelimeApp' do
 
   # Pods for EnglishKelimeApp
 	pod 'FirebaseAuth'
+	pod 'lottie-ios'
 
   target 'EnglishKelimeAppTests' do
     inherit! :search_paths

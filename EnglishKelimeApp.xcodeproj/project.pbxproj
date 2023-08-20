@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
-		3A7EDD9C2A9121D9006A0F56 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */; };
+		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
+		3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */; };
 		924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */; };
 		9A081E81E1A86AD68051FCDE /* Pods_EnglishKelimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */; };
 		C5093728BE7BEBE5286E4BC9 /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */; };
@@ -63,7 +64,8 @@
 		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
 		627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.release.xcconfig"; sourceTree = "<group>"; };
 		63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AF2D2772A92BE4D006B2C17 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AF2D2782A92BE5B006B2C17 /* ErrorView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3AF2D2782A92BE5B006B2C17 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */,
+				3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 		C151469299DDA68A929D285E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +299,7 @@
 		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AF2D2772A92BE4D006B2C17 /* CustomViews */,
 				CE606C242A65D6F400B23001 /* Model */,
 				CEEE67C72A5C9EBE00805434 /* Extensions */,
 				CE2966862A56C55600E3E533 /* View */,
@@ -323,7 +343,6 @@
 			children = (
 				CEDD434A2A799B8C00FD6B6C /* SignUpViewController.swift */,
 				CEDD434B2A799B8C00FD6B6C /* SignUpViewController.xib */,
-				3A7EDD9B2A9121D9006A0F56 /* SignUpViewModel.swift */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";
@@ -465,6 +484,7 @@
 				CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */,
 				CEDD434D2A799B8C00FD6B6C /* SignUpViewController.xib in Resources */,
 				3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */,
+				3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
 				CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */,
 				CECB49242A644CE0007CE3D7 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -605,7 +625,7 @@
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
 				CE8FC6B52A84FB4600B443D1 /* HomeViewController.swift in Sources */,
 				CEB3EDED2A61940C004D1F24 /* UIViewExtensions.swift in Sources */,
-				3A7EDD9C2A9121D9006A0F56 /* SignUpViewModel.swift in Sources */,
+				3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-6Q-FgS">
+                    <rect key="frame" x="51.666666666666657" y="281" width="290" height="290"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsw-gg-feA">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="290"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Gs-OW-UNU">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="290"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-91-XLl">
+                                        <rect key="frame" x="75.333333333333343" y="247" width="139" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="G5M-Qc-Qi6"/>
+                                            <constraint firstAttribute="width" constant="139" id="x1d-BQ-X7L"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="0.0">
+                                                <color key="backgroundColor" name="UpworkColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Tamam">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Futura-Medium"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7uF-91-XLl" firstAttribute="centerX" secondItem="5Gs-OW-UNU" secondAttribute="centerX" id="Drt-ir-UYB"/>
+                                    <constraint firstAttribute="bottom" secondItem="7uF-91-XLl" secondAttribute="bottom" constant="8" id="eoZ-KO-fpW"/>
+                                </constraints>
+                            </view>
+                            <blurEffect style="regular"/>
+                        </visualEffectView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lsw-gg-feA" firstAttribute="top" secondItem="ud2-6Q-FgS" secondAttribute="top" id="4ms-bz-0CJ"/>
+                        <constraint firstAttribute="trailing" secondItem="lsw-gg-feA" secondAttribute="trailing" id="ChF-DY-PlK"/>
+                        <constraint firstAttribute="width" constant="290" id="JqW-rW-sx1"/>
+                        <constraint firstItem="lsw-gg-feA" firstAttribute="leading" secondItem="ud2-6Q-FgS" secondAttribute="leading" id="S4C-H8-dBE"/>
+                        <constraint firstAttribute="bottom" secondItem="lsw-gg-feA" secondAttribute="bottom" id="hcf-98-Esu"/>
+                        <constraint firstAttribute="height" constant="290" id="pCR-l9-caQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ud2-6Q-FgS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X8Z-5q-IKL"/>
+                <constraint firstItem="ud2-6Q-FgS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gP9-zL-qsf"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="UpworkColor">
+            <color red="0.030999999493360519" green="0.11400000005960464" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

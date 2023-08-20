@@ -32,7 +32,6 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var blurView: UIImageView!
     
     var keyboardState: KeyboardState2 = .hidden
-    var viewModel: SignUpViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +84,23 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    // MARK: - Firebase 🔥
+    func createUser(email: String, password: String) {
+      Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+          guard error == nil else { return self.showAlert(title: "Uyarı", message: "\(error!.localizedDescription)") }
+          print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
+
+      }
+    }
+    
+    // MARK: - Alert diaolog
  
+    func showAlert(title: String, message: String) {
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Tamam", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+        }
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -94,8 +109,13 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func signInButton(_ sender: Any) {
         
-        guard let email = emailTextField.text ,!email.isEmpty, let pasword = paswordTextField.text,!pasword.isEmpty  else {return}
-        self.viewModel?.createUser(email: email, password: pasword)
+        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty,let password2 = paswordTextField2.text, !password2.isEmpty  else {
+            showAlert(title: "Uyarı", message: "Lütfen alanları boş bırakmayınız ")
+            return}
+        guard password == password2 else {
+            showAlert(title: "Uyarı", message: "Girilen şifreler aynı değil . Lütfen tekrar deneyiniz")
+            return}
+        createUser(email: email, password: password)
         
         
     }

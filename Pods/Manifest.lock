@@ -28,10 +28,12 @@ PODS:
   - GoogleUtilities/Reachability (7.11.5):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (3.1.1)
+  - lottie-ios (4.2.0)
   - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
   - FirebaseAuth
+  - lottie-ios
 
 SPEC REPOS:
   trunk:
@@ -41,6 +43,7 @@ SPEC REPOS:
     - FirebaseCoreInternal
     - GoogleUtilities
     - GTMSessionFetcher
+    - lottie-ios
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -50,8 +53,9 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: b342e37cd4f5b4454ec34308f073420e7920858e
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
 
-PODFILE CHECKSUM: 82eab5fff4ecdffa9300221ca6d2efe34f238878
+PODFILE CHECKSUM: 4496cd04fb2b3978863738e6ce0bd5dc000c6ac4
 
 COCOAPODS: 1.12.0
