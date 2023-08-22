@@ -19,6 +19,7 @@ class ErrorViewController: UIViewController {
       // 2. Start LottieAnimationView with animation name (without extension)
       
       animationView = .init(name: "coffee")
+        
       
       animationView!.frame = view.bounds
       
