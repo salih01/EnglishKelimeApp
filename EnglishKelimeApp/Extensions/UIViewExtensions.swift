@@ -5,6 +5,7 @@
 //  Created by BilmSoft on 14.07.2023.
 //
 import UIKit
+import Lottie
 
 extension UIView {
     func addCornerRadiusAndShadow(cornerRadius: CGFloat, shadowColor: UIColor, shadowOpacity: Float, shadowOffset: CGSize, shadowRadius: CGFloat) {
@@ -72,6 +73,23 @@ extension UIImageView {
         maskLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: radius, height: radius)).cgPath
         layer.mask = maskLayer
     }
+}
+
+extension LottieAnimationView {
+    // Initialize animationView with animation name (without extension) and add it to the provided view
+    convenience init(animationName: String, loopMode: LottieLoopMode = .loop, animationSpeed: CGFloat = 1.0) {
+          self.init()
+          
+          if let animation = LottieAnimation.named(animationName) {
+              self.animation = animation
+              self.contentMode = .scaleAspectFit
+              self.loopMode = loopMode
+              self.animationSpeed = animationSpeed
+              self.play()
+          } else {
+              print("Animation named '\(animationName)' not found.")
+          }
+      }
 }
 
 

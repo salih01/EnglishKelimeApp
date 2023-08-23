@@ -87,7 +87,9 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     // MARK: - Firebase 🔥
     func createUser(email: String, password: String) {
       Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-          guard error == nil else { return self.showAlert(title: "Uyarı", message: "\(error!.localizedDescription)") }
+          guard error == nil else { return self.showAlert(title: "Uyarı", message: "\(error!.localizedDescription)")
+
+          }
           print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
 
       }
@@ -108,7 +110,9 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func signInButton(_ sender: Any) {
-        
+        let vc = ErrorViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
         guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty,let password2 = paswordTextField2.text, !password2.isEmpty  else {
             showAlert(title: "Uyarı", message: "Lütfen alanları boş bırakmayınız ")
             return}
