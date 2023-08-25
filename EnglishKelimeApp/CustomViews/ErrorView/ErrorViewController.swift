@@ -17,11 +17,13 @@ class ErrorViewController: UIViewController {
       super.viewDidLoad()
         if let animationName = animationName {
             setupAnimation(named: animationName)
+            
         }
+        
   
     }
     private func setupAnimation(named animationName: String) {
-           animationView.animation = LottieAnimation.named(animationName)
+        animationView = .init(animationName: animationName)
            animationView.contentMode = .scaleAspectFit
            animationView.loopMode = .loop
            animationView.animationSpeed = 0.5

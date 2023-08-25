@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0EB0F12A96ADDE0018552A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0F02A96ADDD0018552A /* cat.json */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
+		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
 		3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */; };
 		924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */; };
@@ -63,7 +65,9 @@
 /* Begin PBXFileReference section */
 		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0EB0F02A96ADDD0018552A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
 		627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AD0D1E12A99411200A954EC /* cat2.json */,
+				3A0EB0F02A96ADDD0018552A /* cat.json */,
 				3AF2D2772A92BE4D006B2C17 /* CustomViews */,
 				CE606C242A65D6F400B23001 /* Model */,
 				CEEE67C72A5C9EBE00805434 /* Extensions */,
@@ -478,12 +484,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0EB0F12A96ADDE0018552A /* cat.json in Resources */,
 				CEC0B7CF2A55FC390001C767 /* LaunchScreen.storyboard in Resources */,
 				CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */,
 				CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */,
 				CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */,
 				CEDD434D2A799B8C00FD6B6C /* SignUpViewController.xib in Resources */,
 				3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */,
+				3AD0D1E22A99411300A954EC /* cat2.json in Resources */,
 				3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
 				CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */,
