@@ -14,8 +14,8 @@
             filePath = "EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "createUser(email:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5F2DA5C5-D6B5-4ABF-B3C7-500A312E7009"
+            uuid = "87C9D20C-4487-4310-BB0E-164B5AADDDC6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EnglishKelimeApp/CustomViews/ErrorView/ErrorViewController.swift"
+            filePath = "EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "setupAnimation(named:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "createUser(email:password:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -88,7 +88,13 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     func createUser(email: String, password: String) {
       Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
           guard error == nil else {
-              return self.showAlert(title: "Uyarı", message: "\(error!.localizedDescription)")
+              let vc = ErrorViewController()
+              vc.animationName = "cat2"
+              vc.descriptionLabels = "\(error!.localizedDescription)"
+              vc.modalPresentationStyle = .fullScreen
+              self.present(vc, animated: true, completion: nil)
+              return
+
 
           }
           print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
@@ -96,32 +102,30 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
       }
     }
     
-    // MARK: - Alert diaolog
- 
-    func showAlert(title: String, message: String) {
-            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Tamam", style: .default, handler: nil)
-            alertController.addAction(okAction)
-            present(alertController, animated: true, completion: nil)
-        }
-    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func signInButton(_ sender: Any) {
-        let vc = ErrorViewController()
-        vc.animationName = "cat2"
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+
         
         
         guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty,let password2 = paswordTextField2.text, !password2.isEmpty  else {
-            showAlert(title: "Uyarı", message: "Lütfen alanları boş bırakmayınız ")
+
+            let vc = ErrorViewController()
+            vc.animationName = "cat2"
+            vc.descriptionLabels = "Lütfen alanları boş bırakmayınız"
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
             return}
         guard password == password2 else {
-            showAlert(title: "Uyarı", message: "Girilen şifreler aynı değil . Lütfen tekrar deneyiniz")
+
+            let vc = ErrorViewController()
+            vc.animationName = "cat2"
+            vc.descriptionLabels = "Girilen şifreler aynı değil . Lütfen tekrar deneyiniz"
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
             return}
         createUser(email: email, password: password)
         
