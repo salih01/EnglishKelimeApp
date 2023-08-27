@@ -51,7 +51,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-91-XLl">
-                                        <rect key="frame" x="75" y="237" width="139" height="45"/>
+                                        <rect key="frame" x="75.333333333333343" y="237" width="139" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="G5M-Qc-Qi6"/>
                                             <constraint firstAttribute="width" constant="139" id="x1d-BQ-X7L"/>
@@ -70,6 +70,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backButton:" destination="-1" eventType="touchUpInside" id="yfD-oy-B2T"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -104,6 +107,9 @@
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
     </objects>
+    <designables>
+        <designable name="Bmb-xC-Y3q"/>
+    </designables>
     <resources>
         <namedColor name="UpworkColor">
             <color red="0.030999999493360519" green="0.11400000005960464" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

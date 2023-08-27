@@ -91,12 +91,16 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
               let vc = ErrorViewController()
               vc.animationName = "cat2"
               vc.descriptionLabels = "\(error!.localizedDescription)"
-              vc.modalPresentationStyle = .fullScreen
+              vc.modalPresentationStyle = .popover
               self.present(vc, animated: true, completion: nil)
               return
 
 
           }
+          // kullanıcı girişi burada sağlanıyor
+          let vc = MainViewController()
+          vc.modalPresentationStyle = .fullScreen
+          self.present(vc, animated: true, completion: nil)
           print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
 
       }
@@ -109,14 +113,12 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func signInButton(_ sender: Any) {
 
-        
-        
         guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty,let password2 = paswordTextField2.text, !password2.isEmpty  else {
 
             let vc = ErrorViewController()
             vc.animationName = "cat2"
             vc.descriptionLabels = "Lütfen alanları boş bırakmayınız"
-            vc.modalPresentationStyle = .fullScreen
+            vc.modalPresentationStyle = .popover
             self.present(vc, animated: true, completion: nil)
             return}
         guard password == password2 else {
@@ -124,10 +126,12 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
             let vc = ErrorViewController()
             vc.animationName = "cat2"
             vc.descriptionLabels = "Girilen şifreler aynı değil . Lütfen tekrar deneyiniz"
-            vc.modalPresentationStyle = .fullScreen
+            vc.modalPresentationStyle = .popover
             self.present(vc, animated: true, completion: nil)
             return}
-        createUser(email: email, password: password)
+            // firebase login sayfasına yönlendirme
+            createUser(email: email, password: password)
+
         
         
     }

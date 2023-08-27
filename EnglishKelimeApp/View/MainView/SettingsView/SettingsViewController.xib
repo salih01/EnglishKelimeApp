@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -16,26 +16,249 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="SettingsViewController" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="390" height="1300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="N8V-he-7MC">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="N8V-he-7MC">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="1300"/>
                 </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-Ct-DYw">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="1300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgG-Rd-Auk" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="1300"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayarlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-21-9oz">
+                                    <rect key="frame" x="15" y="0.0" width="117" height="53"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="53" id="fRO-FY-W6g"/>
+                                        <constraint firstAttribute="width" constant="117" id="xbu-dr-yA4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Lk-ZI-FWd">
+                                    <rect key="frame" x="8" y="104" width="374" height="163"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qv2-gd-P7O">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Üyelik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU0-Zj-92A">
+                                                <rect key="frame" x="14" y="16" width="90" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="RRJ-wX-bAk"/>
+                                                    <constraint firstAttribute="width" constant="90" id="glS-ge-h2Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gJC-DR-XWl">
+                                                <rect key="frame" x="20" y="47" width="140" height="101"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ücretsiz Üyelik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL3-TM-ZIB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="27" id="ZdL-az-NxN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-ST-HFL">
+                                                        <rect key="frame" x="0.0" y="35" width="120" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="PRO Üyelik Satın al ">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-5O-jRk">
+                                                        <rect key="frame" x="0.0" y="72" width="140" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Satın alımları geri yükle">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gJC-DR-XWl" secondAttribute="bottom" constant="15" id="G02-9c-jd5"/>
+                                            <constraint firstItem="fU0-Zj-92A" firstAttribute="leading" secondItem="Qv2-gd-P7O" secondAttribute="leading" constant="14" id="KnJ-Pb-EMv"/>
+                                            <constraint firstAttribute="trailing" secondItem="fU0-Zj-92A" secondAttribute="trailing" constant="270" id="Zbw-mH-Wyz"/>
+                                            <constraint firstItem="gJC-DR-XWl" firstAttribute="top" secondItem="fU0-Zj-92A" secondAttribute="bottom" constant="8" symbolic="YES" id="gJg-co-m7s"/>
+                                            <constraint firstItem="fU0-Zj-92A" firstAttribute="top" secondItem="Qv2-gd-P7O" secondAttribute="top" constant="16" id="hTj-nA-ffA"/>
+                                            <constraint firstAttribute="trailing" secondItem="gJC-DR-XWl" secondAttribute="trailing" constant="214" id="wSC-eq-Aw7"/>
+                                            <constraint firstItem="gJC-DR-XWl" firstAttribute="leading" secondItem="Qv2-gd-P7O" secondAttribute="leading" constant="20" id="ydt-3I-7fx"/>
+                                        </constraints>
+                                    </view>
+                                    <blurEffect style="light"/>
+                                </visualEffectView>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kax-pw-hvM">
+                                    <rect key="frame" x="8" y="290" width="374" height="163"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="c6r-QK-VdI">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hakkımızda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCk-Iv-0rX">
+                                                <rect key="frame" x="14" y="16" width="102" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="B38-jM-jL2"/>
+                                                    <constraint firstAttribute="width" constant="102" id="w3O-ZE-iMP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-dR-hrb">
+                                                <rect key="frame" x="20" y="47" width="140" height="101"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ücretsiz Üyelik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weH-dR-ZSg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="27" id="T7g-Hn-dO8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bo-40-RfO">
+                                                        <rect key="frame" x="0.0" y="35" width="120" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="PRO Üyelik Satın al ">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-d8-8g4">
+                                                        <rect key="frame" x="0.0" y="72" width="140" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Satın alımları geri yükle">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ANb-dR-hrb" secondAttribute="bottom" constant="15" id="EaZ-xZ-Eah"/>
+                                            <constraint firstItem="dCk-Iv-0rX" firstAttribute="top" secondItem="c6r-QK-VdI" secondAttribute="top" constant="16" id="FRc-oA-Ll2"/>
+                                            <constraint firstItem="dCk-Iv-0rX" firstAttribute="leading" secondItem="c6r-QK-VdI" secondAttribute="leading" constant="14" id="FVz-ym-ibd"/>
+                                            <constraint firstItem="ANb-dR-hrb" firstAttribute="top" secondItem="dCk-Iv-0rX" secondAttribute="bottom" constant="8" symbolic="YES" id="NEj-QW-4YH"/>
+                                            <constraint firstAttribute="trailing" secondItem="dCk-Iv-0rX" secondAttribute="trailing" constant="258" id="Y1P-mg-y1f"/>
+                                            <constraint firstAttribute="trailing" secondItem="ANb-dR-hrb" secondAttribute="trailing" constant="214" id="dgl-8t-wPO"/>
+                                            <constraint firstItem="ANb-dR-hrb" firstAttribute="leading" secondItem="c6r-QK-VdI" secondAttribute="leading" constant="20" id="hI1-c5-rFa"/>
+                                        </constraints>
+                                    </view>
+                                    <blurEffect style="light"/>
+                                </visualEffectView>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIV-OO-ivf">
+                                    <rect key="frame" x="8" y="475" width="374" height="163"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4lw-rV-uAv">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDy-2I-3vo">
+                                                <rect key="frame" x="14" y="16" width="102" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="Epg-CT-uKU"/>
+                                                    <constraint firstAttribute="width" constant="102" id="P5P-PC-r8y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mfF-ok-vzM">
+                                                <rect key="frame" x="20" y="47" width="140" height="101"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ücretsiz Üyelik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-l8-vgw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="27" id="XZr-el-0Is"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-fa-2Jd">
+                                                        <rect key="frame" x="0.0" y="35" width="120" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="PRO Üyelik Satın al ">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYQ-gv-koc">
+                                                        <rect key="frame" x="0.0" y="72" width="140" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Satın alımları geri yükle">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IDy-2I-3vo" secondAttribute="trailing" constant="258" id="5Hh-lq-TRn"/>
+                                            <constraint firstItem="IDy-2I-3vo" firstAttribute="leading" secondItem="4lw-rV-uAv" secondAttribute="leading" constant="14" id="5uE-PV-9O0"/>
+                                            <constraint firstAttribute="trailing" secondItem="mfF-ok-vzM" secondAttribute="trailing" constant="214" id="9g1-u6-Scr"/>
+                                            <constraint firstItem="mfF-ok-vzM" firstAttribute="top" secondItem="IDy-2I-3vo" secondAttribute="bottom" constant="8" symbolic="YES" id="Cjd-SY-FQE"/>
+                                            <constraint firstItem="IDy-2I-3vo" firstAttribute="top" secondItem="4lw-rV-uAv" secondAttribute="top" constant="16" id="FkP-Y0-92a"/>
+                                            <constraint firstAttribute="bottom" secondItem="mfF-ok-vzM" secondAttribute="bottom" constant="15" id="ZLm-TJ-n4c"/>
+                                            <constraint firstItem="mfF-ok-vzM" firstAttribute="leading" secondItem="4lw-rV-uAv" secondAttribute="leading" constant="20" id="h2f-ox-18z"/>
+                                        </constraints>
+                                    </view>
+                                    <blurEffect style="light"/>
+                                </visualEffectView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="EFU-21-9oz" firstAttribute="top" secondItem="AgG-Rd-Auk" secondAttribute="top" id="UtF-1c-60I"/>
+                                <constraint firstItem="EFU-21-9oz" firstAttribute="leading" secondItem="AgG-Rd-Auk" secondAttribute="leading" constant="15" id="hSy-i8-5hf"/>
+                                <constraint firstAttribute="trailing" secondItem="EFU-21-9oz" secondAttribute="trailing" constant="258" id="iaX-kz-5PB"/>
+                                <constraint firstAttribute="height" constant="1300" id="oXK-yZ-Sqg"/>
+                                <constraint firstItem="EFU-21-9oz" firstAttribute="top" secondItem="AgG-Rd-Auk" secondAttribute="top" id="sCK-px-gM6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AgG-Rd-Auk" secondAttribute="trailing" id="6tZ-xK-cPh"/>
+                        <constraint firstItem="AgG-Rd-Auk" firstAttribute="leading" secondItem="nIG-Ct-DYw" secondAttribute="leading" id="dP6-r6-N9e"/>
+                        <constraint firstItem="AgG-Rd-Auk" firstAttribute="firstBaseline" secondItem="nIG-Ct-DYw" secondAttribute="top" id="lKB-2h-fxG"/>
+                        <constraint firstAttribute="bottom" secondItem="AgG-Rd-Auk" secondAttribute="bottom" id="oeY-de-2fM"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="N8V-he-7MC" secondAttribute="bottom" id="AaY-L4-wTA"/>
-                <constraint firstItem="N8V-he-7MC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Klw-Kd-mk1"/>
-                <constraint firstItem="N8V-he-7MC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gQI-OO-toL"/>
-                <constraint firstItem="N8V-he-7MC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pH7-4N-7Od"/>
+                <constraint firstAttribute="bottom" secondItem="nIG-Ct-DYw" secondAttribute="bottom" id="9BQ-wp-Rrn"/>
+                <constraint firstItem="nIG-Ct-DYw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GdE-Pc-wl1"/>
+                <constraint firstItem="N8V-he-7MC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jsc-JQ-SR7"/>
+                <constraint firstAttribute="bottom" secondItem="N8V-he-7MC" secondAttribute="bottom" id="bxb-ye-IE1"/>
+                <constraint firstItem="N8V-he-7MC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cMf-aD-2XQ"/>
+                <constraint firstItem="N8V-he-7MC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gO2-fH-6Pt"/>
+                <constraint firstItem="nIG-Ct-DYw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="igj-Di-QYE"/>
+                <constraint firstItem="AgG-Rd-Auk" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="yGT-0j-5Xo"/>
+                <constraint firstItem="nIG-Ct-DYw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yu1-0C-Nd8"/>
             </constraints>
-            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="133.84615384615384" y="98.104265402843595"/>
         </view>
     </objects>
     <resources>
-        <image name="3" width="6107" height="9160"/>
+        <image name="settings" width="4000" height="4000"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

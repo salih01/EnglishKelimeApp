@@ -39,5 +39,8 @@ class ErrorViewController: UIViewController {
            animationView.play()
        }
     
-
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
 }
