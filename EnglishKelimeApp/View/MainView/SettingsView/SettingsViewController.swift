@@ -39,6 +39,12 @@ class SettingsViewController: UIViewController {
         privacyView.clipsToBounds = true
     }
 
-
+    @IBAction func signInButton(_ sender: UIButton) {
+        let vc:LoginViewController = LoginViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+    }
+    
     
 }
