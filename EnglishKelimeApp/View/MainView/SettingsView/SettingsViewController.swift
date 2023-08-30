@@ -44,6 +44,9 @@ class SettingsViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
         
+        
+        
+        
     }
     
     
