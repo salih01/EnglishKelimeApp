@@ -16,10 +16,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var abautUsView: UIVisualEffectView!
     @IBOutlet weak var privacyView: UIVisualEffectView!
     
+    @IBOutlet weak var signInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
+        signInButton.self
+        print("Kullanılan View\(view.self)")
     }
     
     func setupView(){
@@ -39,14 +41,13 @@ class SettingsViewController: UIViewController {
         privacyView.clipsToBounds = true
     }
 
+    
     @IBAction func signInButton(_ sender: UIButton) {
+        print("Tıklandı mı\(view.self)")
+
         let vc:LoginViewController = LoginViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
-        
-        
-        
-        
     }
     
     

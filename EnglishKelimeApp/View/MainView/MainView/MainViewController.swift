@@ -33,57 +33,38 @@ class MainViewController: UIViewController {
 
     @IBAction func homeButton(_ sender: UIButton) {
         let tag = sender.tag
-        if tag == 1 {
-            print(tag)
-            let homeView = HomeViewController(nibName: "HomeViewController", bundle: nil)
-            contentView.addSubview(homeView.view)
-            homeView.view.translatesAutoresizingMaskIntoConstraints = false
-            homeView.view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-            homeView.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-            homeView.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-            homeView.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-            homeView.didMove(toParent: self)
-            children.forEach { $0.removeFromParent() }
-            
-        } else if tag == 2 {
-            print(tag)
-            let settings = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
-            contentView.addSubview(settings.view)
-            settings.view.translatesAutoresizingMaskIntoConstraints = false
-            settings.view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-            settings.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-            settings.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-            settings.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-            settings.didMove(toParent: self)
-            children.forEach { $0.removeFromParent() }
 
-        } else if tag == 3 {
+           // Mevcut view'ları kaldırın
+           contentView.subviews.forEach { $0.removeFromSuperview() }
 
-            print(tag)
-            let settings = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
-            contentView.addSubview(settings.view)
-            settings.view.translatesAutoresizingMaskIntoConstraints = false
-            settings.view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-            settings.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-            settings.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-            settings.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-            settings.didMove(toParent: self)
-            children.forEach { $0.removeFromParent() }
+           if tag == 1 {
+               print(tag)
+               let homeView = HomeViewController(nibName: "HomeViewController", bundle: nil)
+               contentView.addSubview(homeView.view)
+               homeView.view.translatesAutoresizingMaskIntoConstraints = false
+               NSLayoutConstraint.activate([
+                   homeView.view.topAnchor.constraint(equalTo: contentView.topAnchor),
+                   homeView.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+                   homeView.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                   homeView.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+               ])
+               self.addChild(homeView)
+               homeView.didMove(toParent: self)
 
-        } else if tag == 4 {
-            
-            let settings = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
-            contentView.addSubview(settings.view)
-            settings.view.translatesAutoresizingMaskIntoConstraints = false
-            settings.view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-            settings.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-            settings.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-            settings.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-            settings.didMove(toParent: self)
-            children.forEach { $0.removeFromParent()}
-
-        }
-        
+           } else if tag == 2 || tag == 3 || tag == 4 {
+               print(tag)
+               let settings = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+               contentView.addSubview(settings.view)
+               settings.view.translatesAutoresizingMaskIntoConstraints = false
+               NSLayoutConstraint.activate([
+                   settings.view.topAnchor.constraint(equalTo: contentView.topAnchor),
+                   settings.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+                   settings.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                   settings.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+               ])
+               self.addChild(settings)
+               settings.didMove(toParent: self)
+           }
         
     }
 }
