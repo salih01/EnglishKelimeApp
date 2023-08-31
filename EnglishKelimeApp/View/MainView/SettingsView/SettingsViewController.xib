@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,21 +48,21 @@
                                                     <constraint firstAttribute="width" constant="127" id="t0Z-nq-NKO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKk-tU-arR">
-                                                <rect key="frame" x="20" y="47" width="147.66666666666666" height="32"/>
+                                                <rect key="frame" x="20" y="47" width="147" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-SN-VYB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="U2d-qe-FNh"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Kayıt Ol /Giriş Yap">
-                                                            <imageReference key="image" image="person.crop.circle.dashed" catalog="system" symbolScale="large"/>
+                                                        <state key="normal" title="Kayıt Ol /Giriş Yap 🤜🏼">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="cg0-LC-5q7"/>
@@ -99,7 +98,7 @@
                                                     <constraint firstAttribute="height" constant="23" id="eO5-aP-j0Z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YME-k1-Bne">
@@ -111,7 +110,7 @@
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Bildirim saati ayarla ⏰">
-                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="cGg-K5-emM">
@@ -152,7 +151,7 @@
                                                     <constraint firstAttribute="width" constant="90" id="glS-ge-h2Y"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gJC-DR-XWl">
@@ -164,7 +163,7 @@
                                                             <constraint firstAttribute="height" constant="27" id="ZdL-az-NxN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-ST-HFL">
@@ -172,7 +171,7 @@
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="PRO Üyelik Satın al 🔥 ">
-                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-5O-jRk">
@@ -180,7 +179,7 @@
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Satın alımları geri yükle">
-                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -214,7 +213,7 @@
                                                     <constraint firstAttribute="width" constant="102" id="w3O-ZE-iMP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-dR-hrb">
@@ -226,7 +225,7 @@
                                                             <constraint firstAttribute="height" constant="27" id="T7g-Hn-dO8"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bo-40-RfO">
@@ -234,7 +233,7 @@
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Bizi arkadaşlarına öner">
-                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-d8-8g4">
@@ -242,7 +241,7 @@
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Yıldızla bizi 🌟">
-                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -274,7 +273,7 @@
                                                     <constraint firstAttribute="width" constant="102" id="P5P-PC-r8y"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mfF-ok-vzM">
@@ -286,7 +285,7 @@
                                                             <constraint firstAttribute="height" constant="27" id="XZr-el-0Is"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -314,7 +313,7 @@
                                         <constraint firstAttribute="width" constant="137" id="xbu-dr-yA4"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -369,7 +368,6 @@
     </objects>
     <resources>
         <image name="fall_color_12 -2" width="2000" height="1334"/>
-        <image name="person.crop.circle.dashed" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

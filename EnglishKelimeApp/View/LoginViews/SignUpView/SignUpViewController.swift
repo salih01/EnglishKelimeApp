@@ -98,6 +98,17 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
 
           }
           // kullanıcı girişi burada sağlanıyor
+          if let user = authResult?.user {
+               let uid = user.uid
+               let email = user.email
+               let displayName = user.displayName
+               let photoURL = user.photoURL
+               
+               print("UID: \(uid)")
+               print("E-posta: \(email ?? "Belirtilmemiş")")
+               print("Ad ve Soyad: \(displayName ?? "Belirtilmemiş")")
+               print("Profil Resmi URL: \(photoURL?.absoluteString ?? "Belirtilmemiş")")
+           }
           let vc = MainViewController()
           vc.modalPresentationStyle = .fullScreen
           self.present(vc, animated: true, completion: nil)
