@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
                 <outlet property="abautUsView" destination="kax-pw-hvM" id="cWa-6o-oAe"/>
+                <outlet property="logOut" destination="C3j-YT-AtC" id="lQu-iM-x14"/>
                 <outlet property="loginView" destination="nGq-ym-qiP" id="eLy-gj-zo5"/>
                 <outlet property="memberView" destination="0Lk-ZI-FWd" id="Y4A-mo-WuU"/>
                 <outlet property="notificationsView" destination="0Cq-NC-OrF" id="Afv-1t-xh5"/>
@@ -52,7 +53,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKk-tU-arR">
-                                                <rect key="frame" x="20" y="47" width="147" height="32"/>
+                                                <rect key="frame" x="20" y="47" width="147" height="72"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-SN-VYB">
                                                         <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
@@ -66,6 +67,20 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="cg0-LC-5q7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3j-YT-AtC">
+                                                        <rect key="frame" x="0.0" y="40" width="88" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="44p-Jn-ZDO"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Çıkış Yap 😔">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="logOut:" destination="-1" eventType="touchUpInside" id="3BT-On-mUT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

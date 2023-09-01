@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UIViewController {
 
@@ -16,13 +17,25 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var abautUsView: UIVisualEffectView!
     @IBOutlet weak var privacyView: UIVisualEffectView!
     
+    @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        signInButton.self
         print("Kullanılan View\(view.self)")
+        
+        if let currentUser = Auth.auth().currentUser {
+               // Kullanıcı oturum açmışsa "kayıt ol" butonunu gizle
+               signInButton.isHidden = true
+               logOut.isHidden = false
+           } else {
+               // Kullanıcı oturum açmamışsa "kayıt ol" butonunu göster
+               signInButton.isHidden = false
+               logOut.isHidden = true
+           }
     }
+    
+    
     
     func setupView(){
         loginView.layer.cornerRadius = 10
@@ -40,7 +53,29 @@ class SettingsViewController: UIViewController {
         privacyView.layer.cornerRadius = 10
         privacyView.clipsToBounds = true
     }
+    func showSignOutPopup() {
+        let vc = ErrorViewController()
+        vc.animationName = "success"
+        vc.descriptionLabels = "Çıkış Yapıldı 😔"
+        vc.modalPresentationStyle = .popover
+        logOut.isHidden = true
+        signInButton.isHidden = false
+        self.present(vc, animated: true, completion: nil)
 
+    }
+    
+    func signOut(){
+        
+        do {
+            try Auth.auth().signOut()
+                showSignOutPopup()
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    
     
     @IBAction func signInButton(_ sender: UIButton) {
         print("Tıklandı mı\(view.self)")
@@ -50,5 +85,9 @@ class SettingsViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    
+    @IBAction func logOut(_ sender: Any) {
+        signOut()
+    }
     
 }

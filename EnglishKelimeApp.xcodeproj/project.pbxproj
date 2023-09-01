@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A0EB0F12A96ADDE0018552A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0F02A96ADDD0018552A /* cat.json */; };
+		3A250D622AA2318A00FDF128 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A250D612AA2318A00FDF128 /* success.json */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
@@ -66,6 +67,7 @@
 		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0EB0F02A96ADDD0018552A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+		3A250D612AA2318A00FDF128 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -139,9 +141,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A250D602AA2316100FDF128 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3A250D612AA2318A00FDF128 /* success.json */,
+				3AD0D1E12A99411200A954EC /* cat2.json */,
+				3A0EB0F02A96ADDD0018552A /* cat.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
 		3AF2D2772A92BE4D006B2C17 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				3A250D602AA2316100FDF128 /* LottieFiles */,
 				3AF2D2782A92BE5B006B2C17 /* ErrorView */,
 			);
 			path = CustomViews;
@@ -199,8 +212,8 @@
 		CE2966882A56C5D000E3E533 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				CE8FC6B22A84FB2500B443D1 /* HomeView */,
 				CE7BB8CD2A7DABB10097DD56 /* MainView */,
+				CE8FC6B22A84FB2500B443D1 /* HomeView */,
 				CE7BB8CE2A7DABC40097DD56 /* SettingsView */,
 			);
 			path = MainView;
@@ -303,8 +316,6 @@
 		CEC0B7BE2A55FC380001C767 /* EnglishKelimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				3AD0D1E12A99411200A954EC /* cat2.json */,
-				3A0EB0F02A96ADDD0018552A /* cat.json */,
 				3AF2D2772A92BE4D006B2C17 /* CustomViews */,
 				CE606C242A65D6F400B23001 /* Model */,
 				CEEE67C72A5C9EBE00805434 /* Extensions */,
@@ -494,6 +505,7 @@
 				3AD0D1E22A99411300A954EC /* cat2.json in Resources */,
 				3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
+				3A250D622AA2318A00FDF128 /* success.json in Resources */,
 				CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */,
 				CECB49242A644CE0007CE3D7 /* OnboardingCollectionViewCell.xib in Resources */,
 				CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */,
