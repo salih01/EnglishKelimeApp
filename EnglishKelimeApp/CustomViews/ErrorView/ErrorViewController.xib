@@ -40,7 +40,7 @@
                                             <constraint firstAttribute="height" constant="150" id="zzL-cl-uFU"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sorun oluştu .Lütfen tekrar deneyiniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-3t-IJJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sorun oluştu .Lütfen tekrar deneyiniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-3t-IJJ">
                                         <rect key="frame" x="25" y="18" width="240" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="wYq-T5-uH1"/>
