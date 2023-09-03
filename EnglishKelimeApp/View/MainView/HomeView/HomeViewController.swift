@@ -6,16 +6,25 @@
 //
 
 import UIKit
+import Lottie
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var animationView: LottieAnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupAnimation()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func printButton(_ sender: Any) {
-        print("hello")
-    }
+    private func setupAnimation() {
+        animationView.animation = LottieAnimation.named("wawes")
+        animationView.contentMode = .scaleAspectFill
+           animationView.loopMode = .loop
+           animationView.animationSpeed = 1
+           animationView.play()
+       }
+    
+
 }

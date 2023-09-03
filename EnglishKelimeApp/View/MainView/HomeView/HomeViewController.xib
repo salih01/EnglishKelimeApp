@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EnglishKelimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="animationView" destination="ava-KG-6Cr" id="3nL-ef-zD8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,32 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waves4" translatesAutoresizingMaskIntoConstraints="NO" id="V1S-3N-UWD">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lr-rV-XBf">
-                    <rect key="frame" x="170" y="431" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                    <connections>
-                        <action selector="printButton:" destination="-1" eventType="touchUpInside" id="824-RB-xuT"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KG-6Cr" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="200" y="0.0" width="214" height="243"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="243" id="xOg-PK-gSk"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="V1S-3N-UWD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AOF-k1-Fub"/>
-                <constraint firstItem="V1S-3N-UWD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HRV-Dn-FAG"/>
-                <constraint firstItem="V1S-3N-UWD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sEI-35-QO9"/>
-                <constraint firstAttribute="bottom" secondItem="V1S-3N-UWD" secondAttribute="bottom" id="xTb-e1-ZJU"/>
+                <constraint firstItem="ava-KG-6Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0L0-my-WlS"/>
+                <constraint firstItem="ava-KG-6Cr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KKk-7O-jrw"/>
+                <constraint firstItem="ava-KG-6Cr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="200" id="nd1-5l-dUE"/>
             </constraints>
-            <point key="canvasLocation" x="5.7971014492753632" y="20.758928571428569"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="36.160714285714285"/>
         </view>
     </objects>
+    <designables>
+        <designable name="ava-KG-6Cr"/>
+    </designables>
     <resources>
-        <image name="waves4" width="3000" height="2000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
