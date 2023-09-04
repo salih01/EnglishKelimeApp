@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
            animationView.loopMode = .loop
            animationView.animationSpeed = 1
            animationView.play()
+        
+        
        }
     
 
