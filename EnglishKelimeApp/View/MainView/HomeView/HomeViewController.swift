@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
            animationView.play()
         
         
+        
        }
-    
 
 }
