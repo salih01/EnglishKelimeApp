@@ -14,6 +14,8 @@
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
 		3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */; };
+		3AF37F9A2AA8B5F300F616E5 /* back&black.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AF37F992AA8B5F300F616E5 /* back&black.json */; };
+		3AF37FA02AA9103300F616E5 /* white&whites.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AF37F9F2AA9103300F616E5 /* white&whites.json */; };
 		924881DD380559B96423DFDF /* Pods_EnglishKelimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */; };
 		9A081E81E1A86AD68051FCDE /* Pods_EnglishKelimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */; };
 		C5093728BE7BEBE5286E4BC9 /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D369615C735B4EF5CE03BC /* Pods_EnglishKelimeApp_EnglishKelimeAppUITests.framework */; };
@@ -74,6 +76,8 @@
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		3AF37F992AA8B5F300F616E5 /* back&black.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "back&black.json"; sourceTree = "<group>"; };
+		3AF37F9F2AA9103300F616E5 /* white&whites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "white&whites.json"; sourceTree = "<group>"; };
 		627D901664EB38253093C86D /* Pods-EnglishKelimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.release.xcconfig"; sourceTree = "<group>"; };
 		63330959BA8EE79A98BC457B /* Pods-EnglishKelimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp/Pods-EnglishKelimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		670B705789964BBC85740B7E /* Pods_EnglishKelimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 		3A250D602AA2316100FDF128 /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
+				3AF37F9F2AA9103300F616E5 /* white&whites.json */,
+				3AF37F992AA8B5F300F616E5 /* back&black.json */,
 				3A250D612AA2318A00FDF128 /* success.json */,
 				3AD0D1E12A99411200A954EC /* cat2.json */,
 				3A0EB0F02A96ADDD0018552A /* cat.json */,
@@ -509,10 +515,12 @@
 				3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
 				3A250D622AA2318A00FDF128 /* success.json in Resources */,
+				3AF37FA02AA9103300F616E5 /* white&whites.json in Resources */,
 				CEEE67C62A5C8EEB00805434 /* LoginViewController.xib in Resources */,
 				CECB49242A644CE0007CE3D7 /* OnboardingCollectionViewCell.xib in Resources */,
 				CE29668D2A56C62800E3E533 /* OnboardingViewController.xib in Resources */,
 				CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */,
+				3AF37F9A2AA8B5F300F616E5 /* back&black.json in Resources */,
 				3AB306E82AA5308A00F2B7ED /* wawes.json in Resources */,
 				CE8FC6B62A84FB4600B443D1 /* HomeViewController.xib in Resources */,
 			);

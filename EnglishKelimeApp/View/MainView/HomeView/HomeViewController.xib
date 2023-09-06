@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,20 +21,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KG-6Cr" customClass="LottieAnimationView" customModule="Lottie">
-                    <rect key="frame" x="200" y="0.0" width="214" height="243"/>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KG-6Cr" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="-12" y="-25" width="438" height="636"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="243" id="xOg-PK-gSk"/>
+                        <constraint firstAttribute="height" constant="636" id="QfU-cI-1Y7"/>
                     </constraints>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fou-BX-Ktv">
+                    <rect key="frame" x="20" y="48" width="139" height="103"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-oS-FS6">
+                            <rect key="frame" x="0.0" y="0.0" width="139" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="9k2-nY-A0F"/>
+                                <constraint firstAttribute="width" constant="139" id="EH5-ZK-n07"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
+                            <color key="textColor" name="Dyellow"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMy-mk-Pdq">
+                            <rect key="frame" x="0.0" y="47" width="113" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="113" id="Yp9-F4-Xqw"/>
+                                <constraint firstAttribute="height" constant="56" id="dQz-bj-D0y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
+                            <color key="textColor" name="Background"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ava-KG-6Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0L0-my-WlS"/>
-                <constraint firstItem="ava-KG-6Cr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KKk-7O-jrw"/>
-                <constraint firstItem="ava-KG-6Cr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="200" id="nd1-5l-dUE"/>
+                <constraint firstItem="ava-KG-6Cr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-12" id="X9e-cN-hmd"/>
+                <constraint firstAttribute="trailing" secondItem="ava-KG-6Cr" secondAttribute="trailing" constant="-12" id="Xe8-zX-TdH"/>
+                <constraint firstItem="fou-BX-Ktv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dNy-Cz-EAV"/>
+                <constraint firstItem="fou-BX-Ktv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pSs-IH-ZkE"/>
+                <constraint firstItem="ava-KG-6Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-25" id="x4N-sG-MBR"/>
             </constraints>
             <point key="canvasLocation" x="8.6956521739130448" y="36.160714285714285"/>
         </view>
@@ -42,6 +70,12 @@
         <designable name="ava-KG-6Cr"/>
     </designables>
     <resources>
+        <namedColor name="Background">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Dyellow">
+            <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
