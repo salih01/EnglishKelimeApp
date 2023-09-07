@@ -10,6 +10,8 @@
 		3A0EB0F12A96ADDE0018552A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0F02A96ADDD0018552A /* cat.json */; };
 		3A250D622AA2318A00FDF128 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A250D612AA2318A00FDF128 /* success.json */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
+		3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */; };
+		3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */; };
 		3AB306E82AA5308A00F2B7ED /* wawes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB306E72AA5308A00F2B7ED /* wawes.json */; };
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
@@ -72,6 +74,8 @@
 		3A0EB0F02A96ADDD0018552A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		3A250D612AA2318A00FDF128 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		3AB306E72AA5308A00F2B7ED /* wawes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wawes.json; sourceTree = "<group>"; };
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 				3AB306E72AA5308A00F2B7ED /* wawes.json */,
 			);
 			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		3A81E1842AAA032500D18053 /* HomeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */,
+				3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */,
+			);
+			path = HomeViewCell;
 			sourceTree = "<group>";
 		};
 		3AF2D2772A92BE4D006B2C17 /* CustomViews */ = {
@@ -294,6 +307,7 @@
 		CE8FC6B22A84FB2500B443D1 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				3A81E1842AAA032500D18053 /* HomeViewCell */,
 				CE8FC6B32A84FB4600B443D1 /* HomeViewController.swift */,
 				CE8FC6B42A84FB4600B443D1 /* HomeViewController.xib */,
 			);
@@ -522,6 +536,7 @@
 				CE7BB8D22A7DAD750097DD56 /* SettingsViewController.xib in Resources */,
 				3AF37F9A2AA8B5F300F616E5 /* back&black.json in Resources */,
 				3AB306E82AA5308A00F2B7ED /* wawes.json in Resources */,
+				3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */,
 				CE8FC6B62A84FB4600B443D1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +679,7 @@
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
 				CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */,
 				CEDD434C2A799B8C00FD6B6C /* SignUpViewController.swift in Sources */,
+				3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */,
 				CECB49232A644CE0007CE3D7 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

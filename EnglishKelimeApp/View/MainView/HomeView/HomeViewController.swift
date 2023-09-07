@@ -11,22 +11,19 @@ import Lottie
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var animationView: LottieAnimationView!
+    @IBOutlet weak var tableView: UITableView!
     
     private var isDarkModeEnabled = false // Kullanılacak arayüz stilini kontrol etmek için bir bayrak
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAnimation()
+        tableView.dataSource = self
+        tableView.delegate   = self
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // Belirli bir süre sonra karanlık moda geçmek için bir zamanlayıcı başlat
-        Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(switchToDarkMode), userInfo: nil, repeats: false)
-    }
-    
+
     private func setupAnimation() {
-        let animationName = isDarkModeEnabled ? "back&black" : "white&whites"
+        let animationName = "back&black"
         
         animationView.animation = LottieAnimation.named(animationName)
         animationView.contentMode = .scaleAspectFill
@@ -35,11 +32,28 @@ class HomeViewController: UIViewController {
         animationView.play()
     }
     
-    @objc private func switchToDarkMode() {
-        isDarkModeEnabled = true
-        setupAnimation()
+
+    
+}
+
+extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     
         
-        // Burada ayrıca arayüzünüzü karanlık moda geçirmek için gerekli diğer işlemleri yapabilirsiniz.
+        let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
+        let title = "Özel Başlık"
+        let imageName = "waves"
+        
+        
+        cell.setupCell(title: title, imageName: imageName)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
     
