@@ -46,7 +46,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         
         let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
         let title = "Özel Başlık"
-        let imageName = "waves"
+        let imageName = "waves5"
         
         
         cell.setupCell(title: title, imageName: imageName)
