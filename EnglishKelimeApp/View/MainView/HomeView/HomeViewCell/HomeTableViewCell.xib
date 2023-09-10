@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
@@ -22,28 +22,50 @@
                         <rect key="frame" x="10" y="10" width="300" height="130"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-v2-eGn">
-                                <rect key="frame" x="25" y="0.0" width="267" height="130"/>
+                                <rect key="frame" x="35" y="0.0" width="257" height="130"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sprite02" translatesAutoresizingMaskIntoConstraints="NO" id="g5T-gO-bRy">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sprite05" translatesAutoresizingMaskIntoConstraints="NO" id="g5T-gO-bRy">
                                         <rect key="frame" x="-12" y="-310" width="245" height="517"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3wY-hE-eMe">
+                                        <rect key="frame" x="218" y="55" width="24" height="21"/>
+                                        <color key="tintColor" name="darkBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Wuq-YE-3MG"/>
+                                            <constraint firstAttribute="height" constant="24.5" id="uB2-9f-zNr"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3wY-hE-eMe" secondAttribute="trailing" constant="15" id="EUO-tA-D0q"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wY-hE-eMe" secondAttribute="bottom" constant="52.5" id="LvL-q2-nCt"/>
+                                    <constraint firstItem="3wY-hE-eMe" firstAttribute="top" secondItem="vZO-v2-eGn" secondAttribute="top" constant="53" id="hwT-gg-egn"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 - 100 Kelime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-VN-0mL">
-                                <rect key="frame" x="162" y="25" width="130" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - 100 Kelime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-VN-0mL">
+                                <rect key="frame" x="35" y="53.5" width="130" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <color key="textColor" name="darkBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A1-A2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWu-Ww-Rfv">
+                                <rect key="frame" x="35" y="78" width="43" height="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="13"/>
                                 <color key="textColor" name="darkBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="NewRed"/>
                         <constraints>
+                            <constraint firstItem="r0D-VN-0mL" firstAttribute="centerY" secondItem="ejM-TZ-mIr" secondAttribute="centerY" id="4rN-Cc-ln8"/>
                             <constraint firstAttribute="trailing" secondItem="vZO-v2-eGn" secondAttribute="trailing" constant="8" id="7xE-cM-kLz"/>
+                            <constraint firstItem="fWu-Ww-Rfv" firstAttribute="top" secondItem="r0D-VN-0mL" secondAttribute="bottom" constant="1.5" id="YiQ-NT-YMi"/>
+                            <constraint firstItem="fWu-Ww-Rfv" firstAttribute="leading" secondItem="ejM-TZ-mIr" secondAttribute="leading" constant="35" id="Zmx-VF-2i4"/>
                             <constraint firstItem="vZO-v2-eGn" firstAttribute="top" secondItem="ejM-TZ-mIr" secondAttribute="top" id="g9b-di-4OS"/>
-                            <constraint firstItem="vZO-v2-eGn" firstAttribute="leading" secondItem="ejM-TZ-mIr" secondAttribute="leading" constant="25" id="in9-Vu-Xqx"/>
+                            <constraint firstItem="vZO-v2-eGn" firstAttribute="leading" secondItem="ejM-TZ-mIr" secondAttribute="leading" constant="35" id="in9-Vu-Xqx"/>
+                            <constraint firstItem="r0D-VN-0mL" firstAttribute="leading" secondItem="ejM-TZ-mIr" secondAttribute="leading" constant="35" id="kyq-3P-UVz"/>
                             <constraint firstAttribute="bottom" secondItem="vZO-v2-eGn" secondAttribute="bottom" id="ts6-5q-GvI"/>
                         </constraints>
                     </view>
@@ -60,12 +82,14 @@
             <connections>
                 <outlet property="backView" destination="ejM-TZ-mIr" id="IJC-5U-EPY"/>
                 <outlet property="dayLabel" destination="r0D-VN-0mL" id="A5U-oh-GMB"/>
+                <outlet property="spriteImage" destination="g5T-gO-bRy" id="pRT-n7-SFC"/>
             </connections>
-            <point key="canvasLocation" x="138.93129770992365" y="46.478873239436624"/>
+            <point key="canvasLocation" x="137.68115942028987" y="46.205357142857139"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="sprite02" width="8000" height="6929"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="sprite05" width="8000" height="6929"/>
         <namedColor name="NewRed">
             <color red="0.98799997568130493" green="0.16099999845027924" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

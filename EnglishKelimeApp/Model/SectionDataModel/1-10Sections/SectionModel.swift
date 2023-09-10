@@ -21,10 +21,13 @@ struct SectionModel {
 }
 
 var sectionModelData = [
-    SectionModel(id: 0, title: "1-99 Kelime", subtitle: "A1-A2", color: UIColor(named: "NewRed")!, shadowColor: UIColor(named: "NewRed")!, images: UIImage(named: "waves5")!, description: "asada"),
-    SectionModel(id: 1, title: "100-199 Kelime", subtitle: "A1-A2", color: UIColor(named: "UpworkColor")!, shadowColor: UIColor(named: "UpworkColor")!, images: UIImage(named: "waves5")!, description: "asada"),
-    SectionModel(id: 2, title: "200-399 Kelime", subtitle: "A1-A2", color: UIColor(named: "LightBlue")!, shadowColor: UIColor(named: "LightBlue")!, images: UIImage(named: "waves5")!, description: "asada"),
-    SectionModel(id: 3, title: "400-599 Kelime", subtitle: "A1-A2", color: UIColor(named: "NewYellow")!, shadowColor: UIColor(named: "NewYellow")!, images: UIImage(named: "waves5")!, description: "asada"),
+    SectionModel(id: 0, title: "1-99 Kelime", subtitle: "A1-A2", color: UIColor(named: "black_")!, shadowColor: UIColor(named: "black_")!, images: UIImage(named: "sprite05")!, description: "asada"),
+    SectionModel(id: 1, title: "100-199 Kelime", subtitle: "A1-A2", color: UIColor(named: "UpworkColor")!, shadowColor: UIColor(named: "UpworkColor")!, images: UIImage(named: "sprite02")!, description: "asada"),
+    SectionModel(id: 0, title: "200-299 Kelime", subtitle: "A1-A2", color: UIColor(named: "Green")!, shadowColor: UIColor(named: "Green")!, images: UIImage(named: "sprite03")!, description: "asada"),
+
+    SectionModel(id: 3, title: "300-399 Kelime", subtitle: "A1-A2", color: UIColor(named: "LightGreen")!, shadowColor: UIColor(named: "LightGreen")!, images: UIImage(named: "sprite09")!, description: "asada"),
+    SectionModel(id: 2, title: "400-499 Kelime", subtitle: "A1-A2", color: UIColor(named: "Orange")!, shadowColor: UIColor(named: "Orange")!, images: UIImage(named: "sprite10")!, description: "asada"),
+
 ]
 
 

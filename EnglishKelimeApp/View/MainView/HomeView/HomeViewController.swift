@@ -49,6 +49,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         cell.dayLabel.text = sections.title
         cell.backView.backgroundColor = sections.color
         cell.backView.addCornerRadiusAndShadow(cornerRadius: 35, shadowColor: sections.shadowColor, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
+        cell.spriteImage.image = sections.images
         //cell.setupCell(title: title, imageName: imageName)
         return cell
     }

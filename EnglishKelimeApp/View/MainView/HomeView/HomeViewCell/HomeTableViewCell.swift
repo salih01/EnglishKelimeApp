@@ -11,6 +11,7 @@ class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var spriteImage: UIImageView!
     
 /*
     func setupCell(title: String, imageName: String) {
