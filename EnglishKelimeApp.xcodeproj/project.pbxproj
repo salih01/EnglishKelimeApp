@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A050D832AABC32B00CAF460 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A050D822AABC32B00CAF460 /* SectionModel.swift */; };
 		3A0EB0F12A96ADDE0018552A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0F02A96ADDD0018552A /* cat.json */; };
 		3A250D622AA2318A00FDF128 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A250D612AA2318A00FDF128 /* success.json */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		171E81A103D36A69882778B4 /* Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EnglishKelimeApp-EnglishKelimeAppUITests/Pods-EnglishKelimeApp-EnglishKelimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A050D822AABC32B00CAF460 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3A0EB0F02A96ADDD0018552A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		3A250D612AA2318A00FDF128 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -151,6 +153,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A050D802AABBC5F00CAF460 /* SectionDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A050D812AABBC7200CAF460 /* 1-10Sections */,
+			);
+			path = SectionDataModel;
+			sourceTree = "<group>";
+		};
+		3A050D812AABBC7200CAF460 /* 1-10Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3A050D822AABC32B00CAF460 /* SectionModel.swift */,
+			);
+			path = "1-10Sections";
+			sourceTree = "<group>";
+		};
 		3A250D602AA2316100FDF128 /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +291,7 @@
 		CE606C242A65D6F400B23001 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A050D802AABBC5F00CAF460 /* SectionDataModel */,
 				CE606C252A65D6FD00B23001 /* Onboarding */,
 			);
 			path = Model;
@@ -680,6 +699,7 @@
 				CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */,
 				CEDD434C2A799B8C00FD6B6C /* SignUpViewController.swift in Sources */,
 				3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */,
+				3A050D832AABC32B00CAF460 /* SectionModel.swift in Sources */,
 				CECB49232A644CE0007CE3D7 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

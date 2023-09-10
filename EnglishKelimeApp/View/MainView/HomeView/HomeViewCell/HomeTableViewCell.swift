@@ -10,23 +10,16 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var backView: UIView!
-    @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var effect: UIVisualEffectView!
     
-
+/*
     func setupCell(title: String, imageName: String) {
-        dayLabel.text = title
-        backImage.image = UIImage(named: imageName)
-        
-        backImage.addCornerRadius(radius: 20)
-        backImage.clipsToBounds = true
-        effect.layer.cornerRadius = 20
-        effect.clipsToBounds = true
-
-
-
+      //  dayLabel.text = title
+        backView.backgroundColor = UIColor(named: imageName)
+        backView.addCornerRadiusAndShadow(cornerRadius: 35, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
+       // backView.clipsToBounds = true
 
         // İhtiyaca bağlı diğer ayarlamaları yapabilirsiniz
     }
+ */
 }
