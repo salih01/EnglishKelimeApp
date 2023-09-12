@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
         initUI()
     }
     func initUI(){
+        
         blurView.layer.cornerRadius = 30
         blurView.clipsToBounds = true
         blurView2.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
