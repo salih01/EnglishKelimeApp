@@ -75,6 +75,9 @@
             <point key="canvasLocation" x="8.6956521739130448" y="36.160714285714285"/>
         </view>
     </objects>
+    <designables>
+        <designable name="ava-KG-6Cr"/>
+    </designables>
     <resources>
         <namedColor name="Background">
             <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

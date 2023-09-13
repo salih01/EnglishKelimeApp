@@ -17,9 +17,10 @@ class HomeViewController: UIViewController {
     var sectionModelAllData = sectionModelData
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAnimation()
         tableView.dataSource = self
         tableView.delegate   = self
+        setupAnimation()
+
     }
 
     private func setupAnimation() {
@@ -50,12 +51,16 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         cell.backView.backgroundColor = sections.color
         cell.backView.addCornerRadiusAndShadow(cornerRadius: 35, shadowColor: sections.shadowColor, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         cell.spriteImage.image = sections.images
-        //cell.setupCell(title: title, imageName: imageName)
         return cell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        if indexPath.row == sectionModelAllData.count - 1 {
+            // Son hücreye farklı bir yükseklik verin
+            return 270
+        } else {
+            // Diğer hücrelere varsayılan yüksekliği verin
+            return 150
+        }
     }
-    
-    
 }
