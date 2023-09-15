@@ -63,4 +63,8 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
             return 150
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }

@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,7 +23,8 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rSE-dh-6dd">
                     <rect key="frame" x="0.0" y="211" width="414" height="685"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" name="white&amp;white"/>
+                    <color key="sectionIndexBackgroundColor" name="white&amp;white"/>
                 </tableView>
                 <view userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KG-6Cr" customClass="LottieAnimationView" customModule="Lottie">
                     <rect key="frame" x="-12" y="-25" width="438" height="636"/>
@@ -60,7 +60,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="white&amp;white"/>
             <constraints>
                 <constraint firstItem="rSE-dh-6dd" firstAttribute="top" secondItem="fou-BX-Ktv" secondAttribute="bottom" constant="60" id="BRF-q2-aDF"/>
                 <constraint firstAttribute="bottom" secondItem="rSE-dh-6dd" secondAttribute="bottom" id="JAE-7t-W6e"/>
@@ -85,8 +85,8 @@
         <namedColor name="Dyellow">
             <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="white&amp;white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>
