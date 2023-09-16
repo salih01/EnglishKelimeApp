@@ -12,6 +12,8 @@
 		3A250D622AA2318A00FDF128 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A250D612AA2318A00FDF128 /* success.json */; };
 		3A4287512AB4ED7D00540711 /* HomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42874F2AB4ED7D00540711 /* HomeSecondViewController.swift */; };
 		3A4287522AB4ED7D00540711 /* HomeSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */; };
+		3A4287562AB5065000540711 /* HomeSecondViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4287542AB5065000540711 /* HomeSecondViewCell.swift */; };
+		3A4287572AB5065000540711 /* HomeSecondViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4287552AB5065000540711 /* HomeSecondViewCell.xib */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
 		3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */; };
 		3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */; };
@@ -79,6 +81,8 @@
 		3A250D612AA2318A00FDF128 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3A42874F2AB4ED7D00540711 /* HomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondViewController.swift; sourceTree = "<group>"; };
 		3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondViewController.xib; sourceTree = "<group>"; };
+		3A4287542AB5065000540711 /* HomeSecondViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondViewCell.swift; sourceTree = "<group>"; };
+		3A4287552AB5065000540711 /* HomeSecondViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondViewCell.xib; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 		3A4287532AB4EDB400540711 /* HomeSecondViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				3A4287542AB5065000540711 /* HomeSecondViewCell.swift */,
+				3A4287552AB5065000540711 /* HomeSecondViewCell.xib */,
 			);
 			path = HomeSecondViewCell;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				CE2966982A56DB1300E3E533 /* SplashViewController.xib in Resources */,
 				CEC0B7CC2A55FC390001C767 /* Assets.xcassets in Resources */,
 				CE2966922A56C65000E3E533 /* MainViewController.xib in Resources */,
+				3A4287572AB5065000540711 /* HomeSecondViewCell.xib in Resources */,
 				CEDD434D2A799B8C00FD6B6C /* SignUpViewController.xib in Resources */,
 				3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */,
 				3AD0D1E22A99411300A954EC /* cat2.json in Resources */,
@@ -718,6 +725,7 @@
 				CEC0B7C02A55FC380001C767 /* AppDelegate.swift in Sources */,
 				CE29668C2A56C62800E3E533 /* OnboardingViewController.swift in Sources */,
 				CE2966912A56C65000E3E533 /* MainViewController.swift in Sources */,
+				3A4287562AB5065000540711 /* HomeSecondViewCell.swift in Sources */,
 				CEEE67C52A5C8EEB00805434 /* LoginViewController.swift in Sources */,
 				CEEE67C92A5C9ECB00805434 /* Helper.swift in Sources */,
 				CE8FC6B52A84FB4600B443D1 /* HomeViewController.swift in Sources */,

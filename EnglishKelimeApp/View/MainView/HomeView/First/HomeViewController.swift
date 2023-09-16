@@ -43,8 +43,6 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     
-        
         let cell = Bundle.main.loadNibNamed("HomeTableViewCell", owner: self, options: nil)?.first as! HomeTableViewCell
         let sections = sectionModelAllData[indexPath.row]
         cell.dayLabel.text = sections.title
@@ -66,5 +64,10 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        
+        if indexPath.row == 0 {
+            
+        }
+        
     }
 }
