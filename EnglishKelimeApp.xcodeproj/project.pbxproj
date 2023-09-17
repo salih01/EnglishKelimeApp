@@ -18,6 +18,7 @@
 		3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */; };
 		3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */; };
 		3AB306E82AA5308A00F2B7ED /* wawes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB306E72AA5308A00F2B7ED /* wawes.json */; };
+		3AB446512AB74D9D00961472 /* SectionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB446502AB74D9D00961472 /* SectionOne.swift */; };
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AF2D27B2A92C170006B2C17 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */; };
 		3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */; };
@@ -87,6 +88,7 @@
 		3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		3AB306E72AA5308A00F2B7ED /* wawes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wawes.json; sourceTree = "<group>"; };
+		3AB446502AB74D9D00961472 /* SectionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOne.swift; sourceTree = "<group>"; };
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AF2D2792A92C170006B2C17 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		3AF2D27A2A92C170006B2C17 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		3A050D802AABBC5F00CAF460 /* SectionDataModel */ = {
 			isa = PBXGroup;
 			children = (
+				3AB4464F2AB74D1300961472 /* 1-99Word */,
 				3A050D812AABBC7200CAF460 /* 1-10Sections */,
 			);
 			path = SectionDataModel;
@@ -226,6 +229,14 @@
 				3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */,
 			);
 			path = HomeViewCell;
+			sourceTree = "<group>";
+		};
+		3AB4464F2AB74D1300961472 /* 1-99Word */ = {
+			isa = PBXGroup;
+			children = (
+				3AB446502AB74D9D00961472 /* SectionOne.swift */,
+			);
+			path = "1-99Word";
 			sourceTree = "<group>";
 		};
 		3AF2D2772A92BE4D006B2C17 /* CustomViews */ = {
@@ -736,6 +747,7 @@
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
 				CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */,
+				3AB446512AB74D9D00961472 /* SectionOne.swift in Sources */,
 				3A4287512AB4ED7D00540711 /* HomeSecondViewController.swift in Sources */,
 				CEDD434C2A799B8C00FD6B6C /* SignUpViewController.swift in Sources */,
 				3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */,

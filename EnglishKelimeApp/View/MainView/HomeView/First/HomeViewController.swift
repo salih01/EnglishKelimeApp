@@ -65,8 +65,22 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         
+        let selectedSection = SectionOneData[indexPath.row]
         if indexPath.row == 0 {
-            
+            let vc = HomeSecondViewController()
+
+            /*
+                    // Gerekli bağlantıları yapılandırın
+                    let animationName = selectedSection.animationName
+                    vc.lottieView.animation = LottieAnimation.named(animationName)
+                    vc.lottieView.contentMode = .scaleAspectFill
+                    vc.lottieView.loopMode = .loop
+                    vc.lottieView.animationSpeed = 1
+                    vc.lottieView.play()
+                    */
+                    vc.modalPresentationStyle = .fullScreen
+                    present(vc, animated: true, completion: nil)
+                
         }
         
     }
