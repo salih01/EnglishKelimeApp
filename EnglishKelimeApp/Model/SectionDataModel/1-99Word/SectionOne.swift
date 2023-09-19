@@ -28,7 +28,7 @@ struct SectionOne {
 
 var SectionOneData = [
     SectionOne(id: 0, title: "1-99 Kelime", animationName: "back&black", backView:UIColor(named: "black_")!, collectionViewCell: "cell199"),
-    SectionOne(id: 1, title: "1-99 Kelime", animationName: "199", backView:UIColor(named: "black_")!, collectionViewCell: "cell100199"),
+    SectionOne(id: 1, title: "1-99 Kelime", animationName: "back&black", backView:UIColor(named: "black_")!, collectionViewCell: "cell100199"),
 
 ]
 

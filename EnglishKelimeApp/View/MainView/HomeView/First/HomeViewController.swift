@@ -69,15 +69,17 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         if indexPath.row == 0 {
             let vc = HomeSecondViewController()
 
-            /*
                     // Gerekli bağlantıları yapılandırın
-                    let animationName = selectedSection.animationName
-                    vc.lottieView.animation = LottieAnimation.named(animationName)
-                    vc.lottieView.contentMode = .scaleAspectFill
-                    vc.lottieView.loopMode = .loop
-                    vc.lottieView.animationSpeed = 1
-                    vc.lottieView.play()
-                    */
+                    if let lottieView = vc.lottieView {
+                        lottieView.animation = LottieAnimation.named("back&black")
+                        lottieView.contentMode = .scaleAspectFill
+                        lottieView.loopMode = .loop
+                        lottieView.animationSpeed = 1
+                        lottieView.play()
+                    } else {
+                        print("LottieView is nil. Animation assignment failed.")
+                    }
+                 
                     vc.modalPresentationStyle = .fullScreen
                     present(vc, animated: true, completion: nil)
                 

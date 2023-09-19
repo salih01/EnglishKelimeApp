@@ -3,7 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22129"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,7 +14,7 @@
             <connections>
                 <outlet property="backView" destination="OMz-vg-pgd" id="eby-CG-Eef"/>
                 <outlet property="collectionView" destination="LLs-KU-GZM" id="Ifr-sn-Elg"/>
-                <outlet property="lottieView" destination="fBF-n1-JrE" id="SGp-9I-nyn"/>
+                <outlet property="lottieView" destination="fBF-n1-JrE" id="0cM-OE-O9X"/>
                 <outlet property="upView" destination="ksc-ce-ERu" id="krX-sc-Xvq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -39,7 +39,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBF-n1-JrE" userLabel="Lottie" customClass="LottieAnimationView" customModule="Lottie">
                                             <rect key="frame" x="0.0" y="79" width="375" height="196"/>
-                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="196" id="BsG-vm-UvG"/>
                                             </constraints>
@@ -116,6 +116,9 @@
             <point key="canvasLocation" x="87.200000000000003" y="19.95073891625616"/>
         </view>
     </objects>
+    <designables>
+        <designable name="fBF-n1-JrE"/>
+    </designables>
     <resources>
         <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
         <namedColor name="Background">
@@ -129,9 +132,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
