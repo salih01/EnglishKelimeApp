@@ -63,27 +63,38 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         
         let selectedSection = SectionOneData[indexPath.row]
-        if indexPath.row == 0 {
-            let vc = HomeSecondViewController()
-
-                    // Gerekli bağlantıları yapılandırın
-                    if let lottieView = vc.lottieView {
-                        lottieView.animation = LottieAnimation.named("back&black")
-                        lottieView.contentMode = .scaleAspectFill
-                        lottieView.loopMode = .loop
-                        lottieView.animationSpeed = 1
-                        lottieView.play()
-                    } else {
-                        print("LottieView is nil. Animation assignment failed.")
-                    }
-                 
-                    vc.modalPresentationStyle = .fullScreen
-                    present(vc, animated: true, completion: nil)
-                
-        }
         
+        switch indexPath.row {
+        case 0:
+            let animationName = selectedSection.animationName
+            let backViewName  = selectedSection.backView
+            let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
+            vc.animationName = animationName
+            vc.backViewName = backViewName
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        case 1:
+            let animationName = selectedSection.animationName
+            let backViewName  = selectedSection.backView
+            let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
+            vc.animationName = animationName
+            vc.backViewName = backViewName
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+            
+        case 2:
+            let animationName = selectedSection.animationName
+            let backViewName  = selectedSection.backView
+            let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
+            vc.animationName = animationName
+            vc.backViewName = backViewName
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+            
+        default:
+            print("Unhandled indexPath")
+        }
     }
 }

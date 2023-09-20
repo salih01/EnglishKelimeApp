@@ -21,14 +21,16 @@ struct SectionOne {
     var id:Int
     var title : String
     var animationName : String
-    var backView: UIColor
+    var backView: String
     var collectionViewCell:String
     
 }
 
 var SectionOneData = [
-    SectionOne(id: 0, title: "1-99 Kelime", animationName: "back&black", backView:UIColor(named: "black_")!, collectionViewCell: "cell199"),
-    SectionOne(id: 1, title: "1-99 Kelime", animationName: "back&black", backView:UIColor(named: "black_")!, collectionViewCell: "cell100199"),
+    SectionOne(id: 0, title: "1-99 Kelime", animationName: "cat2", backView:"UpworkColor", collectionViewCell: "cell199"),
+    SectionOne(id: 1, title: "100-199 Kelime", animationName: "cat", backView:"UpworkColor", collectionViewCell: "cell100199"),
+    SectionOne(id: 2, title: "200-299 Kelime", animationName: "talk", backView:"UpworkColor", collectionViewCell: "cell100199"),
+
 
 ]
 

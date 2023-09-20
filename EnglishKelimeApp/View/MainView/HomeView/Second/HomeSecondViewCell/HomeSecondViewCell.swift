@@ -9,9 +9,9 @@ import UIKit
 
 class HomeSecondViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var complateImage: UIImageView!
+    
 }

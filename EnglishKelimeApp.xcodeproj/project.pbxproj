@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A050D832AABC32B00CAF460 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A050D822AABC32B00CAF460 /* SectionModel.swift */; };
 		3A0EB0F12A96ADDE0018552A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0F02A96ADDD0018552A /* cat.json */; };
+		3A1966ED2ABB131E00CA9D1B /* talk.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A1966EC2ABB131E00CA9D1B /* talk.json */; };
 		3A250D622AA2318A00FDF128 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A250D612AA2318A00FDF128 /* success.json */; };
 		3A4287512AB4ED7D00540711 /* HomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42874F2AB4ED7D00540711 /* HomeSecondViewController.swift */; };
 		3A4287522AB4ED7D00540711 /* HomeSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */; };
@@ -79,6 +80,7 @@
 		26E4A01C2895BEBCC965BAB9 /* Pods_EnglishKelimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnglishKelimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A050D822AABC32B00CAF460 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3A0EB0F02A96ADDD0018552A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+		3A1966EC2ABB131E00CA9D1B /* talk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = talk.json; sourceTree = "<group>"; };
 		3A250D612AA2318A00FDF128 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3A42874F2AB4ED7D00540711 /* HomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondViewController.swift; sourceTree = "<group>"; };
 		3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondViewController.xib; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				3AF37F9F2AA9103300F616E5 /* white&whites.json */,
+				3A1966EC2ABB131E00CA9D1B /* talk.json */,
 				3AF37F992AA8B5F300F616E5 /* back&black.json */,
 				3A250D612AA2318A00FDF128 /* success.json */,
 				3AD0D1E12A99411200A954EC /* cat2.json */,
@@ -594,6 +597,7 @@
 				3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */,
 				3AD0D1E22A99411300A954EC /* cat2.json in Resources */,
 				3AF2D27C2A92C170006B2C17 /* ErrorViewController.xib in Resources */,
+				3A1966ED2ABB131E00CA9D1B /* talk.json in Resources */,
 				CEC0B7C72A55FC380001C767 /* Main.storyboard in Resources */,
 				3A250D622AA2318A00FDF128 /* success.json in Resources */,
 				3AF37FA02AA9103300F616E5 /* white&whites.json in Resources */,
