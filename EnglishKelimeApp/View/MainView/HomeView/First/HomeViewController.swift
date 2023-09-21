@@ -73,6 +73,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
             let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
             vc.animationName = animationName
             vc.backViewName = backViewName
+
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
         case 1:

@@ -24,6 +24,16 @@ class HomeSecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         collectionView.dataSource = self
         collectionView.delegate   = self
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 175, height: 225)
+        layout.minimumInteritemSpacing = 10 // Yatayda hücreler arası boşluk
+        layout.minimumLineSpacing = 10 // Dikeyde hücreler arası boşluk
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15) // Yatayda boşluk
+        collectionView.collectionViewLayout = layout
+        collectionView.layer.cornerRadius = 45
+        
+        
         collectionView.register(UINib(nibName: "HomeSecondViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeSecondViewCell")
 
         upView.addCornerRadiusAndShadow(cornerRadius: 40, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
@@ -46,7 +56,7 @@ class HomeSecondViewController: UIViewController {
     }
 
 }
-extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewDataSource {
+extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sectionModelAllData.count
     }
@@ -54,16 +64,20 @@ extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeSecondViewCell", for: indexPath) as! HomeSecondViewCell
-        
         // Özel hücreyi verilerle doldurun
         let sectionData = sectionModelAllData[indexPath.item]
         cell.wordLabel.text = sectionData.title
         cell.backView.backgroundColor  = sectionData.color
         cell.image.image = sectionData.images
+        cell.backView.addCornerRadiusAndShadow(cornerRadius: 35, shadowColor: .black, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         // Diğer özellikleri de doldurabilirsiniz
-        
         return cell
 
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 175, height: 225)
+        
     }
     
     
