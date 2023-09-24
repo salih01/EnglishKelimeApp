@@ -17,7 +17,7 @@ class HomeSecondViewController: UIViewController {
     var animationName: String = ""
     var backViewName:String = ""
     var sectionModelAllData = sectionModelData
-
+    var sectionOneAllData   = SectionOneData
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class HomeSecondViewController: UIViewController {
 }
 extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sectionModelAllData.count
+        return sectionOneAllData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

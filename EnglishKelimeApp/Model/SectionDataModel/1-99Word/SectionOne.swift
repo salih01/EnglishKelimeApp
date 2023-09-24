@@ -27,9 +27,9 @@ struct SectionOne {
 }
 
 var SectionOneData = [
-    SectionOne(id: 0, title: "1-99 Kelime", animationName: "cat2", backView:"UpworkColor", collectionViewCell: "cell199"),
-    SectionOne(id: 1, title: "100-199 Kelime", animationName: "cat", backView:"UpworkColor", collectionViewCell: "cell100199"),
-    SectionOne(id: 2, title: "200-299 Kelime", animationName: "talk", backView:"UpworkColor", collectionViewCell: "cell100199"),
+    SectionOne(id: 0, title: "1-10 Kelime", animationName: "cat2", backView:"UpworkColor", collectionViewCell: "cell199"),
+    SectionOne(id: 1, title: "11-19 Kelime", animationName: "cat", backView:"UpworkColor", collectionViewCell: "cell100199"),
+    SectionOne(id: 2, title: "20-29 Kelime", animationName: "talk", backView:"UpworkColor", collectionViewCell: "cell100199"),
 
 
 ]
