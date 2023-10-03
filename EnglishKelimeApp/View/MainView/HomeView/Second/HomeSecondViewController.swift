@@ -72,6 +72,8 @@ extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewData
         cell.backView.addCornerRadiusAndShadow(cornerRadius: 35, shadowColor: .black, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
         // Diğer özellikleri de doldurabilirsiniz
         return cell
+        
+        
 
     }
     
