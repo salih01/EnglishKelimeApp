@@ -19,5 +19,6 @@ struct Slide {
         Slide(imageName: "2", title: "onboarding3", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
         Slide(imageName: "3", title: "onboarding4", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak ")
         
+        
     ]
 }
