@@ -17,7 +17,6 @@ struct SectionModel {
     var shadowColor:UIColor
     var images : UIImage
     var description : String
-    
 }
 
 var sectionModelData = [
