@@ -22,6 +22,26 @@ class HomeSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        FirestoreManager.shared.get1to10Data { data in
+            if let data = data {
+                if let data1_100 = data["Data1-100"] as? [String: Any],
+                   let oneToTen = data1_100["1-10"] as? [[String: Any]] {
+                    for item in oneToTen {
+                        if let cevapA = item["A"] as? String {
+                            // "A" verisini kullanabilirsiniz
+                            print("Cevap A: \(cevapA)")
+                        }
+                    }
+                } else {
+                    // Verileri işlerken bir hata oluştu
+                    print("Veri işleme hatası")
+                }
+            } else {
+                // Hata işleme veya veri bulunamadı durumu
+                print("Veri bulunamadı veya hata oluştu.")
+            }
+        }
         collectionView.dataSource = self
         collectionView.delegate   = self
         
@@ -52,6 +72,8 @@ class HomeSecondViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
+    
+    
 
 }
 extension HomeSecondViewController:UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout {
