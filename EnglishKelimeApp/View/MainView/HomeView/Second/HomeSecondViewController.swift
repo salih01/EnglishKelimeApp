@@ -32,8 +32,6 @@ class HomeSecondViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15) // Yatayda boşluk
         collectionView.collectionViewLayout = layout
         collectionView.layer.cornerRadius = 45
-        
-        
         collectionView.register(UINib(nibName: "HomeSecondViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeSecondViewCell")
 
         upView.addCornerRadiusAndShadow(cornerRadius: 40, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
