@@ -13,6 +13,8 @@ struct Slide {
     let description:String
 
 
+
+
     static let collection:[Slide] = [
     
         Slide(imageName: "6", title: "İngilizce Kelime Öğrenmek Şimdi Çok daha kolay", description: "Tek yapmanız gereken testi çözmek ve cevapları doğru cevaplamak "),
