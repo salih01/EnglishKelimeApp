@@ -32,6 +32,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var blurView: UIImageView!
     
     var keyboardState: KeyboardState2 = .hidden
+    private var viewModel = SignInEmailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,28 +124,24 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func signInButton(_ sender: Any) {
+        viewModel.delegate = self
 
-        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty,let password2 = paswordTextField2.text, !password2.isEmpty  else {
-
-            let vc = ErrorViewController()
-            vc.animationName = "cat2"
-            vc.descriptionLabels = "Lütfen alanları boş bırakmayınız"
-            vc.modalPresentationStyle = .popover
-            self.present(vc, animated: true, completion: nil)
-            return}
-        guard password == password2 else {
-
-            let vc = ErrorViewController()
-            vc.animationName = "cat2"
-            vc.descriptionLabels = "Girilen şifreler aynı değil . Lütfen tekrar deneyiniz"
-            vc.modalPresentationStyle = .popover
-            self.present(vc, animated: true, completion: nil)
-            return}
-            // firebase login sayfasına yönlendirme
-            createUser(email: email, password: password)
-
-        
-        
+        Task {
+            try await viewModel.sign
+            // Başarılı kayıt işlemi sonrasında yapılacak işlemler
+        }
     }
     
+}
+extension SignUpViewController: SignUpViewModelDelegate {
+
+    func showErrors(_ errorMessage: String) {
+        DispatchQueue.main.async {
+            let vc = ErrorViewController()
+            vc.animationName = "cat2"
+            vc.descriptionLabels = errorMessage
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
 }
