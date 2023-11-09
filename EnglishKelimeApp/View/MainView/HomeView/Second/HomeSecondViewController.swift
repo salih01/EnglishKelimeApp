@@ -22,15 +22,7 @@ class HomeSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        FirestoreManager.shared.getAllData { data in
-            if let data = data {
-                // "AllData" koleksiyonundan gelen veriler ile burada çalışabilirsiniz
-                print("AllData verileri: \(data)")
-            } else {
-                // Hata işleme veya veri bulunamadı durumu
-                print("AllData verileri bulunamadı veya hata oluştu.")
-            }
-        }
+
         collectionView.dataSource = self
         collectionView.delegate   = self
         
