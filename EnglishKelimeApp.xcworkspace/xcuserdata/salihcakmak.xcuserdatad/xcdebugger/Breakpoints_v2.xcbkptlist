@@ -7,7 +7,70 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10FD6A9F-BAF2-425F-9CB4-A0F6B05419FB"
+            uuid = "4D8F1B19-43DB-47A3-AEF7-EA22D788C40A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "signInButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D8F1B19-43DB-47A3-AEF7-EA22D788C40A - a5db1daa9b811b81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishKelimeApp.SignUpViewController.signInButton(Any) -&gt; ()"
+                  moduleName = "EnglishKelimeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salihcakmak/Xcode/EnglishKelimeApp/EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "4D8F1B19-43DB-47A3-AEF7-EA22D788C40A - a5db1daa9b811b81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishKelimeApp.SignUpViewController.signInButton(Any) -&gt; ()"
+                  moduleName = "EnglishKelimeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salihcakmak/Xcode/EnglishKelimeApp/EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "4D8F1B19-43DB-47A3-AEF7-EA22D788C40A - a5db1daa9b811f61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishKelimeApp.SignUpViewController.signInButton(Any) -&gt; ()"
+                  moduleName = "EnglishKelimeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salihcakmak/Xcode/EnglishKelimeApp/EnglishKelimeApp/View/LoginViews/SignUpView/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F77A38D-52C3-46E6-954C-2DEBDB4A1C69"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -16,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "signIn()"
+            landmarkName = "signIn(email:password:repeatedPassword:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

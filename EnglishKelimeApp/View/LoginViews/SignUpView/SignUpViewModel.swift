@@ -9,6 +9,7 @@ import Foundation
 import FirebaseAuth
 protocol SignUpViewModelDelegate: AnyObject {
     func showErrors(_ errorMessage: String)
+    func onSuccessfulSignIn()
 }
 
 final class SignInEmailViewModel {
@@ -18,8 +19,8 @@ final class SignInEmailViewModel {
     var password = ""
     var repeatedPassword = ""
     
-    func signIn() async throws {
-        guard !email.isEmpty, !password.isEmpty, password == repeatedPassword else {
+    func signIn(email: String, password: String, repeatedPassword: String) async throws {
+        guard !email.isEmpty, !password.isEmpty else {
             delegate?.showErrors("Lütfen alanları boş bırakmayınız")
             return
         }
@@ -30,6 +31,7 @@ final class SignInEmailViewModel {
         
         do {
             try await AuthenticationManager.shared.createUser(email: email, password: password)
+            delegate?.onSuccessfulSignIn()
         } catch {
             delegate?.showErrors(error.localizedDescription)
         }

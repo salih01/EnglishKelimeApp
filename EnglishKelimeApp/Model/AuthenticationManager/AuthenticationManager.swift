@@ -17,6 +17,7 @@ final class AuthenticationManager {
     // MARK: - CREATE USER WITH FİREBASE 🔥
     func createUser(email:String,password:String) async throws -> AuthDataResultModel {
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
+        print("*** Oluşturulan Kullanıcı -> \(authDataResult)")
         return AuthDataResultModel(user: authDataResult.user)
     }
     

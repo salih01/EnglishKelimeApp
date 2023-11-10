@@ -85,39 +85,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    // MARK: - Firebase 🔥
-    func createUser(email: String, password: String) {
-      Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-          guard error == nil else {
-              let vc = ErrorViewController()
-              vc.animationName = "cat2"
-              vc.descriptionLabels = "\(error!.localizedDescription)"
-              vc.modalPresentationStyle = .popover
-              self.present(vc, animated: true, completion: nil)
-              return
 
-
-          }
-          // kullanıcı girişi burada sağlanıyor
-          if let user = authResult?.user {
-               let uid = user.uid
-               let email = user.email
-               let displayName = user.displayName
-               let photoURL = user.photoURL
-               
-               print("UID: \(uid)")
-               print("E-posta: \(email ?? "Belirtilmemiş")")
-               print("Ad ve Soyad: \(displayName ?? "Belirtilmemiş")")
-               print("Profil Resmi URL: \(photoURL?.absoluteString ?? "Belirtilmemiş")")
-           }
-          let vc = MainViewController()
-          vc.modalPresentationStyle = .fullScreen
-          self.present(vc, animated: true, completion: nil)
-          print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
-
-      }
-    }
-    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
@@ -125,15 +93,28 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func signInButton(_ sender: Any) {
         viewModel.delegate = self
+        guard let email = emailTextField.text,
+              let password = paswordTextField.text,
+              let repeatedPassword = paswordTextField2.text else {
+            return
+            
+        }
 
         Task {
-            try await viewModel.sign
-            // Başarılı kayıt işlemi sonrasında yapılacak işlemler
+            try await viewModel.signIn(email: email, password: password, repeatedPassword: repeatedPassword)
         }
     }
     
 }
 extension SignUpViewController: SignUpViewModelDelegate {
+    func onSuccessfulSignIn() {
+         DispatchQueue.main.async {
+             let vc = MainViewController()
+             vc.modalPresentationStyle = .fullScreen
+             self.present(vc, animated: true, completion: nil)
+         }
+     }
+    
 
     func showErrors(_ errorMessage: String) {
         DispatchQueue.main.async {
