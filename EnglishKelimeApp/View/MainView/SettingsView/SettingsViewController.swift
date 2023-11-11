@@ -16,9 +16,11 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var memberView: UIVisualEffectView!
     @IBOutlet weak var abautUsView: UIVisualEffectView!
     @IBOutlet weak var privacyView: UIVisualEffectView!
-    
     @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+    
+    private var viewModel = SettingsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -63,31 +65,31 @@ class SettingsViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
 
     }
-    
-    func signOut(){
-        
-        do {
-            try Auth.auth().signOut()
-                showSignOutPopup()
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
+
     
     
     @IBAction func signInButton(_ sender: UIButton) {
-        print("Tıklandı mı\(view.self)")
-
-        let vc:LoginViewController = LoginViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        viewModel.delegate = self
+        viewModel.presentLoginViewController()
     }
     
     
     @IBAction func logOut(_ sender: Any) {
-        signOut()
+        viewModel.signOut()
     }
     
+}
+
+extension SettingsViewController:SettingsViewModelDelegate {
+    func presentLoginViewController() {
+        DispatchQueue.main.async {
+            let vc:LoginViewController = LoginViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+        }
+    }
+    
+    func didSignOutSuccessfully() {
+        showSignOutPopup()
+    }
 }
