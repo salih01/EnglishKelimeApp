@@ -9,16 +9,21 @@ import Foundation
 import FirebaseAuth
 
 protocol SettingsViewModelDelegate:AnyObject {
+    func updateUI(isUserAuthenticated: Bool)
     func didSignOutSuccessfully()
     func presentLoginViewController()
+    func showSignOutPopup()
 }
 
 final class SettingsViewModel {
     
     weak var delegate:SettingsViewModelDelegate?
-    
-    func checkUserAuthentication() -> Bool {
+    var isUserAuthenticated: Bool {
         return Auth.auth().currentUser != nil
+    }
+    
+    func checkUserAuthentication() {
+        delegate?.updateUI(isUserAuthenticated: isUserAuthenticated)
     }
     
     func presentLoginViewController() {
@@ -33,7 +38,5 @@ final class SettingsViewModel {
             print(error.localizedDescription)
         }
     }
-    
-
     
 }

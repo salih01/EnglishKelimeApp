@@ -24,21 +24,10 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        print("Kullanılan View\(view.self)")
-        
-        if let currentUser = Auth.auth().currentUser {
-               // Kullanıcı oturum açmışsa "kayıt ol" butonunu gizle
-               signInButton.isHidden = true
-               logOut.isHidden = false
-           } else {
-               // Kullanıcı oturum açmamışsa "kayıt ol" butonunu göster
-               signInButton.isHidden = false
-               logOut.isHidden = true
-           }
+        viewModel.delegate = self
+        viewModel.checkUserAuthentication()
     }
-    
-    
-    
+
     func setupView(){
         loginView.layer.cornerRadius = 10
         loginView.clipsToBounds = true
@@ -55,19 +44,8 @@ class SettingsViewController: UIViewController {
         privacyView.layer.cornerRadius = 10
         privacyView.clipsToBounds = true
     }
-    func showSignOutPopup() {
-        let vc = ErrorViewController()
-        vc.animationName = "success"
-        vc.descriptionLabels = "Çıkış Yapıldı 😔"
-        vc.modalPresentationStyle = .popover
-        logOut.isHidden = true
-        signInButton.isHidden = false
-        self.present(vc, animated: true, completion: nil)
 
-    }
 
-    
-    
     @IBAction func signInButton(_ sender: UIButton) {
         viewModel.delegate = self
         viewModel.presentLoginViewController()
@@ -81,12 +59,29 @@ class SettingsViewController: UIViewController {
 }
 
 extension SettingsViewController:SettingsViewModelDelegate {
+    func updateUI(isUserAuthenticated: Bool) {
+        DispatchQueue.main.async {
+            self.signInButton.isHidden = isUserAuthenticated
+            self.logOut.isHidden = !isUserAuthenticated
+        }
+    }
+    
     func presentLoginViewController() {
         DispatchQueue.main.async {
             let vc:LoginViewController = LoginViewController()
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
+    }
+    func showSignOutPopup() {
+        let vc = ErrorViewController()
+        vc.animationName = "success"
+        vc.descriptionLabels = "Çıkış Yapıldı 😔"
+        vc.modalPresentationStyle = .popover
+        logOut.isHidden = true
+        signInButton.isHidden = false
+        self.present(vc, animated: true, completion: nil)
+
     }
     
     func didSignOutSuccessfully() {
