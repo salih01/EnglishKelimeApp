@@ -21,6 +21,7 @@
 		3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */; };
 		3AB306E82AA5308A00F2B7ED /* wawes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB306E72AA5308A00F2B7ED /* wawes.json */; };
 		3AB446512AB74D9D00961472 /* SectionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB446502AB74D9D00961472 /* SectionOne.swift */; };
+		3AC6C2332B0230320071A313 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6C2322B0230320071A313 /* LoginViewModel.swift */; };
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
 		3AEF861B2AFCFEB700FFC107 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF86192AFCFEB700FFC107 /* AuthenticationManager.swift */; };
 		3AEF861C2AFCFEB700FFC107 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF861A2AFCFEB700FFC107 /* AuthDataResultModel.swift */; };
@@ -96,6 +97,7 @@
 		3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		3AB306E72AA5308A00F2B7ED /* wawes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wawes.json; sourceTree = "<group>"; };
 		3AB446502AB74D9D00961472 /* SectionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOne.swift; sourceTree = "<group>"; };
+		3AC6C2322B0230320071A313 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
 		3AEF86192AFCFEB700FFC107 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		3AEF861A2AFCFEB700FFC107 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			children = (
 				CEEE67C32A5C8EEB00805434 /* LoginViewController.swift */,
 				CEEE67C42A5C8EEB00805434 /* LoginViewController.xib */,
+				3AC6C2322B0230320071A313 /* LoginViewModel.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				3AEF861B2AFCFEB700FFC107 /* AuthenticationManager.swift in Sources */,
 				CEC0B7C22A55FC380001C767 /* SceneDelegate.swift in Sources */,
 				CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */,
+				3AC6C2332B0230320071A313 /* LoginViewModel.swift in Sources */,
 				3AEF861E2AFD01BE00FFC107 /* SignUpViewModel.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,

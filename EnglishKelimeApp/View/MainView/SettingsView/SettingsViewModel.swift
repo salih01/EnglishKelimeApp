@@ -32,7 +32,7 @@ final class SettingsViewModel {
     
     func signOut() {
         do {
-            try Auth.auth().signOut()
+            try AuthenticationManager.shared.signOut()
             delegate?.didSignOutSuccessfully()
         } catch {
             print(error.localizedDescription)

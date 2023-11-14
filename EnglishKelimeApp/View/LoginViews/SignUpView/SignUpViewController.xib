@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -142,7 +142,7 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <color key="backgroundColor" name="MainColorUp"/>
                                     <constraints>
                                         <constraint firstItem="frY-vQ-aIK" firstAttribute="leading" secondItem="OCH-j7-StS" secondAttribute="leading" constant="14" id="XGp-8y-2Wy"/>
                                         <constraint firstAttribute="bottom" secondItem="frY-vQ-aIK" secondAttribute="bottom" constant="20" symbolic="YES" id="lUK-yy-Uvh"/>
@@ -219,7 +219,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" name="MainColor"/>
                     <constraints>
                         <constraint firstItem="BRR-C5-Hlm" firstAttribute="leading" secondItem="djs-oW-Z7E" secondAttribute="leading" constant="11" id="2m0-of-5ZO"/>
                         <constraint firstItem="szZ-t1-HQj" firstAttribute="leading" secondItem="djs-oW-Z7E" secondAttribute="leading" constant="-8" id="BSo-Gz-7hn"/>
@@ -233,7 +233,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Cei-Zu-4Dd"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="MainColor"/>
             <constraints>
                 <constraint firstItem="djs-oW-Z7E" firstAttribute="top" secondItem="MrR-u8-EKC" secondAttribute="top" id="EKz-4n-5pm"/>
                 <constraint firstItem="djs-oW-Z7E" firstAttribute="leading" secondItem="Cei-Zu-4Dd" secondAttribute="leading" id="Y3a-5R-eA6"/>
@@ -251,6 +251,12 @@
         <namedColor name="Dyellow">
             <color red="0.90600001811981201" green="0.6940000057220459" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.96470588450000005" green="0.96470588450000005" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainColorUp">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="Yellow">
             <color red="0.97600001096725464" green="0.85100001096725464" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -258,10 +264,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

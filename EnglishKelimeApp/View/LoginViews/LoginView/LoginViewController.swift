@@ -16,7 +16,6 @@ enum KeyboardState {
 class LoginViewController: UIViewController ,UITextFieldDelegate{
     
     weak var onboardingDelegates:OnboardingDelegate?
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var paswordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
@@ -33,12 +32,14 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var backImage: UIImageView!
     
     var keyboardState: KeyboardState = .hidden
-    
+    private var viewModel = LoginViewModel()
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        viewModel.delegate        = self
         emailTextField.delegate   = self
         paswordTextField.delegate = self
     }
@@ -90,53 +91,20 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         }
     }
     
-    // MARK: - Firebase 🔥
-    func createUser(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-            guard error == nil else {
-                let vc = ErrorViewController()
-                vc.animationName = "cat2"
-                vc.descriptionLabels = "\(error!.localizedDescription)"
-                vc.modalPresentationStyle = .popover
-                self.present(vc, animated: true, completion: nil)
-                return
-                
-                
-            }
-            if let _ = authResult?.user.uid {
-                
-                let vc = MainViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
-                print("Oluşturulan kullanıcı: \(authResult?.user.uid)")
-            }
-        }
-    }
+    
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
-        
-        
-        
-        
-        
+
     }
     
     @IBAction func logInButton(_ sender: Any) {
-        
-        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty  else {
-            
-            let vc = ErrorViewController()
-            vc.animationName = "cat2"
-            vc.descriptionLabels = "Lütfen alanları boş bırakmayınız"
-            vc.modalPresentationStyle = .popover
-            self.present(vc, animated: true, completion: nil)
-            return}
-        createUser(email: email, password: password)
-        
-        
-        
+        viewModel.delegate = self
+        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty  else {return}
+        Task {
+            try await viewModel.signIn(email:email,password:password)
+        }
     }
     
     
@@ -146,4 +114,23 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         present(vc, animated: true, completion: nil)
         
     }
+}
+extension LoginViewController:LoginViewModelDelegate {
+    func showErrors(_ errorMessage: String) {
+        DispatchQueue.main.async {
+            let vc = ErrorViewController()
+            vc.animationName = "cat2"
+            vc.descriptionLabels = errorMessage
+            vc.modalPresentationStyle = .popover
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func showMainView() {
+        DispatchQueue.main.async {
+        let vc = MainViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+       }
+     }
 }
