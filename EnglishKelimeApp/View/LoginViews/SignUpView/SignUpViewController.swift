@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 import GoogleSignInSwift
+import AuthenticationServices
 
 enum KeyboardState2 {
     case shown
@@ -42,8 +43,10 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         initUI()
         emailTextField.delegate   = self
         paswordTextField.delegate = self
+        viewModel.delegate = self
         customizeGoogleSignInButton()
     }
+
 
     func initUI() {
         
@@ -138,6 +141,13 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
 
     @objc func customGoogleSignInAction() {
         // Handle the custom Google Sign-In button action
+        Task {
+            do {
+                try await viewModel.signInGoogle()
+            } catch {
+                
+            }
+        }
     }
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -160,6 +170,11 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
 }
 extension SignUpViewController: SignUpViewModelDelegate {
+
+    func getPresentingViewController() -> UIViewController {
+        return self
+    }
+
     func onSuccessfulSignIn() {
          DispatchQueue.main.async {
              let vc = MainViewController()

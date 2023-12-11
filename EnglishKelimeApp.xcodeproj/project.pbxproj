@@ -23,6 +23,7 @@
 		3AB446512AB74D9D00961472 /* SectionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB446502AB74D9D00961472 /* SectionOne.swift */; };
 		3AC6C2332B0230320071A313 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6C2322B0230320071A313 /* LoginViewModel.swift */; };
 		3AD0D1E22A99411300A954EC /* cat2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD0D1E12A99411200A954EC /* cat2.json */; };
+		3AE86FB52B274627006B5D47 /* GoogleSignInResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE86FB42B274627006B5D47 /* GoogleSignInResultModel.swift */; };
 		3AEF861B2AFCFEB700FFC107 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF86192AFCFEB700FFC107 /* AuthenticationManager.swift */; };
 		3AEF861C2AFCFEB700FFC107 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF861A2AFCFEB700FFC107 /* AuthDataResultModel.swift */; };
 		3AEF861E2AFD01BE00FFC107 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF861D2AFD01BE00FFC107 /* SignUpViewModel.swift */; };
@@ -99,6 +100,7 @@
 		3AB446502AB74D9D00961472 /* SectionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOne.swift; sourceTree = "<group>"; };
 		3AC6C2322B0230320071A313 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3AD0D1E12A99411200A954EC /* cat2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat2.json; sourceTree = "<group>"; };
+		3AE86FB42B274627006B5D47 /* GoogleSignInResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInResultModel.swift; sourceTree = "<group>"; };
 		3AEF86192AFCFEB700FFC107 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		3AEF861A2AFCFEB700FFC107 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		3AEF861D2AFD01BE00FFC107 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				3AEF86192AFCFEB700FFC107 /* AuthenticationManager.swift */,
 				3AEF861A2AFCFEB700FFC107 /* AuthDataResultModel.swift */,
+				3AE86FB42B274627006B5D47 /* GoogleSignInResultModel.swift */,
 			);
 			path = AuthenticationManager;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 				CE606C272A65D78E00B23001 /* SlideOnboarding.swift in Sources */,
 				3AC6C2332B0230320071A313 /* LoginViewModel.swift in Sources */,
 				3AEF861E2AFD01BE00FFC107 /* SignUpViewModel.swift in Sources */,
+				3AE86FB52B274627006B5D47 /* GoogleSignInResultModel.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
 				CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */,

@@ -7,10 +7,15 @@
 
 import Foundation
 import FirebaseAuth
+import GoogleSignIn
+import GoogleSignInSwift
+
 protocol SignUpViewModelDelegate: AnyObject {
     func showErrors(_ errorMessage: String)
     func onSuccessfulSignIn()
+    func getPresentingViewController() -> UIViewController
 }
+
 
 final class SignInEmailViewModel {
     
@@ -36,4 +41,30 @@ final class SignInEmailViewModel {
             delegate?.showErrors(error.localizedDescription)
         }
     }
+    
+    func signInGoogle() async throws {
+        
+        guard let presentingViewController = delegate?.getPresentingViewController() else {
+            // Hata yönetimi - uygun ViewController bulunamadı
+            return
+        }
+        let gidSignInResult = try await GIDSignIn.sharedInstance.signIn(withPresenting: presentingViewController)
+
+
+        guard let idToken = gidSignInResult.user.idToken?.tokenString else {
+              throw URLError(.badServerResponse)
+        }
+        let accessToken = gidSignInResult.user.accessToken.tokenString
+        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken)
+        
+        do {
+              try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
+                delegate?.onSuccessfulSignIn()
+          } catch {
+              delegate?.showErrors(error.localizedDescription)
+          }
+        
+    }
 }
+
+
