@@ -141,14 +141,16 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
 
     @objc func customGoogleSignInAction() {
         // Handle the custom Google Sign-In button action
-        Task {
+        Task.detached {
             do {
-                try await viewModel.signInGoogle()
+                try await self.viewModel.signInGoogle()
             } catch {
-                
+                // Handle errors
             }
         }
     }
+
+
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
