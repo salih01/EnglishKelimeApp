@@ -20,16 +20,12 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var paswordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
-    
-    @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var emailPaswordView: UIView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var personIcon: UIImageView!
-    @IBOutlet weak var lockIcon: UIImageView!
     @IBOutlet weak var signInButton: UIButton!
+    
     @IBOutlet weak var backView: UIView!
-    @IBOutlet weak var backImage: UIImageView!
+    
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: UIView!
     
     var keyboardState: KeyboardState = .hidden
     private var viewModel = LoginViewModel()
@@ -42,6 +38,10 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         viewModel.delegate        = self
         emailTextField.delegate   = self
         paswordTextField.delegate = self
+        applyCornerRadiusAndShadow(to: emailView, cornerRadius: 10, shadowOpacity: 1, shadowRadius: 30, shadowOffset: CGSize(width: 0, height: 11))
+           applyCornerRadiusAndShadow(to: passwordView, cornerRadius: 10, shadowOpacity: 1, shadowRadius: 30, shadowOffset: CGSize(width: 0, height: 11))
+
+
     }
     
     func initUI() {
@@ -50,46 +50,29 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         signInButton.hapticFeedback(style: .light)
         emailTextField.layer.cornerRadius = 5
         paswordTextField.layer.cornerRadius = 5
-        imageView.addCornerRadius(radius: 30)
         
-        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-        signInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-        emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 0.5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 5)
-        //        self.hideKeyboardWhenTappedAround()
-        
-        personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-        lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewRed")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
+        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"UpworkColorButton")!, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 3), shadowRadius: 3)
+
         backView.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor:.black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-      //  backImage.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-      //  backImage.blurEffect(view: backImage, alpha: 0.98)
-        
-        
-        
+ 
     }
-    // Klavye gösterilmeye başlandığında çağrılır
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateStackView(for: .shown)
+    func applyCornerRadiusAndShadow(to view: UIView, cornerRadius: CGFloat, shadowOpacity: Float, shadowRadius: CGFloat, shadowOffset: CGSize) {
+        // Corner radius uygula
+        view.layer.cornerRadius = cornerRadius
+
+        // UIBezierPath ve gölge uygula
+        let shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: cornerRadius)
+        let layer = CALayer()
+        layer.shadowPath = shadowPath.cgPath
+        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowRadius = shadowRadius
+        layer.shadowOffset = shadowOffset
+        layer.bounds = view.bounds
+        layer.position = view.center
+        view.layer.addSublayer(layer)
     }
-    
-    // Klavye gizlendiğinde çağrılır
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        animateStackView(for: .hidden)
-        self.hideKeyboardWhenTappedAround()
-    }
-    
-    // Klavye durumuna göre animasyonu gerçekleştiren fonksiyon
-    private func animateStackView(for state: KeyboardState) {
-        switch state {
-        case .shown:
-            UIView.animate(withDuration: 0.5) {
-                self.stackView.transform = CGAffineTransform(translationX: 0, y: -260)
-            }
-        case .hidden:
-            UIView.animate(withDuration: 0.5) {
-                self.stackView.transform = .identity
-            }
-        }
-    }
+
     
     
     
