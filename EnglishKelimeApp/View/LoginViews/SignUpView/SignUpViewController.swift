@@ -11,11 +11,6 @@ import GoogleSignIn
 import GoogleSignInSwift
 import AuthenticationServices
 
-enum KeyboardState2 {
-    case shown
-    case hidden
-}
-
 class SignUpViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
@@ -34,7 +29,6 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var blurView: UIImageView!
     @IBOutlet weak var signInButton:GIDSignInButton!
-    var keyboardState: KeyboardState2 = .hidden
     private var viewModel = SignInEmailViewModel()
 
     
@@ -69,30 +63,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         
 
     }
-    // Klavye gösterilmeye başlandığında çağrılır
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateStackView(for: .shown)
-    }
 
-    // Klavye gizlendiğinde çağrılır
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        animateStackView(for: .hidden)
-        self.hideKeyboardWhenTappedAround()
-    }
-
-    // Klavye durumuna göre animasyonu gerçekleştiren fonksiyon
-    private func animateStackView(for state: KeyboardState) {
-        switch state {
-        case .shown:
-            UIView.animate(withDuration: 0.5) {
-                self.stackView.transform = CGAffineTransform(translationX: 0, y: -260)
-            }
-        case .hidden:
-            UIView.animate(withDuration: 0.5) {
-                self.stackView.transform = .identity
-            }
-        }
-    }
     func customizeGoogleSignInButton() {
         guard let googleSignInButton = signInButton as? GIDSignInButton else {
             return
