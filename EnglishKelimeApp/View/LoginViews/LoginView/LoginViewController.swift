@@ -35,6 +35,8 @@ class LoginViewController: UIViewController {
         emailTextField.delegate   = self
         paswordTextField.delegate = self
         customizeGoogleSignInButton()
+        hideKeyboardWhenTappedAround()
+
     }
     
     func initUI() {
@@ -91,12 +93,9 @@ class LoginViewController: UIViewController {
             googleLogoImageView.widthAnchor.constraint(equalToConstant: 30), // Google logosu genişliği
             googleLogoImageView.heightAnchor.constraint(equalToConstant: 30), // Google logosu yüksekliği
 
-            // Diğer constraint'leri oluşturun
             customGoogleSignInButton.topAnchor.constraint(equalTo: logInButton.bottomAnchor, constant: 24),
             customGoogleSignInButton.heightAnchor.constraint(equalToConstant: 56),
             customGoogleSignInButton.widthAnchor.constraint(equalToConstant: 305),
-
-            // Yeni bir constraint ekleyerek X ekseninde ekranın ortasına konumlandırın
             customGoogleSignInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 
             
@@ -107,7 +106,7 @@ class LoginViewController: UIViewController {
         // Handle the custom Google Sign-In button action
         Task.detached {
             do {
-              //  try await self.viewModel.signInGoogle()
+                try await self.viewModel.signInGoogle()
             } catch {
                 // Handle errors
             }
@@ -123,7 +122,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func logInButton(_ sender: Any) {
         viewModel.delegate = self
-        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty  else {return}
+        guard let email = emailTextField.text ,!email.isEmpty, let password = paswordTextField.text,!password.isEmpty  else {
+            return showErrors("Lütfen alanları boş bırakmayınız")}
         Task {
             try await viewModel.signIn(email:email,password:password)
         }
@@ -138,6 +138,18 @@ class LoginViewController: UIViewController {
     }
 }
 extension LoginViewController:LoginViewModelDelegate {
+    func onSuccessfulSignIn() {
+        DispatchQueue.main.async {
+            let vc = MainViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func getPresentingViewController() -> UIViewController {
+        return self
+    }
+    
     func showErrors(_ errorMessage: String) {
         DispatchQueue.main.async {
             let vc = ErrorViewController()

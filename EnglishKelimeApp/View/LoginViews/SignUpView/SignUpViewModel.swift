@@ -20,9 +20,7 @@ protocol SignUpViewModelDelegate: AnyObject {
 final class SignInEmailViewModel {
     
     weak var delegate: SignUpViewModelDelegate?
-    var email = ""
-    var password = ""
-    var repeatedPassword = ""
+
     
     func signIn(email: String, password: String, repeatedPassword: String) async throws {
         guard !email.isEmpty, !password.isEmpty else {

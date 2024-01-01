@@ -16,6 +16,7 @@
 		3A4287522AB4ED7D00540711 /* HomeSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */; };
 		3A4287562AB5065000540711 /* HomeSecondViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4287542AB5065000540711 /* HomeSecondViewCell.swift */; };
 		3A4287572AB5065000540711 /* HomeSecondViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4287552AB5065000540711 /* HomeSecondViewCell.xib */; };
+		3A4D9E1C2B42D86200895E9D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D9E1B2B42D86200895E9D /* MainViewModel.swift */; };
 		3A7EDD9A2A90EF3E006A0F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */; };
 		3A81E1872AAA034B00D18053 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */; };
 		3A81E1882AAA034B00D18053 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */; };
@@ -93,6 +94,7 @@
 		3A4287502AB4ED7D00540711 /* HomeSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondViewController.xib; sourceTree = "<group>"; };
 		3A4287542AB5065000540711 /* HomeSecondViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondViewCell.swift; sourceTree = "<group>"; };
 		3A4287552AB5065000540711 /* HomeSecondViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondViewCell.xib; sourceTree = "<group>"; };
+		3A4D9E1B2B42D86200895E9D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		3A7EDD992A90EF3E006A0F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A81E1852AAA034B00D18053 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3A81E1862AAA034B00D18053 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			children = (
 				CE29668F2A56C65000E3E533 /* MainViewController.swift */,
 				CE2966902A56C65000E3E533 /* MainViewController.xib */,
+				3A4D9E1B2B42D86200895E9D /* MainViewModel.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				3AEF861E2AFD01BE00FFC107 /* SignUpViewModel.swift in Sources */,
 				3AE86FB52B274627006B5D47 /* GoogleSignInResultModel.swift in Sources */,
 				CE2966972A56DB1300E3E533 /* SplashViewController.swift in Sources */,
+				3A4D9E1C2B42D86200895E9D /* MainViewModel.swift in Sources */,
 				CEC0B7CA2A55FC380001C767 /* EnglishKelimeApp.xcdatamodeld in Sources */,
 				CE7BB8D12A7DAD750097DD56 /* SettingsViewController.swift in Sources */,
 				3AB446512AB74D9D00961472 /* SectionOne.swift in Sources */,

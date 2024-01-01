@@ -30,7 +30,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="390" height="823"/>
                     <color key="backgroundColor" red="0.96470588450000005" green="0.94509804249999996" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-Ct-DYw">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-Ct-DYw">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="823"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgG-Rd-Auk" userLabel="ContentView">

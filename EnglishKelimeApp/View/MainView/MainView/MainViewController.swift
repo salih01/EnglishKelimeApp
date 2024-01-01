@@ -12,11 +12,20 @@ class MainViewController: UIViewController {
     @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var blurView2: UIView!
     @IBOutlet var contentView: UIView!
-    
+    var viewModel = MainViewModel()
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
         initUI()
+        Task {
+            do {
+                try await initAsync()
+            } catch {
+                // Handle errors
+                print("An error occurred: \(error)")
+            }
+        }
     }
     func initUI(){
         
@@ -35,6 +44,19 @@ class MainViewController: UIViewController {
         self.addChild(homeView)
         homeView.didMove(toParent: self)
     }
+    
+    func initAsync() async throws {
+        do {
+            try await viewModel.signInAnonymous()
+            print("Ananoymous tetiklendi")
+
+        } catch {
+            // Handle errors
+            print("An error occurred during async initialization: \(error)")
+            throw error
+        }
+    }
+ 
 
     @IBAction func homeButton(_ sender: UIButton) {
         let tag = sender.tag

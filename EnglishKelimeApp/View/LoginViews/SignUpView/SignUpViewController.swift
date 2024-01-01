@@ -13,21 +13,18 @@ import AuthenticationServices
 
 class SignUpViewController: UIViewController,UITextFieldDelegate {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var stackView: UIStackView!
+
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var paswordTextField: UITextField!
     @IBOutlet weak var paswordTextField2: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var emailPaswordView: UIView!
-    @IBOutlet weak var personIcon: UIImageView!
-    @IBOutlet weak var lockIcon: UIImageView!
-    @IBOutlet weak var lockIcon2: UIImageView!
     
-    @IBOutlet weak var backImage: UIImageView!
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var passwordView2: UIView!
+
     @IBOutlet weak var backView: UIView!
-    @IBOutlet weak var blurView: UIImageView!
     @IBOutlet weak var signInButton:GIDSignInButton!
     private var viewModel = SignInEmailViewModel()
 
@@ -37,8 +34,11 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         initUI()
         emailTextField.delegate   = self
         paswordTextField.delegate = self
+        paswordTextField2.delegate = self
+
         viewModel.delegate = self
         customizeGoogleSignInButton()
+        hideKeyboardWhenTappedAround()
     }
 
 
@@ -47,20 +47,14 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         emailTextField.layer.cornerRadius = 10
         paswordTextField.layer.cornerRadius = 10
         paswordTextField2.layer.cornerRadius = 10
-        imageView.addCornerRadius(radius: 30)
         logInButton.hapticFeedback(style: .light)
         backButton.hapticFeedback(style: .light)
+      
+        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"UpworkColorButton")!, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 3), shadowRadius: 3)
         
-//        imageView.blurEffect(view: imageView, alpha: 0.6)
-        personIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-        lockIcon.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-        lockIcon2.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-        logInButton.addCornerRadiusAndShadow(cornerRadius: 15, shadowColor: UIColor(named:"NewYellow")!, shadowOpacity: 0.7, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
-        emailPaswordView.addCornerRadiusAndShadow(cornerRadius: 20, shadowColor: .black, shadowOpacity: 5, shadowOffset: CGSize(width: 2, height: 5), shadowRadius: 10)
-        backView.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor:.black, shadowOpacity: 5, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 5)
-      //  backImage.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: .black, shadowOpacity: 10, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 10)
-      //  backImage.blurEffect(view: backImage, alpha: 0.98)
-        
+        emailView.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: UIColor(named:"UpworkColorButton")!, shadowOpacity: 0.1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
+        passwordView.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: UIColor(named:"UpworkColorButton")!, shadowOpacity: 0.1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
+        passwordView2.addCornerRadiusAndShadow(cornerRadius: 10, shadowColor: UIColor(named:"UpworkColorButton")!, shadowOpacity: 0.1, shadowOffset: CGSize(width: 0, height: 5), shadowRadius: 3)
 
     }
 
@@ -103,10 +97,12 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
             googleLogoImageView.widthAnchor.constraint(equalToConstant: 30), // Google logosu genişliği
             googleLogoImageView.heightAnchor.constraint(equalToConstant: 30), // Google logosu yüksekliği
 
-            customGoogleSignInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30), // Sol tarafta 16 birim boşluk
-            customGoogleSignInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30), // Sağ tarafta 16 birim boşluk
-            customGoogleSignInButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60), // Bottomdan 55 birim yukarıda
-            customGoogleSignInButton.heightAnchor.constraint(equalToConstant: 40), // Adjust the height as needed
+            customGoogleSignInButton.topAnchor.constraint(equalTo: logInButton.bottomAnchor, constant: 24),
+            customGoogleSignInButton.heightAnchor.constraint(equalToConstant: 56),
+            customGoogleSignInButton.widthAnchor.constraint(equalToConstant: 305),
+            customGoogleSignInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+
+            
         ])
     }
 
@@ -132,8 +128,7 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         guard let email = emailTextField.text,
               let password = paswordTextField.text,
               let repeatedPassword = paswordTextField2.text else {
-            return
-            
+            return showErrors("Lütfen alanları boş bırakmayınız")
         }
 
         Task {

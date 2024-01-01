@@ -9,10 +9,35 @@ import Foundation
 import FirebaseAuth
 
 
+enum AuthProviderOption:String {
+    case email = "password"
+    case google = "google.com"
+}
+
 final class AuthenticationManager {
     
     static let shared = AuthenticationManager()
     private init(){}
+    
+    // MARK: -  Providers
+    func getProviders() throws-> [AuthProviderOption]{
+        guard let providerData = Auth.auth().currentUser?.providerData else {
+            throw URLError(.badServerResponse)
+        }
+        var providers:[AuthProviderOption] = []
+        
+        for provider in providerData {
+            if let option = AuthProviderOption(rawValue: provider.providerID) {
+                providers.append(option)
+            } else {
+                assertionFailure("Provider Option bulunamadı : \(provider.providerID)")
+                
+            }
+           
+        }
+        print("providers: -> \(providers)")
+        return providers
+    }
     
     // MARK: - GET USER
     func getAuthenticatedUser() throws -> AuthDataResultModel {
@@ -57,4 +82,14 @@ extension AuthenticationManager {
         return AuthDataResultModel(user: authDataResult.user)
     }
     
+}
+
+// MARK: -  SIGN IN ANONYMOUS
+
+extension AuthenticationManager {
+    
+    func signInAnonymous() async throws  -> AuthDataResultModel{
+        let authDataResult = try await Auth.auth().signInAnonymously()
+        return AuthDataResultModel(user: authDataResult.user)
+    }
 }
