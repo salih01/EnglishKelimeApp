@@ -32,8 +32,10 @@ final class AuthenticationManager {
             } else {
                 assertionFailure("Provider Option bulunamadı : \(provider.providerID)")
                 
+                
+                
+                
             }
-           
         }
         print("providers: -> \(providers)")
         return providers
