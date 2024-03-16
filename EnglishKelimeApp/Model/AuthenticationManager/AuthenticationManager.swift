@@ -65,6 +65,16 @@ final class AuthenticationManager {
        try Auth.auth().signOut()
     }
     
+    func signInAnonymouslyIfNeeded() async throws {
+        if let currentUser = Auth.auth().currentUser, !currentUser.isAnonymous {
+            print("Kullanıcı zaten oturum açmış ve anonim değil.")
+            return
+        }
+        if Auth.auth().currentUser == nil {
+            let authDataResult = try await Auth.auth().signInAnonymously()
+            print("Anonim oturum açıldı: \(authDataResult.user)")
+        }
+    }
 }
 
 // MARK: -  Sign In SSO

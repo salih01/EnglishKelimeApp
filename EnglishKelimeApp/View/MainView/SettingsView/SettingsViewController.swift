@@ -61,8 +61,8 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController:SettingsViewModelDelegate {
     func updateUI(isUserAuthenticated: Bool) {
         DispatchQueue.main.async {
-            self.signInButton.isHidden = isUserAuthenticated
             self.logOut.isHidden = !isUserAuthenticated
+            self.signInButton.isHidden = isUserAuthenticated
         }
     }
     

@@ -10,6 +10,6 @@ import Foundation
 class MainViewModel {
     
     func signInAnonymous() async throws{
-        try await AuthenticationManager.shared.signInAnonymous()
+        try await AuthenticationManager.shared.signInAnonymouslyIfNeeded()
     }
 }

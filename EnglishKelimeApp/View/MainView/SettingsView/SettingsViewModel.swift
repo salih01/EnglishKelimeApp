@@ -18,12 +18,16 @@ protocol SettingsViewModelDelegate:AnyObject {
 final class SettingsViewModel {
     
     weak var delegate:SettingsViewModelDelegate?
-    var isUserAuthenticated: Bool {
-        return Auth.auth().currentUser != nil
+    var isRealUserLoggedIn: Bool {
+        if let currentUser = Auth.auth().currentUser {
+            return !currentUser.isAnonymous // Anonim olmayan kullanıcılar için true döner
+        }
+        return false // Kullanıcı oturum açmamışsa
     }
     
     func checkUserAuthentication() {
-        delegate?.updateUI(isUserAuthenticated: isUserAuthenticated)
+        // Delegate üzerinden UI güncelleme
+        delegate?.updateUI(isUserAuthenticated: isRealUserLoggedIn)
     }
     
     func presentLoginViewController() {

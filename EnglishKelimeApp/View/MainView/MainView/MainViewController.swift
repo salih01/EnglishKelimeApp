@@ -48,10 +48,7 @@ class MainViewController: UIViewController {
     func initAsync() async throws {
         do {
             try await viewModel.signInAnonymous()
-            print("Ananoymous tetiklendi")
-
         } catch {
-            // Handle errors
             print("An error occurred during async initialization: \(error)")
             throw error
         }
