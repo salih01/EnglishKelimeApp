@@ -32,8 +32,6 @@ class HomeViewController: UIViewController {
         animationView.configureAndPlay(animationName: "back&black")
     }
     
-
-    
 }
 
 extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
