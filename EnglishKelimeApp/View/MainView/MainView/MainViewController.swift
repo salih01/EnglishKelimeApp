@@ -16,7 +16,8 @@ class MainViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        navigationController?.navigationBar.isHidden = true
+        contentView.isHidden = false
         initUI()
         Task {
             do {

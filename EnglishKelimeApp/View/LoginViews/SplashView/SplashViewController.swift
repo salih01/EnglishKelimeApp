@@ -20,20 +20,18 @@ class SplashViewController: UIViewController {
         launchView.addCornerRadius(radius: 15.0)
         
     }
-    private func showinitialView() {
-        if isUserLoggedIn {
-            let vc = MainViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
-        } else {
-//            let vc = OnboardingViewController()
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true, completion: nil)
-            let vc = MainViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
-            
-            
+    private func showInitialView() {
+        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+            if isUserLoggedIn {
+                // Kullanıcı giriş yapmışsa, MainViewController'ı göster
+                let mainVC = MainViewController()
+                sceneDelegate.window?.rootViewController = UINavigationController(rootViewController: mainVC)
+            } else {
+                // Kullanıcı giriş yapmamışsa, OnboardingViewController'ı göster
+                let onboardingVC = OnboardingViewController()
+                sceneDelegate.window?.rootViewController = UINavigationController(rootViewController: onboardingVC)
+            }
+            sceneDelegate.window?.makeKeyAndVisible()
         }
     }
     
@@ -43,7 +41,7 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         delay(durationInSeconds: 2.0) {
-            self.showinitialView()
+            self.showInitialView()
         }
     }
     

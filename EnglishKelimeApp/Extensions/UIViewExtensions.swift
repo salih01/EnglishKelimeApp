@@ -93,4 +93,17 @@ extension LottieAnimationView {
 }
 
 
+extension LottieAnimationView {
+    func configureAndPlay(animationName: String, contentMode: UIView.ContentMode = .scaleAspectFill, loopMode: LottieLoopMode = .loop, animationSpeed: CGFloat = 1.0) {
+        guard let animation = LottieAnimation.named(animationName) else {
+            print("Animation named '\(animationName)' not found.")
+            return
+        }
+        self.animation = animation
+        self.contentMode = contentMode
+        self.loopMode = loopMode
+        self.animationSpeed = animationSpeed
+        self.play()
+    }
+}
 

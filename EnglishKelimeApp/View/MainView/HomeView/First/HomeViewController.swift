@@ -20,17 +20,16 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate   = self
         setupAnimation()
-
-    }
-
-    private func setupAnimation() {
-        let animationName = "back&black"
         
-        animationView.animation = LottieAnimation.named(animationName)
-        animationView.contentMode = .scaleAspectFill
-        animationView.loopMode = .loop
-        animationView.animationSpeed = 1
-        animationView.play()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    private func setupAnimation() {
+        animationView.configureAndPlay(animationName: "back&black")
     }
     
 
@@ -73,26 +72,21 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
             let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
             vc.animationName = animationName
             vc.backViewName = backViewName
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             let animationName = selectedSection.animationName
             let backViewName  = selectedSection.backView
             let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
             vc.animationName = animationName
             vc.backViewName = backViewName
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
-            
+            self.navigationController?.pushViewController(vc, animated: true)
         case 2:
             let animationName = selectedSection.animationName
             let backViewName  = selectedSection.backView
             let vc = HomeSecondViewController(nibName: "HomeSecondViewController", bundle: nil)
             vc.animationName = animationName
             vc.backViewName = backViewName
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
-            
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("Unhandled indexPath")
         }

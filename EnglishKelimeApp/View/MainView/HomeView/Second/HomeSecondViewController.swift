@@ -22,10 +22,8 @@ class HomeSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
         collectionView.dataSource = self
         collectionView.delegate   = self
-        
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 175, height: 225)
         layout.minimumInteritemSpacing = 10 // Yatayda hücreler arası boşluk
@@ -51,7 +49,8 @@ class HomeSecondViewController: UIViewController {
     
     
     @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
     

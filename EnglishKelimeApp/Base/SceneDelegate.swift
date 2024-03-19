@@ -24,9 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          let window = UIWindow(windowScene: windowScene)
          
          /// 3. Create a view hierarchy programmatically
-         let splashviewController = SplashViewController()
-         let navigation = UINavigationController(rootViewController: splashviewController)
-         
+        let mainViewController = MainViewController()
+        let navigation = UINavigationController(rootViewController: mainViewController)
+//        let splashviewController = SplashViewController()
+//        let navigation = UINavigationController(rootViewController: splashviewController)
+        
          /// 4. Set the root view controller of the window with your view controller
          window.rootViewController = navigation
          
