@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  EnglishKelimeApp
 //
-//  Created by BilmSoft on 6.07.2023.
+//  Created by Salih on 6.07.2023.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  SlideOnboarding.swift
 //  EnglishKelimeApp
 //
-//  Created by BilmSoft on 17.07.2023.
+//  Created by Salih on 17.07.2023.
 //
 
 import Foundation

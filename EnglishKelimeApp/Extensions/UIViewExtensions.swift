@@ -2,7 +2,7 @@
 //  UIViewExtensions.swift
 //  EnglishKelimeApp
 //
-//  Created by BilmSoft on 14.07.2023.
+//  Created by Salih on 14.07.2023.
 //
 import UIKit
 import Lottie

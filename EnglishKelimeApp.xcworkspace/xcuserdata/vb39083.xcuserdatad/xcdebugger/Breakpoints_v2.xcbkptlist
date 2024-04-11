@@ -36,79 +36,74 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - fed49069cf5ad142"
+                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - bff493570706cca1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(1) suspend resume partial function for EnglishKelimeApp.AuthenticationManager.signInAnonymous() async throws -&gt; EnglishKelimeApp.AuthDataResultModel"
                   moduleName = "EnglishKelimeApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vb39083/XcodeMe/XcodeSelect/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
+                  urlString = "file:///Users/vb39083/Xcode/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "68">
+                  endingLineNumber = "101">
                </Location>
                <Location
-                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 463a20a2bfe28465"
+                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 71a239c77be9986"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(2) await resume partial function for EnglishKelimeApp.AuthenticationManager.signInAnonymous() async throws -&gt; EnglishKelimeApp.AuthDataResultModel"
                   moduleName = "EnglishKelimeApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vb39083/XcodeMe/XcodeSelect/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
+                  urlString = "file:///Users/vb39083/Xcode/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "60">
+                  endingLineNumber = "101">
                </Location>
                <Location
-                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 52204f76a5b39544"
+                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 13004c486def88a7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(3) suspend resume partial function for EnglishKelimeApp.AuthenticationManager.signInAnonymous() async throws -&gt; EnglishKelimeApp.AuthDataResultModel"
                   moduleName = "EnglishKelimeApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vb39083/XcodeMe/XcodeSelect/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
+                  urlString = "file:///Users/vb39083/Xcode/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "52">
+                  endingLineNumber = "101">
                </Location>
                <Location
-                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 7bca6ff010fccb45"
+                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 3aea6cced8a0d6a6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(4) suspend resume partial function for EnglishKelimeApp.AuthenticationManager.signInAnonymous() async throws -&gt; EnglishKelimeApp.AuthDataResultModel"
                   moduleName = "EnglishKelimeApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vb39083/XcodeMe/XcodeSelect/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
+                  urlString = "file:///Users/vb39083/Xcode/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "44">
+                  endingLineNumber = "101">
                </Location>
                <Location
-                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 7bca6ff010fccb45"
+                  uuid = "A20BC282-6304-4C08-990B-2A08997E4B30 - 3aea6cced8a0d6a6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(4) suspend resume partial function for EnglishKelimeApp.AuthenticationManager.signInAnonymous() async throws -&gt; EnglishKelimeApp.AuthDataResultModel"
                   moduleName = "EnglishKelimeApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vb39083/XcodeMe/XcodeSelect/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
+                  urlString = "file:///Users/vb39083/Xcode/EnglishKelimeApp/EnglishKelimeApp/Model/AuthenticationManager/AuthenticationManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "88">
+                  endingLineNumber = "101">
                </Location>
             </Locations>
          </BreakpointContent>

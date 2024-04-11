@@ -2,7 +2,7 @@
 //  OnboardingCollectionViewCell.swift
 //  EnglishKelimeApp
 //
-//  Created by BilmSoft on 16.07.2023.
+//  Created by Salih on 16.07.2023.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  EnglishKelimeApp
 //
-//  Created by BilmSoft on 5.07.2023.
+//  Created by Salih on 5.07.2023.
 //
 
 import UIKit
